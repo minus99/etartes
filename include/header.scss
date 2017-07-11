@@ -1,0 +1,128 @@
+// header
+
+header.main-header {
+
+    #validateLogin,
+    .kutuSepet {display: none; position: absolute;}
+
+}
+
+// header-top
+
+.header-top {background-color: $color-1;
+
+    .logo,
+    .nav,
+    .member {height: 83px;}
+
+    .logo {flex-basis: 280px;}
+    
+    .member {flex-basis: 230px;}
+
+    .nav {flex-basis: calc(100% - 510px);}
+
+}
+
+// menu
+
+.main-menu {
+
+    ul {list-style: none; margin: 0px; padding: 0px;
+    
+        li {
+
+            a {padding: 0px 10px; color: $color-3; font-size: 14px; text-decoration: none; font-weight: 600;}
+
+        }
+    
+    }
+
+}
+
+// member
+
+.header-login {margin-right: 30px;}
+
+.header-login,
+.header-cart {
+
+    a {color: $color-3;
+    
+        &::before {margin-right: 8px;} 
+    
+    }
+
+}
+
+// header bottom
+
+.header-bottom {background-color: $color-2; position: relative;
+
+    .category {position: relative; max-width: 250px; margin-right: 30px;}
+
+    .search {min-height: 84px;
+    
+        input[type=text] {height: 50px;}
+    
+    }
+
+    .category,
+    .search {flex-grow: 1;}
+
+}
+
+// category
+
+.header-category {background-color: $color-3; position: absolute; top: 17px; left: 0px; width: 100%;
+
+    .title {height: 67px; padding: 20px; box-sizing: border-box; font-size: 15px; font-weight: 600; color: $color-6;
+    
+        &::before {font-size: 26px; margin-right: 20px;}
+
+        span {width: 100%;}
+    
+    }
+
+    .list {border-left: 1px solid $color-4; border-right: 1px solid $color-4; position: relative;
+
+        ul {list-style: none; margin: 0px;
+        
+            li {border-bottom: 1px solid $color-4;
+
+                a {font-size: 15px; font-weight: 600; color: #9B9B9B; padding: 15px 15px; display: flex; align-items: center; justify-content: space-between;}
+
+                &:first-child {border-top: 1px solid $color-4;}
+
+            }
+        
+        }
+
+        nav > ul {padding: 0px;
+        
+            > li {
+
+                > a i {font-size: 11px;}
+
+                > ul {visibility: hidden; opacity: 0;  position: absolute; top: 0px; left: 250px; z-index: 2; padding: 0px; width: 250px; border-right: 1px solid $color-4; transition: all 0.3s ease;}
+
+                &:hover {
+
+                    > ul {visibility: visible; opacity: 1;}
+
+                }
+
+            }
+        
+        }
+
+    }
+
+}
+
+// search
+
+.mod-mini-search-header,
+.mod-mini-search-footer,
+.ems-field.submit {display: none;}
+
+.mod-mini-search {font-size: 0px; width: 100%;}

@@ -1,0 +1,62 @@
+// fonts
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin-ext');
+
+@import 'fontello.css';
+
+html {font-family: $font; font-size: 17px; line-height: 1.5; color: $color-2; -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility;}
+
+body {margin: 0px;}
+
+a,
+a:hover {text-decoration: none;}
+
+.float-left {float: left;}
+
+.float-right {float: right;}
+
+// buttons 
+
+.button {font-weight: 600; text-align: center; background-color: $color-1; color: $color-3; border-radius: 4px;
+
+    &.large {font-size: 18px; padding: 15px 56px;}
+
+    &.small {padding: 10px 35px;}
+
+    &.short {padding: 5px 41px;}
+
+    &.border {padding: 10px 45px; border: 1px solid $color-3;}
+
+    &.small,
+    &.short,
+    &.border {font-size: 14px;}
+
+}
+
+// flex
+
+.flex {display: flex;}
+
+.flex-center {justify-content: center;}
+
+.flex-between {justify-content: space-between;}
+
+.flex-end {justify-content: flex-end;}
+
+.flex-middle {align-items: center;}
+
+// container
+
+.ems-container {max-width: 1200px; padding-left: 40px; padding-right: 40px; margin-left: auto; margin-right: auto; box-sizing: content-box;
+
+    &::before,
+    &::after {clear: both;}
+
+}
+
+// form
+
+input:not([type=radio]):not([type=checkbox]),
+select,
+textarea {max-width: 100%; width: 100%; border: 0 none; padding: 0 10px; box-sizing: border-box; margin: 0; border-radius: 0; background: $color-3; color: $color-2; border: 1px solid $color-4; transition: .2s ease-in-out; transition-property: color,background-color,border;}
+
