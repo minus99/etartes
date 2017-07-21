@@ -19,6 +19,8 @@
 
     .ems-form-password-forget {right: 15px; top: calc(50% - 10px); font-size: 12px; text-decoration: underline;}
 
+    // login
+
     .ems-login {
 
         @include checkbox-radius;
@@ -28,22 +30,42 @@
 
         .kutuUyeGirisFacebookConnect {
 
-            * {width: 100%;}
+            table, tbody, tr, th {display: block $i;}
 
         }
 
-        .btnFacebookLogin {}
+        .btnFacebookLogin {display: block;}
 
     }
+
+    // register
 
     .ems-signup {
 
-        .btnYeniUyeKaydet {display: block;
+        .enter-link {display: none;}
 
-            @extend .large;
+        .mobile-phone {
+
+            .ems-form-obj {
+
+                input {
+
+                    &:first-child {width: 110px $i; margin-right: 15px;}
+
+                    &:last-child {width: calc(100% - 125px) $i;}
+
+                }
+
+            }
 
         }
 
     }
+
+    .btnYeniUyeKaydet {display: block;
+
+        @extend .large;
+
+    }    
 
 }

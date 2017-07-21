@@ -31,7 +31,7 @@
 
 // member
 
-.member {position: absolute; right: 40px; top: -83px; height: 83px; width: 230px; transition: top 0.3s ease; transition-delay: 0s; 
+.member {position: absolute; right: 40px; top: -83px; height: 83px; width: 275px; transition: top 0.3s ease; transition-delay: 0s; 
 
     .icon-basket,
     .icon-user {
@@ -51,23 +51,23 @@
 
     #validateLogin {margin-right: 30px; width: 50%;
 
-        .mod-mini-login {
+        .mod-mini-login {padding: 12px;
 
             .mod-mini-login-body {position: relative;
         
-                .ems-form {opacity: 0; visibility: hidden; position: absolute; background-color: $color-3; z-index: 2; width: 290px; left: 0px; padding: 15px;}
+                .ems-form {opacity: 0; visibility: hidden; position: absolute; background-color: $color-3; z-index: 2; width: 290px; left: -12px; top: 40px; padding: 15px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;}
             
             }
 
-            &.opened {
+            &.opened {background-color: $color-3; border-top-left-radius: 3px; border-top-right-radius: 3px;
 
                 .mod-mini-login-body {
 
                     .ems-form {opacity: 1; visibility: visible;}
 
-                    .sub {background-color: $color-3; padding: 12px;
+                    .sub {
                     
-                        * {color: $color-2;}
+                        > span * {color: $color-2;}
                     
                     }
 
@@ -78,6 +78,22 @@
         }
 
         .mod-mini-login-signin {display: none;}
+
+        .submit .btnKutuLogin {display: block;
+
+            @extend .large;
+
+        }
+
+        @include checkbox-radius;
+
+        .forget {position: absolute; right: 12px; top: -47px; font-size: 12px; text-decoration: underline; text-decoration-skip: ink; -moz-text-decoration-color: $color-9; font-weight: 600; color: $color-9;}
+
+        .btn-signin {display: none;}
+
+        .ems-form .ems-field .ems-form-label {color: $color-9; font-weight: 600;} 
+
+        .remember {color: $color-9;}
 
     }
 

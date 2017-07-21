@@ -1,0 +1,39 @@
+// content page
+
+.ems-content-page {
+
+    .kutuSolMenuTree {
+
+        .kutuHeaderSolMenuTree {display: none;}
+
+        .sStylerMainWrp {display: none;}
+
+    }
+
+}
+
+// sidebar
+
+.ems-sidebar {width: 280px;
+
+    .sev2 > a {font-size: 18px; font-weight: bold; margin-bottom: 25px; display: inline-block;}
+
+    .sev3 {
+
+        a {font-size: 14px; line-height: 2.14;}
+
+        &.act a {font-weight: bold;}
+
+    }
+
+}
+
+// content
+
+.ems-content {width: calc(100% - 280px); font-size: 15px;
+
+    h2 {margin: 0px; font-size: 18px;}
+
+    p {margin-top: 25px; margin-bottom: 0px;}
+
+}

@@ -60,11 +60,12 @@ a.btnDefault {
   color: #FFFFFF;
   border-radius: 4px;
   display: inline-block; }
-  a.button.large, a.button.btnFacebookLogin, .product-item .urunListe_sepet a.btnFacebookLogin, .ems-page-member-login a.button.btnLogin, .ems-page-member-login .product-item .urunListe_sepet a.btnLogin, .product-item .urunListe_sepet .ems-page-member-login a.btnLogin, .ems-page-member-login .ems-signup a.button.btnYeniUyeKaydet, .ems-page-member-login .ems-signup .product-item .urunListe_sepet a.btnYeniUyeKaydet, .product-item .urunListe_sepet .ems-page-member-login .ems-signup a.btnYeniUyeKaydet, .product-item .urunListe_sepet a.large,
+  a.button.large, a.button.btnFacebookLogin, .product-item .urunListe_sepet a.btnFacebookLogin, .member #validateLogin .submit a.button.btnKutuLogin, .member #validateLogin .submit .product-item .urunListe_sepet a.btnKutuLogin, .product-item .urunListe_sepet .member #validateLogin .submit a.btnKutuLogin, .ems-page-member-login a.button.btnLogin, .ems-page-member-login .product-item .urunListe_sepet a.btnLogin, .product-item .urunListe_sepet .ems-page-member-login a.btnLogin, .ems-page-member-login a.button.btnYeniUyeKaydet, .ems-page-member-login .product-item .urunListe_sepet a.btnYeniUyeKaydet, .product-item .urunListe_sepet .ems-page-member-login a.btnYeniUyeKaydet, .product-item .urunListe_sepet a.large,
   a.btnDefault.large,
   a.btnDefault.btnFacebookLogin,
+  .member #validateLogin .submit a.btnDefault.btnKutuLogin,
   .ems-page-member-login a.btnDefault.btnLogin,
-  .ems-page-member-login .ems-signup a.btnDefault.btnYeniUyeKaydet {
+  .ems-page-member-login a.btnDefault.btnYeniUyeKaydet {
     font-size: 18px;
     padding: 12px 56px; }
   a.button.small, .product-item .urunListe_sepet a.small, .tekli .product-item .urunListe_sepet a,
@@ -166,7 +167,9 @@ textarea {
   transition: 0.2s ease-in-out;
   -webkit-transition-property: color,background-color,border;
   -o-transition-property: color,background-color,border;
-  transition-property: color,background-color,border; }
+  transition-property: color,background-color,border;
+  -webkit-box-shadow: 0px 0px 0px 200px #FFFFFF inset;
+  box-shadow: 0px 0px 0px 200px #FFFFFF inset; }
 
 input:not([type=radio]):not([type=checkbox]) {
   height: 50px; }
@@ -190,8 +193,9 @@ input:not([type=radio]):not([type=checkbox]) {
       background-color: #78B657;
       border-color: #78B657; }
 
-.sStylerMainWrp + span,
-.checkbox + span {
+.sStylerMainWrp + *,
+.checkbox + *,
+.control-code img ~ * {
   font-size: 13px; }
 
 .ems-form .ems-field {
@@ -205,7 +209,8 @@ input:not([type=radio]):not([type=checkbox]) {
     z-index: 1;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out; }
+    transition: all .2s ease-in-out;
+    pointer-events: none; }
   .ems-form .ems-field.is-completed .ems-form-label {
     font-size: 11px;
     top: 3px; }
@@ -864,7 +869,7 @@ button.swiper-pagination-bullet {
   right: 40px;
   top: -83px;
   height: 83px;
-  width: 230px;
+  width: 275px;
   -webkit-transition: top 0.3s ease;
   -o-transition: top 0.3s ease;
   transition: top 0.3s ease;
@@ -883,27 +888,71 @@ button.swiper-pagination-bullet {
   .member #validateLogin {
     margin-right: 30px;
     width: 50%; }
-    .member #validateLogin .mod-mini-login .mod-mini-login-body {
-      position: relative; }
-      .member #validateLogin .mod-mini-login .mod-mini-login-body .ems-form {
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
-        background-color: #FFFFFF;
-        z-index: 2;
-        width: 290px;
-        left: 0px;
-        padding: 15px; }
-    .member #validateLogin .mod-mini-login.opened .mod-mini-login-body .ems-form {
-      opacity: 1;
-      visibility: visible; }
-    .member #validateLogin .mod-mini-login.opened .mod-mini-login-body .sub {
-      background-color: #FFFFFF;
+    .member #validateLogin .mod-mini-login {
       padding: 12px; }
-      .member #validateLogin .mod-mini-login.opened .mod-mini-login-body .sub * {
-        color: #30373B; }
+      .member #validateLogin .mod-mini-login .mod-mini-login-body {
+        position: relative; }
+        .member #validateLogin .mod-mini-login .mod-mini-login-body .ems-form {
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          background-color: #FFFFFF;
+          z-index: 2;
+          width: 290px;
+          left: -12px;
+          top: 40px;
+          padding: 15px;
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px; }
+      .member #validateLogin .mod-mini-login.opened {
+        background-color: #FFFFFF;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px; }
+        .member #validateLogin .mod-mini-login.opened .mod-mini-login-body .ems-form {
+          opacity: 1;
+          visibility: visible; }
+        .member #validateLogin .mod-mini-login.opened .mod-mini-login-body .sub > span * {
+          color: #30373B; }
     .member #validateLogin .mod-mini-login-signin {
       display: none; }
+    .member #validateLogin .submit .btnKutuLogin {
+      display: block; }
+    .member #validateLogin .sStylerWrp_checkbox {
+      width: 22px;
+      margin-right: 15px;
+      display: inline-block; }
+      .member #validateLogin .sStylerWrp_checkbox .cStyler {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        cursor: pointer;
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in; }
+        .member #validateLogin .sStylerWrp_checkbox .cStyler.checked {
+          background-color: #78B657;
+          border-color: #78B657; }
+    .member #validateLogin .forget {
+      position: absolute;
+      right: 12px;
+      top: -47px;
+      font-size: 12px;
+      text-decoration: underline;
+      -webkit-text-decoration-skip: ink;
+      text-decoration-skip: ink;
+      -moz-text-decoration-color: #9B9B9B;
+      font-weight: 600;
+      color: #9B9B9B; }
+    .member #validateLogin .btn-signin {
+      display: none; }
+    .member #validateLogin .ems-form .ems-field .ems-form-label {
+      color: #9B9B9B;
+      font-weight: 600; }
+    .member #validateLogin .remember {
+      color: #9B9B9B; }
   .member .mod-mini-cart {
     position: relative;
     width: 50%; }
@@ -1177,9 +1226,18 @@ button.swiper-pagination-bullet {
   .ems-page-member-login .ems-login .enter-link,
   .ems-page-member-login .ems-login .guestCheckout {
     display: none; }
-  .ems-page-member-login .ems-login .kutuUyeGirisFacebookConnect * {
-    width: 100%; }
-  .ems-page-member-login .ems-signup .btnYeniUyeKaydet {
+  .ems-page-member-login .ems-login .kutuUyeGirisFacebookConnect table, .ems-page-member-login .ems-login .kutuUyeGirisFacebookConnect tbody, .ems-page-member-login .ems-login .kutuUyeGirisFacebookConnect tr, .ems-page-member-login .ems-login .kutuUyeGirisFacebookConnect th {
+    display: block !important; }
+  .ems-page-member-login .ems-login .btnFacebookLogin {
+    display: block; }
+  .ems-page-member-login .ems-signup .enter-link {
+    display: none; }
+  .ems-page-member-login .ems-signup .mobile-phone .ems-form-obj input:first-child {
+    width: 110px !important;
+    margin-right: 15px; }
+  .ems-page-member-login .ems-signup .mobile-phone .ems-form-obj input:last-child {
+    width: calc(100% - 125px) !important; }
+  .ems-page-member-login .btnYeniUyeKaydet {
     display: block; }
 
 .page-home {
@@ -1493,5 +1551,34 @@ button.swiper-pagination-bullet {
 
 .tekli .product-item .urunListe_adet {
   display: block; }
+
+.ems-content-page .kutuSolMenuTree .kutuHeaderSolMenuTree {
+  display: none; }
+
+.ems-content-page .kutuSolMenuTree .sStylerMainWrp {
+  display: none; }
+
+.ems-sidebar {
+  width: 280px; }
+  .ems-sidebar .sev2 > a {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    display: inline-block; }
+  .ems-sidebar .sev3 a {
+    font-size: 14px;
+    line-height: 2.14; }
+  .ems-sidebar .sev3.act a {
+    font-weight: bold; }
+
+.ems-content {
+  width: calc(100% - 280px);
+  font-size: 15px; }
+  .ems-content h2 {
+    margin: 0px;
+    font-size: 18px; }
+  .ems-content p {
+    margin-top: 25px;
+    margin-bottom: 0px; }
 
 /*# sourceMappingURL=style.css.map */
