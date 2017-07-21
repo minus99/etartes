@@ -1,0 +1,21 @@
+// widget
+
+.widget-product {margin: 60px 0px 40px 0px;}
+
+.swiper-title {font-size: 25px; font-weight: bold; color: $color-8; margin-bottom: 15px;}
+
+// no swiper
+
+.no-swiper {
+
+    .swiper-button-prev,
+    .swiper-button-next,
+    .swiper-pagination {display: none;}
+
+    .swiper-wrapper {flex-wrap: wrap; justify-content: space-between;
+    
+        .swiper-slide {width: calc(25% - 23px); margin-bottom: 40px;}
+    
+    }
+
+}

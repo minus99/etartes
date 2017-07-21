@@ -1,0 +1,146 @@
+// products
+
+.page-product-list {
+
+    .filtre {width: 250px;}
+
+    .content {width: calc(100% - 250px);}
+
+    .ems-prd-list-count {display: none;}
+
+    .content {padding-left: 30px; box-sizing: border-box;}
+
+}
+
+// product list
+
+.product-list {
+
+    > li {width: calc(25% - 24px); margin-right: 31px;
+    
+        &:nth-child(4n) {margin-right: 0px;}
+    
+    }
+
+}
+
+// product item
+
+.product-item {padding: 20px;
+
+    .ems-prd-inner {display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start;}
+
+    .product-code-group {min-height: 76px;}
+
+    .ems-prd-name a {color: $color-9;} 
+
+    .ems-prd-price {color: $color-10; font-size: 23px; font-weight: 700; margin-top: 10px;
+        
+        .urunListe_satisFiyat {direction: rtl;}
+
+        .ems-prd-price-first:not(:empty) {color: $color-5; direction: rtl;}
+    
+    }
+
+    .ems-prd-button {visibility: hidden; opacity: 0; transition: all 0.1s ease; margin-top: 15px;}
+
+    .urunListe_adet {display: none;}
+
+    .urunListe_sepet {
+
+        a {
+            @extend .button;
+            @extend .short; 
+        }
+
+    }
+
+    &:hover {
+
+        .ems-prd-button {visibility: visible; opacity: 1;}
+
+    }
+
+}
+
+// navigation
+
+.navigation {min-height: 50px; line-height: 50px; border-bottom: 1px solid $color-5; color: $color-9;
+
+    .navigasyon {font-size: 13px;}
+
+}
+
+.gosterim {margin-right: 20px; color: $color-9;
+
+    .icon-combined {font-size: 16px;}
+
+    .icon-justify {font-size: 13px;}
+
+    ul {margin: 0px;}
+
+}
+
+.presentation {right: 0px; top: 0px; width: 300px;
+    
+    .ems-prd-list-stock {display: none;}
+
+    .ems-prd-list-sort {height: 50px; font-size: 13px; color: $color-9;
+
+        &::before {margin-right: -15px; font-size: 13px;}
+
+        .sStylerMainWrp {position: relative; width: 100%;}
+
+        .sStylerWrp {position: absolute; right: 0px;}
+
+    }
+
+}
+
+// type
+
+.tekli {
+
+    .product-list {
+
+        > li {width: 100%; margin-right: 0px;
+        
+            &:nth-child(even) {background-color: $color-4;}
+        
+        }
+
+    }
+
+    .ems-prd-inner {justify-content: space-between; align-items: center;}
+
+    .ems-prd-image {flex-basis: 70px;}
+
+    .product-code-group {padding-left: 20px; text-align: left; flex-basis: 300px; display: flex; flex-direction: column; justify-content: center;}
+
+    .ems-none.product-code {display: block $i; font-size: 12px; color: $color-9;}
+
+    .ems-prd-name a {font-size: 14px; color: $color-8;}
+
+    .product-item .ems-prd-price {margin-top: 0px; display: flex; align-items: center; flex-direction: column; font-size: 14px; color: $color-9;}
+
+    .pb1::before {font-size: 14px;}
+
+    .ems-prd-button {flex-basis: 300px; position: relative; visibility: visible; opacity: 1; margin-top: 0px; box-sizing: border-box; padding-left: 45px;
+
+        .urunListe_sepetGrup {display: flex $i; justify-content: space-between;}
+    
+        input {width: 42px; height: 27px; text-align: center; background-color: transparent; border-radius: 4px; border-color: $color-5; color: $color-9; font-weight: 600;}
+
+        [id$="lblURN_ADET"] {display: none;}
+    
+    }
+
+    .product-item .urunListe_adet {display: block;}
+
+    .product-item .urunListe_sepet a {
+
+        @extend .small;
+
+    }
+
+}

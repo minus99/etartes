@@ -1,0 +1,65 @@
+// footer
+
+.main-footer {margin-top: 90px;
+
+    .ems-container {max-width: 850px;}
+
+    ul {list-style: none; padding-left: 0px;}
+
+}
+
+// footer-top
+
+.footer-top {background-color: $color-4;
+
+    // logo
+
+    .logo {width: 360px;
+    
+        small {font-size: 17px; font-weight: 600; color: $color-8; max-width: 80px; padding-left: 15px; margin-bottom: 5px; align-self: flex-end; line-height: 1.2;}
+    
+    }
+
+    // social
+
+    .footer-social {min-height: 90px;}
+
+    .social {width: calc(100% - 360px); font-size: 25px;
+
+        ul {padding-left: 0px; margin: 0px; height: 100%;}
+
+    }
+
+    .icon-facebook {color: $facebook;}
+
+    .icon-twitter {color: $twitter;}
+    
+    .icon-youtube {color: $youtube;}
+
+}
+
+// footer-bottom
+
+.footer-bottom {padding: 25px 0px 35px 0px;
+
+    // menu
+
+    ul li a{font-size: 12px; color: $color-9; font-weight: 600; line-height: 2.5;}
+
+    span {color: $color-8; font-size: 12px; line-height: 2.5; font-weight: bold;}
+
+    .category {
+
+        ul {column-count: 3; column-gap: 50px;}
+
+    }
+
+}
+
+// footer address
+
+.footer-address {border-top: 1px solid $color-5;
+
+    address {font-size: 12px; color: $color-9; min-height: 88px; max-width: 610px; font-weight: 600; font-style: normal;}  
+
+}

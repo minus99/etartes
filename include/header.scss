@@ -1,23 +1,11 @@
-// header
-
-header.main-header {
-
-    #validateLogin,
-    .kutuSepet {display: none; position: absolute;}
-
-}
-
 // header-top
 
 .header-top {background-color: $color-1;
 
     .logo,
-    .nav,
-    .member {height: 83px;}
+    .nav {height: 83px;}
 
     .logo {flex-basis: 280px;}
-    
-    .member {flex-basis: 230px;}
 
     .nav {flex-basis: calc(100% - 510px);}
 
@@ -33,6 +21,8 @@ header.main-header {
 
             a {padding: 0px 10px; color: $color-3; font-size: 14px; text-decoration: none; font-weight: 600;}
 
+            &:first-child a {padding-left: 0px;}
+
         }
     
     }
@@ -41,16 +31,79 @@ header.main-header {
 
 // member
 
-.header-login {margin-right: 30px;}
+.member {position: absolute; right: 40px; top: -83px; height: 83px; width: 230px; transition: top 0.3s ease; transition-delay: 0s; 
 
-.header-login,
-.header-cart {
+    .icon-basket,
+    .icon-user {
 
-    a {color: $color-3;
-    
-        &::before {margin-right: 8px;} 
+        &::before {margin-right: 8px; font-size: 26px; margin-left: 0px;}
+
+    }
+
+    .ems-cart-basket,
+    .sub {
+
+        > span {color: $color-3; font-size: 14px;}
+
+    }
+
+    // login
+
+    #validateLogin {margin-right: 30px; width: 50%;
+
+        .mod-mini-login {
+
+            .mod-mini-login-body {position: relative;
+        
+                .ems-form {opacity: 0; visibility: hidden; position: absolute; background-color: $color-3; z-index: 2; width: 290px; left: 0px; padding: 15px;}
+            
+            }
+
+            &.opened {
+
+                .mod-mini-login-body {
+
+                    .ems-form {opacity: 1; visibility: visible;}
+
+                    .sub {background-color: $color-3; padding: 12px;
+                    
+                        * {color: $color-2;}
+                    
+                    }
+
+                }
+
+            }
+
+        }
+
+        .mod-mini-login-signin {display: none;}
+
+    }
+
+    // cart
+
+    .mod-mini-cart {position: relative; width: 50%;
+
+        .mod-mini-cart-body {width: 380px; background: $color-3; position: absolute; right: 0; z-index: 2; opacity: 0; visibility: hidden;}
+
+        &.opened {
+
+            .mod-mini-cart-header {background-color: $color-3;
+            
+                * {color: $color-2;}
+            
+            }
+
+            .mod-mini-cart-body {opacity: 1; visibility: visible; width: 371px;}
+
+        }
+
+        .ems-cart-piece {position: absolute; left: 0px; top: 0px; font-size: 11px; width: 26px; height: 26px; text-align: center; line-height: 31px; color: $color-3;}
     
     }
+
+    .ems-cart-info {position: relative;}
 
 }
 
@@ -60,11 +113,7 @@ header.main-header {
 
     .category {position: relative; max-width: 250px; margin-right: 30px;}
 
-    .search {min-height: 84px;
-    
-        input[type=text] {height: 50px;}
-    
-    }
+    .search {min-height: 84px;}
 
     .category,
     .search {flex-grow: 1;}
@@ -75,6 +124,8 @@ header.main-header {
 
 .header-category {background-color: $color-3; position: absolute; top: 17px; left: 0px; width: 100%;
 
+    // title
+
     .title {height: 67px; padding: 20px; box-sizing: border-box; font-size: 15px; font-weight: 600; color: $color-6;
     
         &::before {font-size: 26px; margin-right: 20px;}
@@ -83,13 +134,19 @@ header.main-header {
     
     }
 
-    .list {border-left: 1px solid $color-4; border-right: 1px solid $color-4; position: relative;
+    // list
+
+    .list {border-left: 1px solid $color-4; border-right: 1px solid $color-4; position: relative; display: none;
 
         ul {list-style: none; margin: 0px;
         
             li {border-bottom: 1px solid $color-4;
 
-                a {font-size: 15px; font-weight: 600; color: #9B9B9B; padding: 15px 15px; display: flex; align-items: center; justify-content: space-between;}
+                a {font-size: 15px; font-weight: 600; color: #9B9B9B; padding: 15px 15px; display: flex; align-items: center; justify-content: space-between;
+                
+                    i {display: none;}
+                
+                }
 
                 &:first-child {border-top: 1px solid $color-4;}
 
@@ -103,7 +160,7 @@ header.main-header {
 
                 > a i {font-size: 11px;}
 
-                > ul {visibility: hidden; opacity: 0;  position: absolute; top: 0px; left: 250px; z-index: 2; padding: 0px; width: 250px; border-right: 1px solid $color-4; transition: all 0.3s ease;}
+                > ul {display: none;}
 
                 &:hover {
 
@@ -119,10 +176,36 @@ header.main-header {
 
 }
 
+.ems-page-home .header-category.activeted .list,
+.header-category.opened .list{display: block;}
+
 // search
 
 .mod-mini-search-header,
-.mod-mini-search-footer,
-.ems-field.submit {display: none;}
+.mod-mini-search-footer {display: none;}
 
-.mod-mini-search {font-size: 0px; width: 100%;}
+.mod-mini-search {font-size: 0px; width: 100%; transition: width 0.3s ease; transition-delay: 0.1s;
+
+    .icon-search {font-size: 20px; left: 11px; transform: translateY(-50%); top: 50%; color: $color-9; z-index: 2;}
+
+    input[type=text] {padding-left: 40px;}
+
+    .ems-field {margin-bottom: 0px;}
+
+}
+
+// header animation
+
+.sticky-header-ready {
+
+    .mod-mini-search {width: 630px; transition-delay: 0s;}
+
+    .member {top: 0px; transition-delay: 0.1s;}
+
+}
+
+.sticky-header-animate {padding-top: 84px;
+
+    .header-bottom {position: fixed; top: 0px; left: 0px; width: 100%; z-index: 2;}
+
+}

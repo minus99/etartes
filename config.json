@@ -288,7 +288,7 @@
     },
     {
       "uid": "fd55c9726d03ac0e0470e403ad6ed34a",
-      "css": "look",
+      "css": "lock",
       "code": 59410,
       "src": "custom_icons",
       "selected": true,
@@ -319,7 +319,7 @@
       "css": "loading",
       "code": 59401,
       "src": "custom_icons",
-      "selected": false,
+      "selected": true,
       "svg": {
         "path": "M865.3 625H950.3C911 838 724.2 1000 500 1000 308.8 1000 144.8 882.2 76.2 715.5L0 791.7V541.7H250L141.2 650.5C188 804.4 331.1 916.7 500 916.7 678.1 916.7 827.3 791.8 865.3 625V625ZM923.8 284.5L1000 208.3V458.3H750L858.8 349.6C812 195.7 669 83.3 500 83.3 321.9 83.3 172.7 208.3 134.7 375H49.7C89 162 275.8 0 500 0 691.2 0 855.2 117.8 923.9 284.5H923.8Z",
         "width": 1000
@@ -327,6 +327,88 @@
       "search": [
         "untitled-2-04"
       ]
+    },
+    {
+      "uid": "9d3e9faf68fd4e12def853f0d4e1173b",
+      "css": "whatsapp",
+      "code": 62002,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 61593,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 61594,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "47a1f80457068fbeab69fdb83d7d0817",
+      "css": "youtube",
+      "code": 61802,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "221947bea81f49a11b863c686a7bd235",
+      "css": "search",
+      "code": 59415,
+      "src": "websymbols"
+    },
+    {
+      "uid": "25a81737628d1e654a30ad412d7d6dd7",
+      "css": "align-justify",
+      "code": 59416,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "dd492243d64e21dfe16a92452f7861cb",
+      "css": "th-large",
+      "code": 59417,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "6020aff067fc3c119cdd75daa5249220",
+      "css": "exchange",
+      "code": 61676,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d2980954c519e02ecae7169c2c1e2232",
+      "css": "justify",
+      "code": 59418,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M47.3 104.5C21.2 104.5 0 81.2 0 52.3 0 23.4 21.2 0 47.3 0H1206.2C1232.3 0 1253.5 23.3 1253.5 52.3 1253.5 81.1 1232.2 104.5 1206.2 104.5H47.3ZM47.3 393.3C21.2 393.3 0 369.9 0 341.1S21.2 288.8 47.3 288.8H1206.2C1232.3 288.8 1253.5 312.2 1253.5 341.1 1253.5 369.9 1232.2 393.3 1206.2 393.3H47.3ZM47.3 682.1C21.2 682.1 0 658.8 0 629.8 0 601 21.2 577.6 47.3 577.6H1206.2C1232.3 577.6 1253.5 601 1253.5 629.8S1232.2 682.1 1206.2 682.1H47.3ZM47.3 970.9C21.2 970.9 0 947.6 0 918.7 0 889.8 21.2 866.4 47.3 866.4H1206.2C1232.3 866.4 1253.5 889.7 1253.5 918.7 1253.5 947.5 1232.2 970.9 1206.2 970.9H47.3Z",
+        "width": 1333
+      },
+      "search": [
+        "men-copy-2"
+      ]
+    },
+    {
+      "uid": "a0b243be553682e93a7a7f141ca6af73",
+      "css": "combined",
+      "code": 59419,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M584.6 76.9H923.1V415.4H584.6V76.9ZM76.9 76.9H415.4V415.4H76.9V76.9ZM584.6 584.6H923.1V923.1H584.6V584.6ZM76.9 584.6H415.4V923.1H76.9V584.6Z",
+        "width": 1000
+      },
+      "search": [
+        "combined-shape"
+      ]
+    },
+    {
+      "uid": "7f5801d1e299b445ad0090b0a9e94bcb",
+      "css": "try",
+      "code": 61845,
+      "src": "fontawesome"
     }
   ]
 }

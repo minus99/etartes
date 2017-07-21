@@ -1,0 +1,60 @@
+// home
+
+.page-home {padding-left: 250px;}
+
+.home-content {padding-left: 30px;}
+
+// main-slider
+
+.main-slider {font-size: 0px;
+
+    img {visibility: hidden;}
+
+    h3 {font-size: 36px; font-weight: 700; color: $color-3; line-height: 1; margin-top: 0px; margin-bottom: 20px; max-width: 570px;}
+
+    .content-wrapper {position: absolute; width: 100%; height: 100%;}
+
+    > .swiper-pagination-bullets {bottom: 40px;}
+
+    .swiper-button-prev {left: 30px;}
+
+    .swiper-button-next {right: 30px;}
+
+    .cover {background-size: cover;} 
+
+}
+
+// swiper
+
+.swiper-wrapper {padding-left: 0px; list-style: none;}
+
+.swiper-button-prev,
+.swiper-button-next {background: none; color: $color-3;}
+
+.swiper-pagination-bullet {width: 10px; height: 10px; border: 1px solid $color-3; background-color: $color-3; opacity: 1;
+
+    &-active {background-color: $color-1;}
+
+}
+
+// pay type
+
+.pay-type-list {padding: 25px 50px; color: $color-3; background-color: $color-7; font-size: 13px; font-weight: 500;
+
+    > div::before{font-size: 30px; margin-right: 20px; margin-left: 0px;}
+
+}
+
+// background banner
+
+.background-banner-list {
+
+    .background-banner-item {width: calc(50% - 15px); background-size: cover; min-height: 340px; padding: 30px; box-sizing: border-box;
+    
+        h4 {font-size: 30px; color: $color-3; font-weight: 700; margin: 0px;}
+
+        a {font-size: 14px; color: $color-3; font-weight: 600;} 
+    
+    }
+
+}

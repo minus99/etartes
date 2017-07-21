@@ -1,0 +1,49 @@
+.ems-page-member-login {max-width: 740px; margin: 0px auto;
+
+    .ems-message-wrapper {width: 100%;}
+
+    .ems-login,
+    .ems-signup {width: 320px;}
+
+    .ems-login-header,
+    .ems-signup-header {font-size: 18px; font-weight: bold; margin-bottom: 15px;}
+
+    .ems-login-tab,
+    .ems-signup-tab {display: none;}
+
+    .btnLogin {display: block;
+
+        @extend .large;
+
+    }
+
+    .ems-form-password-forget {right: 15px; top: calc(50% - 10px); font-size: 12px; text-decoration: underline;}
+
+    .ems-login {
+
+        @include checkbox-radius;
+
+        .enter-link,
+        .guestCheckout {display: none;}
+
+        .kutuUyeGirisFacebookConnect {
+
+            * {width: 100%;}
+
+        }
+
+        .btnFacebookLogin {}
+
+    }
+
+    .ems-signup {
+
+        .btnYeniUyeKaydet {display: block;
+
+            @extend .large;
+
+        }
+
+    }
+
+}

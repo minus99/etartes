@@ -2,8 +2,16 @@
 
 @import "include/base.scss";
 
+@import "include/icons.scss";
+
+@import "include/plugins.scss";
+
 @import "include/header.scss";
 @import "include/footer.scss";
+
+@import "include/login.scss";  
+
 @import "include/home.scss";
+@import "include/widget.scss";
 @import "include/product-list.scss";
 @import "include/product-detail.scss";    
