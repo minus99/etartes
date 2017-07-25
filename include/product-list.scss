@@ -87,9 +87,13 @@
 
     .ems-prd-list-sort {height: 50px; font-size: 13px; color: $color-9;
 
-        &::before {margin-right: -15px; font-size: 13px;}
+        .sStylerMainWrp {border: none;
+        
+            &::after {display: none;}
 
-        .sStylerMainWrp {position: relative; width: 100%;}
+            select {padding-right: 0px;}
+
+        }
 
         .sStylerWrp {position: absolute; right: 0px;}
 
@@ -127,7 +131,7 @@
 
     .ems-prd-button {flex-basis: 300px; position: relative; visibility: visible; opacity: 1; margin-top: 0px; box-sizing: border-box; padding-left: 45px;
 
-        .urunListe_sepetGrup {display: flex $i; justify-content: space-between;}
+        .urunListe_sepetGrup {display: flex $i; justify-content: space-between; align-items: center;}
     
         input {width: 42px; height: 27px; text-align: center; background-color: transparent; border-radius: 4px; border-color: $color-5; color: $color-9; font-weight: 600;}
 
@@ -142,5 +146,130 @@
         @extend .small;
 
     }
+
+}
+
+// filtre
+
+.page-product-list {
+
+    .filtre {
+
+        .kutuHeaderKategori,
+        .kutuHeaderOzellikFiltre,
+        .urunKiyaslamaOzellik_temizle {display: none;}
+
+    }
+
+    .menuKategori {
+
+        li {
+
+            > a {display: inline-block; line-height: 2.5;}
+
+            > span {display: none;}
+
+        }
+
+        .s1 {
+
+            > a {font-size: 18px; font-weight: bold; color: $color-9;}
+
+        }
+
+        .s2 {
+
+            > a {font-size: 15px; font-weight: bold; color: $color-9;}
+
+        }
+
+        .sub-items {position: relative;
+
+            &::after {content: '\e804'; position: absolute; right: 0px; top: 12px; font-size: 12px;
+
+                @extend .icons;
+
+            }
+
+            > ul {display: none;}
+
+            &.act {
+
+                > ul {display: block;}
+
+            }
+
+            &.opened {
+
+                 &::after {content: '\e805';}
+
+            }
+
+        }
+
+    }
+
+}
+
+.kutuBodyOzellikFiltre > table {width: 100%;}
+
+.urunKiyaslamaOzellik_ozellikAd {text-transform: uppercase; font-size: 14px; color: $color-6; font-weight: 600; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;
+
+    &::after {content: '\e81c'; 
+    
+        @extend .icons;
+    
+    }
+
+    &.kapali {
+
+        &::after {content: '\e813';}
+        
+    }
+
+}
+
+.urunKiyaslamaOzellik_ozellik {
+
+    table tr td .urunKiyaslamaOzellik {display: block; padding: 10px 30px; font-size: 14px; letter-spacing: .4px; position: relative; color: $color-9; font-weight: 600;
+
+        &::before {content: ''; width: 18px; height: 18px; display: inline-block; border: 1px solid $color-9; position: absolute; top: 10px; left: 0; border-radius: 5px;}
+
+        &.link_selected {
+
+            &::before {background-color: $color-1; border-color: $color-1;}
+
+        }
+        
+    }
+
+    .filterQty {display: none;}
+
+}
+
+
+// pagination
+
+.ems-prd-list-paging-bottom {margin-top: 30px;}
+
+.urunPaging table td[align="left"],
+.urunPaging table td[align="right"],
+.urunPaging table td .urunPaging_btnKiyaslama,
+.urunPaging table td .urunPaging_paging,
+.urunPaging table td .lastPage,
+.urunPaging table td .firstPage {display: none;}
+
+.urunPaging table td[align="center"] {text-align: left;}
+
+.urunPaging {
+
+    .paging {font-size: 14px; color: $color-9; font-weight: 600; display: inline-block; margin-right: 15px;}
+
+    span.paging {border-bottom: 1px solid $color-1;}
+
+    #lbfPagingPrev,
+    #lbfPagingNext {color: $color-1;}
+
+    .tumunuGoster {display: inline-block $i; float: right; font-size: 14px; font-weight: 600; color: $color-9; text-decoration: underline;}
 
 }

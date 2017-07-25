@@ -52,44 +52,90 @@ ul {
 .absolute {
   position: absolute; }
 
-a.button, .product-item .urunListe_sepet a,
-a.btnDefault {
+a.button, .product-item .urunListe_sepet a, .ems-page-message a.btnMesajGonder,
+a.btnDefault,
+a.lnkUyeOlmak,
+.lnkDefault:not(.lnkSifremiUnuttum) {
   font-weight: 600;
   text-align: center;
   background-color: #78B657;
   color: #FFFFFF;
   border-radius: 4px;
   display: inline-block; }
-  a.button.large, a.button.btnFacebookLogin, .product-item .urunListe_sepet a.btnFacebookLogin, .member #validateLogin .submit a.button.btnKutuLogin, .member #validateLogin .submit .product-item .urunListe_sepet a.btnKutuLogin, .product-item .urunListe_sepet .member #validateLogin .submit a.btnKutuLogin, .ems-page-member-login a.button.btnLogin, .ems-page-member-login .product-item .urunListe_sepet a.btnLogin, .product-item .urunListe_sepet .ems-page-member-login a.btnLogin, .ems-page-member-login a.button.btnYeniUyeKaydet, .ems-page-member-login .product-item .urunListe_sepet a.btnYeniUyeKaydet, .product-item .urunListe_sepet .ems-page-member-login a.btnYeniUyeKaydet, .product-item .urunListe_sepet a.large,
+  a.button.large, a.button.btnFacebookLogin, .product-item .urunListe_sepet a.btnFacebookLogin,
+  a.button.lnkDefault.btnFacebookLogin:not(.lnkSifremiUnuttum), .ems-page-message a.lnkDefault.btnFacebookLogin.btnMesajGonder:not(.lnkSifremiUnuttum), .member #validateLogin .submit a.button.btnKutuLogin, .member #validateLogin .submit .product-item .urunListe_sepet a.btnKutuLogin, .product-item .urunListe_sepet .member #validateLogin .submit a.btnKutuLogin, .member #validateLogin .submit .ems-page-message a.btnKutuLogin.btnMesajGonder, .ems-page-message .member #validateLogin .submit a.btnKutuLogin.btnMesajGonder, .member #validateLogin a.button.lnkUyeOlmak, .member #validateLogin .product-item .urunListe_sepet a.lnkUyeOlmak, .product-item .urunListe_sepet .member #validateLogin a.lnkUyeOlmak, .member #validateLogin .ems-page-message a.lnkUyeOlmak.btnMesajGonder, .ems-page-message .member #validateLogin a.lnkUyeOlmak.btnMesajGonder, .member .mod-mini-cart a.button.lnkSepet, .member .mod-mini-cart .product-item .urunListe_sepet a.lnkSepet, .product-item .urunListe_sepet .member .mod-mini-cart a.lnkSepet, .member .mod-mini-cart .ems-page-message a.lnkSepet.btnMesajGonder, .ems-page-message .member .mod-mini-cart a.lnkSepet.btnMesajGonder, .ems-page-member-login a.button.btnLogin, .ems-page-member-login .product-item .urunListe_sepet a.btnLogin, .product-item .urunListe_sepet .ems-page-member-login a.btnLogin, .ems-page-member-login a.button.btnYeniUyeKaydet, .ems-page-member-login .product-item .urunListe_sepet a.btnYeniUyeKaydet, .product-item .urunListe_sepet .ems-page-member-login a.btnYeniUyeKaydet, .product-item .urunListe_sepet a.large, .ems-page-message a.btnMesajGonder,
   a.btnDefault.large,
   a.btnDefault.btnFacebookLogin,
+  a.btnDefault.lnkDefault.btnFacebookLogin:not(.lnkSifremiUnuttum),
   .member #validateLogin .submit a.btnDefault.btnKutuLogin,
+  .member #validateLogin a.btnDefault.lnkUyeOlmak,
+  .member .mod-mini-cart a.btnDefault.lnkSepet,
   .ems-page-member-login a.btnDefault.btnLogin,
-  .ems-page-member-login a.btnDefault.btnYeniUyeKaydet {
+  .ems-page-member-login a.btnDefault.btnYeniUyeKaydet,
+  .ems-page-message a.btnDefault.btnMesajGonder,
+  a.lnkUyeOlmak.large,
+  a.lnkUyeOlmak.btnFacebookLogin,
+  a.lnkUyeOlmak.lnkDefault.btnFacebookLogin:not(.lnkSifremiUnuttum),
+  .member #validateLogin .submit a.lnkUyeOlmak.btnKutuLogin,
+  .member #validateLogin a.lnkUyeOlmak,
+  .member .mod-mini-cart a.lnkUyeOlmak.lnkSepet,
+  .ems-page-member-login a.lnkUyeOlmak.btnLogin,
+  .ems-page-member-login a.lnkUyeOlmak.btnYeniUyeKaydet,
+  .ems-page-message a.lnkUyeOlmak.btnMesajGonder,
+  .lnkDefault:not(.lnkSifremiUnuttum).large,
+  .lnkDefault.btnFacebookLogin:not(.lnkSifremiUnuttum),
+  .member #validateLogin .submit .lnkDefault.btnKutuLogin:not(.lnkSifremiUnuttum),
+  .member #validateLogin .lnkDefault.lnkUyeOlmak:not(.lnkSifremiUnuttum),
+  .member .mod-mini-cart .lnkDefault.lnkSepet:not(.lnkSifremiUnuttum),
+  .ems-page-member-login .lnkDefault.btnLogin:not(.lnkSifremiUnuttum),
+  .ems-page-member-login .lnkDefault.btnYeniUyeKaydet:not(.lnkSifremiUnuttum),
+  .ems-page-message .lnkDefault.btnMesajGonder:not(.lnkSifremiUnuttum) {
     font-size: 18px;
     padding: 12px 56px; }
-  a.button.small, .product-item .urunListe_sepet a.small, .tekli .product-item .urunListe_sepet a,
+  a.button.small, .product-item .urunListe_sepet a.small, .tekli .product-item .urunListe_sepet a, .ems-page-message a.small.btnMesajGonder,
   a.btnDefault.small,
-  .tekli .product-item .urunListe_sepet a.btnDefault {
+  .tekli .product-item .urunListe_sepet a.btnDefault,
+  a.lnkUyeOlmak.small,
+  .tekli .product-item .urunListe_sepet a.lnkUyeOlmak,
+  .lnkDefault:not(.lnkSifremiUnuttum).small,
+  .tekli .product-item .urunListe_sepet a.lnkDefault:not(.lnkSifremiUnuttum) {
     padding: 10px 35px; }
-  a.button.short, .product-item .urunListe_sepet a,
+  a.button.short, .product-item .urunListe_sepet a, .ems-page-message a.short.btnMesajGonder,
   a.btnDefault.short,
-  .product-item .urunListe_sepet a.btnDefault {
+  .product-item .urunListe_sepet a.btnDefault,
+  a.lnkUyeOlmak.short,
+  .product-item .urunListe_sepet a.lnkUyeOlmak,
+  .lnkDefault:not(.lnkSifremiUnuttum).short,
+  .product-item .urunListe_sepet a.lnkDefault:not(.lnkSifremiUnuttum) {
     padding: 5px 41px; }
-  a.button.border, .product-item .urunListe_sepet a.border,
-  a.btnDefault.border {
+  a.button.border, .product-item .urunListe_sepet a.border, .ems-page-message a.border.btnMesajGonder,
+  a.btnDefault.border,
+  a.lnkUyeOlmak.border,
+  .lnkDefault:not(.lnkSifremiUnuttum).border {
     padding: 10px 45px;
     border: 1px solid #FFFFFF;
     background-color: transparent; }
-  a.button.small, .product-item .urunListe_sepet a.small, .tekli .product-item .urunListe_sepet a, a.button.short, .product-item .urunListe_sepet a, a.button.border, .product-item .urunListe_sepet a.border,
+  a.button.small, .product-item .urunListe_sepet a.small, .tekli .product-item .urunListe_sepet a, .ems-page-message a.small.btnMesajGonder, a.button.short, .product-item .urunListe_sepet a, .ems-page-message a.short.btnMesajGonder, a.button.border, .product-item .urunListe_sepet a.border, .ems-page-message a.border.btnMesajGonder,
   a.btnDefault.small,
   .tekli .product-item .urunListe_sepet a.btnDefault,
   a.btnDefault.short,
   .product-item .urunListe_sepet a.btnDefault,
-  a.btnDefault.border {
+  a.btnDefault.border,
+  a.lnkUyeOlmak.small,
+  .tekli .product-item .urunListe_sepet a.lnkUyeOlmak,
+  a.lnkUyeOlmak.short,
+  .product-item .urunListe_sepet a.lnkUyeOlmak,
+  a.lnkUyeOlmak.border,
+  .lnkDefault:not(.lnkSifremiUnuttum).small,
+  .tekli .product-item .urunListe_sepet a.lnkDefault:not(.lnkSifremiUnuttum),
+  .lnkDefault:not(.lnkSifremiUnuttum).short,
+  .product-item .urunListe_sepet a.lnkDefault:not(.lnkSifremiUnuttum),
+  .lnkDefault:not(.lnkSifremiUnuttum).border {
     font-size: 14px; }
-  a.button.btnFacebookLogin, .product-item .urunListe_sepet a.btnFacebookLogin,
-  a.btnDefault.btnFacebookLogin {
+  a.button.btnFacebookLogin, .product-item .urunListe_sepet a.btnFacebookLogin, .ems-page-message a.btnFacebookLogin.btnMesajGonder,
+  a.btnDefault.btnFacebookLogin,
+  a.lnkUyeOlmak.btnFacebookLogin,
+  .lnkDefault:not(.lnkSifremiUnuttum).btnFacebookLogin {
     background-color: #385C8E; }
 
 .flex {
@@ -150,7 +196,8 @@ a.btnDefault {
 
 input:not([type=radio]):not([type=checkbox]),
 select,
-textarea {
+textarea,
+.sStylerWrp_select {
   max-width: 100%;
   width: 100%;
   border: 0 none;
@@ -171,8 +218,14 @@ textarea {
   -webkit-box-shadow: 0px 0px 0px 200px #FFFFFF inset;
   box-shadow: 0px 0px 0px 200px #FFFFFF inset; }
 
-input:not([type=radio]):not([type=checkbox]) {
+input:not([type=radio]):not([type=checkbox]),
+select {
   height: 50px; }
+
+textarea {
+  height: 150px;
+  padding-top: 15px;
+  resize: none; }
 
 .sStylerWrp_checkbox {
   width: 18px;
@@ -198,24 +251,65 @@ input:not([type=radio]):not([type=checkbox]) {
 .control-code img ~ * {
   font-size: 13px; }
 
+.sStylerWrp_select {
+  display: block;
+  height: 50px;
+  padding: 0px;
+  position: relative; }
+  .sStylerWrp_select .sStylerWrp {
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    line-height: 50px;
+    left: 10px; }
+  .sStylerWrp_select::after {
+    content: '\e802';
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 4px);
+    pointer-events: none;
+    color: #9B9B9B; }
+
+#dvMesajSehirBilgi::after {
+  content: '\e802';
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 4px);
+  pointer-events: none;
+  color: #9B9B9B; }
+
+.ems-form .ems-field:not(.captcha) .ems-form-label {
+  font-size: 14px;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 12px;
+  z-index: 1;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  pointer-events: none; }
+
+.ems-form .ems-field:not(.captcha).is-completed .ems-form-label {
+  font-size: 11px;
+  top: 3px; }
+
+.ems-form .ems-field:not(.captcha).textarea .ems-form-label {
+  top: 10px !important; }
+
+.ems-form .ems-field:not(.captcha).textarea.is-active .ems-form-label {
+  font-size: 0px; }
+
+.ems-form .ems-field:not(.captcha).select .ems-form-label {
+  position: static;
+  font-size: 14px !important;
+  margin-bottom: 15px;
+  font-weight: 600; }
+
 .ems-form .ems-field {
   margin-bottom: 15px;
   position: relative; }
-  .ems-form .ems-field .ems-form-label {
-    font-size: 14px;
-    position: absolute;
-    top: calc(50% - 10px);
-    left: 12px;
-    z-index: 1;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    pointer-events: none; }
-  .ems-form .ems-field.is-completed .ems-form-label {
-    font-size: 11px;
-    top: 3px; }
 
-.icons, .pb1::before {
+.icons, .sStylerWrp_select::after, #dvMesajSehirBilgi::after, .pb1::before, .member .mod-mini-cart .ems-col .cart-prd-left .icon-ico_quit::before, .page-product-list .menuKategori .sub-items::after, .urunKiyaslamaOzellik_ozellikAd::after {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -953,6 +1047,8 @@ button.swiper-pagination-bullet {
       font-weight: 600; }
     .member #validateLogin .remember {
       color: #9B9B9B; }
+    .member #validateLogin .lnkUyeOlmak {
+      display: block; }
   .member .mod-mini-cart {
     position: relative;
     width: 50%; }
@@ -965,13 +1061,21 @@ button.swiper-pagination-bullet {
       opacity: 0;
       visibility: hidden; }
     .member .mod-mini-cart.opened .mod-mini-cart-header {
-      background-color: #FFFFFF; }
+      background-color: #FFFFFF;
+      padding: 12px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
       .member .mod-mini-cart.opened .mod-mini-cart-header * {
         color: #30373B; }
     .member .mod-mini-cart.opened .mod-mini-cart-body {
       opacity: 1;
       visibility: visible;
-      width: 371px; }
+      width: 371px;
+      border-radius: 3px;
+      border-top-right-radius: 0px;
+      overflow: hidden; }
+    .member .mod-mini-cart.opened .mini-cart-content {
+      padding: 22px 18px; }
     .member .mod-mini-cart .ems-cart-piece {
       position: absolute;
       left: 0px;
@@ -982,6 +1086,89 @@ button.swiper-pagination-bullet {
       text-align: center;
       line-height: 31px;
       color: #FFFFFF; }
+    .member .mod-mini-cart .ems-col {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom: 20px; }
+      .member .mod-mini-cart .ems-col .cart-prd-left {
+        width: 130px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-right: 20px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        .member .mod-mini-cart .ems-col .cart-prd-left .cart-prd-image {
+          width: 70px; }
+        .member .mod-mini-cart .ems-col .cart-prd-left .icon-ico_quit {
+          font-size: 0px; }
+          .member .mod-mini-cart .ems-col .cart-prd-left .icon-ico_quit::before {
+            content: '\e80c';
+            font-size: 13px;
+            color: #9B9B9B; }
+      .member .mod-mini-cart .ems-col .cart-prd-right {
+        width: calc(100% - 130px); }
+        .member .mod-mini-cart .ems-col .cart-prd-right .cart-prd-name {
+          font-size: 13px;
+          font-weight: 600;
+          color: #9B9B9B;
+          text-transform: uppercase; }
+          .member .mod-mini-cart .ems-col .cart-prd-right .cart-prd-name > b {
+            display: none; }
+        .member .mod-mini-cart .ems-col .cart-prd-right .cart-prd-quantity {
+          display: none; }
+        .member .mod-mini-cart .ems-col .cart-prd-right .cart-prd-price {
+          font-size: 14px;
+          color: #0466BF;
+          font-weight: bold;
+          line-height: 1;
+          margin-top: 10px; }
+        .member .mod-mini-cart .ems-col .cart-prd-right .pb1 {
+          float: left; }
+          .member .mod-mini-cart .ems-col .cart-prd-right .pb1::before {
+            font-size: 14px; }
+    .member .mod-mini-cart .mini-basket-price,
+    .member .mod-mini-cart .mini-basket-link {
+      background-color: #FAF8F7;
+      padding: 15px; }
+    .member .mod-mini-cart .mini-basket-price {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #0466BF;
+      font-weight: bold;
+      font-size: 20px; }
+      .member .mod-mini-cart .mini-basket-price #lblUrunTutari {
+        line-height: 1; }
+      .member .mod-mini-cart .mini-basket-price .pb1 {
+        float: left; }
+    .member .mod-mini-cart .mini-basket-link {
+      padding-top: 0px; }
+    .member .mod-mini-cart .lnkSepet {
+      display: block; }
   .member .ems-cart-info {
     position: relative; }
 
@@ -1436,12 +1623,12 @@ button.swiper-pagination-bullet {
     height: 50px;
     font-size: 13px;
     color: #9B9B9B; }
-    .presentation .ems-prd-list-sort::before {
-      margin-right: -15px;
-      font-size: 13px; }
     .presentation .ems-prd-list-sort .sStylerMainWrp {
-      position: relative;
-      width: 100%; }
+      border: none; }
+      .presentation .ems-prd-list-sort .sStylerMainWrp::after {
+        display: none; }
+      .presentation .ems-prd-list-sort .sStylerMainWrp select {
+        padding-right: 0px; }
     .presentation .ems-prd-list-sort .sStylerWrp {
       position: absolute;
       right: 0px; }
@@ -1536,7 +1723,11 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .tekli .ems-prd-button input {
     width: 42px;
     height: 27px;
@@ -1551,6 +1742,136 @@ button.swiper-pagination-bullet {
 
 .tekli .product-item .urunListe_adet {
   display: block; }
+
+.page-product-list .filtre .kutuHeaderKategori,
+.page-product-list .filtre .kutuHeaderOzellikFiltre,
+.page-product-list .filtre .urunKiyaslamaOzellik_temizle {
+  display: none; }
+
+.page-product-list .menuKategori li > a {
+  display: inline-block;
+  line-height: 2.5; }
+
+.page-product-list .menuKategori li > span {
+  display: none; }
+
+.page-product-list .menuKategori .s1 > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #9B9B9B; }
+
+.page-product-list .menuKategori .s2 > a {
+  font-size: 15px;
+  font-weight: bold;
+  color: #9B9B9B; }
+
+.page-product-list .menuKategori .sub-items {
+  position: relative; }
+  .page-product-list .menuKategori .sub-items::after {
+    content: '\e804';
+    position: absolute;
+    right: 0px;
+    top: 12px;
+    font-size: 12px; }
+  .page-product-list .menuKategori .sub-items > ul {
+    display: none; }
+  .page-product-list .menuKategori .sub-items.act > ul {
+    display: block; }
+  .page-product-list .menuKategori .sub-items.opened::after {
+    content: '\e805'; }
+
+.kutuBodyOzellikFiltre > table {
+  width: 100%; }
+
+.urunKiyaslamaOzellik_ozellikAd {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .urunKiyaslamaOzellik_ozellikAd::after {
+    content: '\e81c'; }
+  .urunKiyaslamaOzellik_ozellikAd.kapali::after {
+    content: '\e813'; }
+
+.urunKiyaslamaOzellik_ozellik table tr td .urunKiyaslamaOzellik {
+  display: block;
+  padding: 10px 30px;
+  font-size: 14px;
+  letter-spacing: .4px;
+  position: relative;
+  color: #9B9B9B;
+  font-weight: 600; }
+  .urunKiyaslamaOzellik_ozellik table tr td .urunKiyaslamaOzellik::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border: 1px solid #9B9B9B;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    border-radius: 5px; }
+  .urunKiyaslamaOzellik_ozellik table tr td .urunKiyaslamaOzellik.link_selected::before {
+    background-color: #78B657;
+    border-color: #78B657; }
+
+.urunKiyaslamaOzellik_ozellik .filterQty {
+  display: none; }
+
+.ems-prd-list-paging-bottom {
+  margin-top: 30px; }
+
+.urunPaging table td[align="left"],
+.urunPaging table td[align="right"],
+.urunPaging table td .urunPaging_btnKiyaslama,
+.urunPaging table td .urunPaging_paging,
+.urunPaging table td .lastPage,
+.urunPaging table td .firstPage {
+  display: none; }
+
+.urunPaging table td[align="center"] {
+  text-align: left; }
+
+.urunPaging .paging {
+  font-size: 14px;
+  color: #9B9B9B;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 15px; }
+
+.urunPaging span.paging {
+  border-bottom: 1px solid #78B657; }
+
+.urunPaging #lbfPagingPrev,
+.urunPaging #lbfPagingNext {
+  color: #78B657; }
+
+.urunPaging .tumunuGoster {
+  display: inline-block !important;
+  float: right;
+  font-size: 14px;
+  font-weight: 600;
+  color: #9B9B9B;
+  text-decoration: underline; }
+
+.page-detail .detail-content {
+  width: calc(100% - 390px); }
+
+.page-detail .detail-bundle {
+  width: 390px; }
 
 .ems-content-page .kutuSolMenuTree .kutuHeaderSolMenuTree {
   display: none; }
@@ -1578,7 +1899,25 @@ button.swiper-pagination-bullet {
     margin: 0px;
     font-size: 18px; }
   .ems-content p {
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 0px; }
+  .ems-content address {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-style: normal;
+    color: #888888; }
+  .ems-content iframe {
+    width: 100%;
+    height: 475px;
+    margin-top: 35px; }
+
+.ems-page-message .pageHeaderMesaj {
+  display: none; }
+
+.ems-page-message .geneltelefon {
+  width: 100% !important; }
+
+.ems-page-message .ems-form {
+  max-width: 400px; }
 
 /*# sourceMappingURL=style.css.map */

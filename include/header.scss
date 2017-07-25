@@ -95,6 +95,12 @@
 
         .remember {color: $color-9;}
 
+        .lnkUyeOlmak {display: block;
+
+            @extend .large;
+
+        }
+
     }
 
     // cart
@@ -105,18 +111,79 @@
 
         &.opened {
 
-            .mod-mini-cart-header {background-color: $color-3;
+            .mod-mini-cart-header {background-color: $color-3; padding: 12px; border-top-left-radius: 3px; border-top-right-radius: 3px;
             
                 * {color: $color-2;}
             
             }
 
-            .mod-mini-cart-body {opacity: 1; visibility: visible; width: 371px;}
+            .mod-mini-cart-body {opacity: 1; visibility: visible; width: 371px; border-radius: 3px; border-top-right-radius: 0px; overflow: hidden;}
+
+            .mini-cart-content {padding: 22px 18px;}
 
         }
 
         .ems-cart-piece {position: absolute; left: 0px; top: 0px; font-size: 11px; width: 26px; height: 26px; text-align: center; line-height: 31px; color: $color-3;}
     
+        .ems-col {display: flex; flex-wrap: wrap; margin-bottom: 20px;
+        
+            .cart-prd-left {width: 130px; display: flex; justify-content: space-between; align-items: center; padding-right: 20px; box-sizing: border-box;
+            
+                .cart-prd-image {width: 70px;}
+
+                .icon-ico_quit {font-size: 0px;
+
+                    &::before {content: '\e80c'; font-size: 13px; color: $color-9;
+
+                        @extend .icons;
+
+                    }
+                
+                }
+            
+            }
+            
+            .cart-prd-right {width: calc(100% - 130px);
+
+                .cart-prd-name {font-size: 13px; font-weight: 600; color: $color-9; text-transform: uppercase;
+
+                    > b {display: none;}
+
+                }
+            
+                .cart-prd-quantity {display: none;}
+
+                .cart-prd-price {font-size: 14px; color: $color-10; font-weight: bold; line-height: 1; margin-top: 10px;}
+
+                .pb1 {float: left;
+                
+                    &::before {font-size: 14px;}
+                
+                }
+            
+            }
+        
+        }
+
+        .mini-basket-price,
+        .mini-basket-link {background-color: #FAF8F7; padding: 15px;}
+
+        .mini-basket-price {display: flex; justify-content: space-between; align-items: center; color: $color-10; font-weight: bold; font-size: 20px;
+        
+            #lblUrunTutari {line-height: 1;}
+
+            .pb1 {float: left;}
+        
+        }
+
+        .mini-basket-link {padding-top: 0px;}
+
+        .lnkSepet {display: block;
+
+            @extend .large;
+
+        }
+
     }
 
     .ems-cart-info {position: relative;}

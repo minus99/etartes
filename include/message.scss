@@ -1,0 +1,16 @@
+.ems-page-message {
+
+    .pageHeaderMesaj {display: none;}
+
+    .geneltelefon {width: 100% $i;}
+
+    .ems-form {max-width: 400px;}
+
+    .btnMesajGonder {
+
+        @extend .button;
+        @extend .large;
+
+    }
+
+}

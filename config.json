@@ -409,6 +409,12 @@
       "css": "try",
       "code": 61845,
       "src": "fontawesome"
+    },
+    {
+      "uid": "1256e3054823e304d7e452a589cf8bb8",
+      "css": "minus",
+      "code": 59420,
+      "src": "entypo"
     }
   ]
 }

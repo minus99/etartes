@@ -38,7 +38,9 @@ ul {list-style: none; padding-left: 0px;}
 // buttons
 
 a.button,
-a.btnDefault {font-weight: 600; text-align: center; background-color: $color-1; color: $color-3; border-radius: 4px; display: inline-block;
+a.btnDefault,
+a.lnkUyeOlmak,
+.lnkDefault:not(.lnkSifremiUnuttum) {font-weight: 600; text-align: center; background-color: $color-1; color: $color-3; border-radius: 4px; display: inline-block;
 
     &.large {font-size: 18px; padding: 12px 56px;}
 
@@ -91,9 +93,13 @@ a.btnDefault {font-weight: 600; text-align: center; background-color: $color-1; 
 
 input:not([type=radio]):not([type=checkbox]),
 select,
-textarea {max-width: 100%; width: 100%; border: 0 none; padding: 0 10px; box-sizing: border-box; margin: 0; border-radius: 0; background: $color-3; color: $color-2; border: 1px solid $color-4; transition: 0.2s ease-in-out; transition-property: color,background-color,border; box-shadow: 0px 0px 0px 200px $color-3 inset;}
+textarea,
+.sStylerWrp_select {max-width: 100%; width: 100%; border: 0 none; padding: 0 10px; box-sizing: border-box; margin: 0; border-radius: 0; background: $color-3; color: $color-2; border: 1px solid $color-4; transition: 0.2s ease-in-out; transition-property: color,background-color,border; box-shadow: 0px 0px 0px 200px $color-3 inset;}
 
-input:not([type=radio]):not([type=checkbox]) {height: 50px;}
+input:not([type=radio]):not([type=checkbox]),
+select {height: 50px;}
+
+textarea {height: 150px; padding-top: 15px; resize: none;}
 
 @mixin checkbox-radius {
 
@@ -123,10 +129,33 @@ input:not([type=radio]):not([type=checkbox]) {height: 50px;}
 .checkbox + *, 
 .control-code img ~ * {font-size: 13px;}
 
+@mixin select-box {
+
+    &::after {content: '\e802'; position: absolute; right: 12px; top: calc(50% - 4px); pointer-events: none; color: $color-9;
+
+        @extend .icons;
+
+    }
+
+}
+
+.sStylerWrp_select {display: block; height: 50px; padding: 0px; position: relative;
+
+    .sStylerWrp {pointer-events: none; position: absolute; height: 100%; line-height: 50px; left: 10px;}
+
+    @include select-box;
+
+}
+
+#dvMesajSehirBilgi {
+
+    @include select-box;
+
+}
 
 .ems-form {
 
-    .ems-field {margin-bottom: 15px; position: relative;
+    .ems-field:not(.captcha) {
     
         .ems-form-label {font-size: 14px; position: absolute; top: calc(50% - 10px); left: 12px; z-index: 1; transition: all .2s ease-in-out; pointer-events: none;}
 
@@ -135,7 +164,27 @@ input:not([type=radio]):not([type=checkbox]) {height: 50px;}
             .ems-form-label {font-size: 11px; top: 3px;}
 
         }
+
+        &.textarea {
+
+            .ems-form-label {top: 10px $i;}
+
+            &.is-active {
+
+                .ems-form-label {font-size: 0px;}
+
+            }
+
+        }
+
+        &.select {
+
+            .ems-form-label {position: static; font-size: 14px $i; margin-bottom: 15px; font-weight: 600;}
+
+        }
     
     }
+
+    .ems-field {margin-bottom: 15px; position: relative;}
 
 }
