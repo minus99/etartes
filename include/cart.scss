@@ -1,0 +1,97 @@
+.cart-page {
+
+    .main-header,
+    .main-footer {display: none;}
+
+}
+
+.ems-page-cart {
+
+    .cart-header {
+
+        img {margin-bottom: 40px;}
+
+    }
+
+    .cart-header-wrapper {border-bottom: 1px solid $color-4; padding-bottom: 30px;}
+
+    .tabloTabBtnAdimSiparis {width: 100%; max-width: 620px; color: $color-5; position: relative;
+    
+        td {display: flex; justify-content: space-between;
+
+            > span {display: block; text-align: center $i;}
+
+        }
+
+        i {font-size: 50px; display: block;
+
+            &::before {
+
+                @extend .icons;
+
+            }
+
+            &.icon-ico_step1 {
+
+                &::before {content: '\e816';}
+
+            }
+
+            &.icon-ico_step2 {
+
+                &::before {content: '\e808';}
+
+            }
+
+            &.icon-ico_step3 {
+
+                &::before {content: '\e806';}
+
+            }
+
+            + b {font-size: 14px; font-weight: 600;}
+
+        }
+    
+    }
+
+    .tabBtnAdimTeslimat {
+
+        &::before,
+        &::after {content: ""; position: absolute; top: 40%; max-width: calc(39% - (50px / 2)); border-bottom: 3px solid $color-5;}
+
+        &::before {right: calc(50% + (50px / 2)); width: 100%;}
+
+        &::after {left: calc(50% + (50px / 2)); width: 100%;}
+
+    }
+
+}
+
+// sepet bos
+
+.sepet-bos {
+
+    .ems-page-cart {padding-bottom: 0px; text-align: center;}
+
+    .pageDescSepet {display: none;}
+
+    .no-prd {min-height: 520px;
+    
+        p {font-size: 30px; font-weight: 600; width: 100%; margin-top: 0px; margin-bottom: 20px;}
+
+        a {color: $color-2; font-weight: 600;
+
+            i {font-size: 30px; margin-right: 5px;}
+
+        }
+    
+    }
+
+    .icon-bag-close {display: none;}
+
+    .pageSepet br {display: none;}
+
+    .pay-type-list {padding: 35px 120px; background-color: $color-4; color: $color-2; font-weight: 600;}
+
+}

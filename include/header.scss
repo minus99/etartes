@@ -107,11 +107,13 @@
 
     .mod-mini-cart {position: relative; width: 50%;
 
+        .mod-mini-cart-header {padding: 12px;}
+
         .mod-mini-cart-body {width: 380px; background: $color-3; position: absolute; right: 0; z-index: 2; opacity: 0; visibility: hidden;}
 
         &.opened {
 
-            .mod-mini-cart-header {background-color: $color-3; padding: 12px; border-top-left-radius: 3px; border-top-right-radius: 3px;
+            .mod-mini-cart-header {background-color: $color-3; border-top-left-radius: 3px; border-top-right-radius: 3px;
             
                 * {color: $color-2;}
             

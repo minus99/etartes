@@ -60,6 +60,8 @@ a.lnkUyeOlmak,
     
     }
 
+    &.none {background-color: transparent; font-weight: normal; color: $color-9;}
+
 }
 
 // flex
@@ -75,6 +77,8 @@ a.lnkUyeOlmak,
 .flex-end {justify-content: flex-end;}
 
 .flex-middle {align-items: center;}
+
+.flex-middle-content {align-content: center;}
 
 .flex-direction-column {flex-direction: column;}
 

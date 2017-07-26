@@ -1,7 +1,182 @@
 .page-detail {
 
-    .detail-content {width: calc(100% - 390px);}
+    .detail-content {width: calc(100% - 391px); border-right: 1px solid $color-4;} 
 
     .detail-bundle {width: 390px;}
+
+    .navigasyon {margin-top: 20px; margin-bottom: 40px;}
+
+    .presentation {display: none;}
+
+}
+
+.ems-prd-detail-inner {
+
+    .inner-row-1 {width: 420px;}
+
+    .inner-row-2 {width: calc(100% - 420px); padding-left: 12px; box-sizing: border-box;}
+
+    .inner-row-3 {width: 100%; border-top: 1px solid $color-4; margin-top: 20px;}
+
+}
+
+// slider
+
+.urunDetay {
+
+    .swiper-left-column {width: 50px; position: absolute; z-index: 2; left: 20px; top: 34px;}
+    
+    .swiper-wrapper {margin: 0px;
+
+        &.thumb-wrp {
+
+            .swiper-slide {height: 50px !important; margin-bottom: 5px; border: 2px solid transparent;
+
+                a {display: flex; align-items: center; justify-content: center; height: 50px; width: 50px; background-color: $color-3;}
+
+                &.selected {border-color: $color-1;
+
+                    a {}
+
+                }
+
+            }
+        
+        }
+    
+    }
+
+    .swiper-pagination {display: none;}
+
+    .inner-row-2 {
+
+        .ems-prd-dtlCode-code {font-size: 12px; color: $color-9;}
+
+        .ems-prd-name {color: $color-9; font-size: 18px; line-height: 1.5; text-transform: uppercase; margin-bottom: 20px;}
+
+        .ems-prd-discount-rate {display: none;}
+
+        .ems-prd-price {
+
+            .pb1 {order: -1;}
+
+        }
+
+        .ems-prd-price-selling {font-size: 36px; line-height: 0.9; color: $color-10; font-weight: bold;
+        
+            .urunDetay_satisFiyat {display: flex; align-items: flex-end;} 
+        
+        }
+
+        .ems-prd-price-first {display: flex; align-items: flex-end; font-size: 25px; font-weight: bold; color: $color-9; line-height: 0.9;}
+
+        .ems-prd-price-first:not(:empty) + .ems-prd-price-selling {font-size: 25px;}
+
+        .pnlSepetGrup {display: flex; margin-top: 20px; margin-bottom: 20px;}
+
+        .urunDetay_btnSepeteAt {font-size: 0px; margin-left: 10px;}
+
+        .btnsepeteAt {
+
+            @extend .large;
+
+        }
+
+        .btnFiyatDus {font-size: 14px; display: flex;
+
+            span {text-decoration: underline;}
+
+            @extend .none;
+
+            &::before {content: '\e80b'; text-decoration: none; margin-right: 15px; font-size: 20px;
+            
+                @extend .icons;
+            
+            }
+
+        }
+
+    }
+
+}
+
+.urunDetay_urunAdet {
+
+    input.plugins-active {display: none;}
+
+    [id$='lblURN_ADET'] {display: none;}
+
+} 
+
+.dropdown.plugins-active {
+
+    > span {border: 1px solid $color-5; display: inline-flex; justify-content: space-around; align-items: center; border-radius: 3px; width: 100px; height: 50px; font-size: 14px;
+    
+        i::after {content: '\e802'; font-size: 7px; display: flex; color: $color-9;
+
+            @extend .icons;
+
+        }
+
+    }
+
+    > ul {visibility: hidden; opacity: 0; transition: opacity 0.3s ease; position: absolute; background-color: $color-3; width: 200px; margin-top: 2px; border-radius: 3px; border: 1px solid $color-5; padding: 10px;}
+
+    &.opened {
+
+        > ul {visibility: visible; opacity: 1;}
+
+    }
+
+}
+
+// tab
+
+#urnDetTabsContainer {
+
+    > li {
+
+        #urnDetTabsDivContainer {display: none;}
+
+        &.selected {
+
+            #urnDetTabsDivContainer {display: block;}
+
+        }
+
+
+    }
+
+}
+
+// bundle
+
+.detail-bundle {padding-top: 80px; padding-left: 25px; box-sizing: border-box;
+
+    .tavsiyeUrun_header {font-size: 25px; font-weight: bold;}
+
+    .product-list > li {width: 100%; text-align: left; min-height: 132px; padding: 0px; margin-bottom: 20px;
+
+        .ems-prd-inner {display: block;
+        
+            > * {float: left;}
+        
+        }
+
+        .ems-prd-name {font-size: 14px; text-transform: uppercase; font-weight: 600; height: 40px; overflow: hidden;}
+
+        .ems-prd-image {width: 140px;}
+
+        .product-code-group {width: calc(100% - 140px); padding-left: 20px; box-sizing: border-box;}
+
+        .ems-prd-price {padding-left: 20px; margin-top: -30px;
+        
+            .pb1::before {margin: 0px;}
+        
+        }
+
+        .ems-prd-button {margin-left: 20px;}
+
+    }
 
 }
