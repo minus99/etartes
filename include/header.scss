@@ -51,12 +51,40 @@
 
     #validateLogin {margin-right: 30px; width: 50%;
 
-        .mod-mini-login {padding: 12px;
+        .mod-mini-login {padding: 12px; position: relative;
 
-            .mod-mini-login-body {position: relative;
+            .mod-mini-login-body {
         
-                .ems-form {opacity: 0; visibility: hidden; position: absolute; background-color: $color-3; z-index: 2; width: 290px; left: -12px; top: 40px; padding: 15px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;}
+                .ems-form {opacity: 0; visibility: hidden; position: absolute; background-color: $color-3; z-index: 2; width: 290px; left: 0px; top: 52px; padding: 15px; border-radius: 3px; border-top-left-radius: 0px;}
             
+                .sub.login {position: absolute; top: 52px; left: 0; width: 290px; min-width: 170px; background: $color-3; z-index: 10; padding: 10px 15px; transition: all .2s ease; opacity: 0; visibility: hidden; overflow: hidden; border-radius: 3px; border-top-left-radius: 0px;
+                
+                    > * {line-height: 2;}
+
+                    .btnKutuLogout {
+
+                        @extend .none;
+
+                    }
+                
+                }
+
+            }
+
+            [id$='lblUYE_ADSOYAD'] {display: none;}
+
+            [id$='lbfUYE_SAYIN'] {display: flex; align-items: flex-end; color: $color-3;
+
+                i {order: -1;
+
+                        &::before {content: '\e801'; font-size: 26px;
+
+                            @extend .icons;
+
+                        }
+
+                }
+
             }
 
             &.opened {background-color: $color-3; border-top-left-radius: 3px; border-top-right-radius: 3px;
@@ -72,6 +100,10 @@
                     }
 
                 }
+
+                .sub.login {visibility: visible; opacity: 1;}
+
+                [id$='lbfUYE_SAYIN'] {color: $color-2;}
 
             }
 
@@ -189,6 +221,18 @@
     }
 
     .ems-cart-info {position: relative;}
+
+}
+
+.ems-logoff {
+
+    .sub.login {display: none;}
+
+}
+
+.ems-login {
+
+    .sub.logoff {display: none;}
 
 }
 

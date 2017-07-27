@@ -19,7 +19,11 @@
     
         td {display: flex; justify-content: space-between;
 
-            > span {display: block; text-align: center $i;}
+            > span {display: block; text-align: center $i;
+            
+                &.tabBtnSelectedSepet {color: $color-2;}
+            
+            }
 
         }
 
@@ -95,3 +99,1500 @@
     .pay-type-list {padding: 35px 120px; background-color: $color-4; color: $color-2; font-weight: 600;}
 
 }
+
+/*.ems-site-safe{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background:#f7f7f7;
+    ul{
+        display: table;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1200px;
+        li{
+            display: table-cell;
+            width: 33.333%;
+            text-align: center;
+            > div{
+                padding: 70px 0;
+                .ems-icon { margin-right:20px; }
+                .ems-icon, span{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                span{ font-family:$fD; font-size:18px; }
+            }
+            &:first-child{ text-align: left; }
+        }
+    }   
+}*/
+
+.page-cart {
+    /*.ems-container {
+        max-width:1240px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        padding-bottom: 80px;
+        background: #fff;
+        min-height: 505px;
+    }*/
+    /*.cart-logo {
+        width: 100%;
+        margin-top: 45px;
+        text-align: center;
+        a{
+            display: inline-block;
+        }
+    }*/
+    /*.widget-prd-detail{
+        .widget-container{
+            margin-top:100px;
+            margin-bottom:100px;
+            max-width: 1380px;
+            .swiper-title{
+                span{ padding-bottom:70px; }
+            }
+        }
+    }*/
+    
+    &.step0 {
+    
+        .page-top-title {display: none;}
+    
+    }
+
+    &.step1 {
+
+        .obj-step0 {display: none;}
+
+        .ems-grid-cart {
+
+            > div {
+
+                .ems-grid-name {width: 38%;}
+
+                .ems-grid-delete {display: none;}
+
+            }
+
+        }
+
+        .ems-message-error {margin-bottom: 30px;}
+
+        .pnlDipToplamTable .pnlDipToplam_sipToplam th,
+        .pnlDipToplamTable .pnlDipToplam_sipToplam td {padding-bottom: 20px;}
+
+        .row-2 {padding-top:50px;}
+    }
+
+    .row-1 {border-bottom: 1px solid;}
+
+    .row-2 {width: calc(100% - 335px); padding-right: 30px; position: relative; padding-top: 24px; 
+
+        .pageErrorStokKontrol {margin:0 0 30px 0; padding: 15px; font-size: 14px;}
+        
+        .pageSiparisOnay_garanriSozlesme {display:none;}
+    }
+
+    .row-3 {width: 335px; float: right; position: relative; z-index: 2;}
+    
+    .cart-section-right {display: none; position: relative;
+
+        &-append .cart-section-right {display: block;}
+    }
+
+    .page-top-title, .page-top-desc {display: none;}
+    
+    .page-top-title {display: block;
+
+        span {font-size: 18px; display: inline-block; padding-bottom: 15px; letter-spacing: 2px;}
+    }
+    
+    .no-prd {text-align: center; margin: 100px auto;
+        
+        p {font-size: 30px; margin: 0; padding: 20px 0; letter-spacing: 3px;}
+        
+        .g-home {padding: 10px; background: none; color:#666666; font-size: 16px; text-transform: inherit; letter-spacing: inherit;
+                
+            &:hover {background: none;}
+            
+            > i {font-size: 30px; margin-right: 10px; display: inline-block; vertical-align: middle;
+                
+                &:before{ font-size: 30px; color:#9b9b9b;}
+            }
+
+            span{display: inline-block; vertical-align: middle; color:#666666; font-size: 16px;}
+
+        }
+
+    }
+
+    .ems-cart-button {
+
+        .btnDefault {padding: 5px 15px 15px 0; background: none;color: $color-2;
+            
+            span {letter-spacing: inherit; font-size: 12px; font-weight: 600;
+                
+                i {display: inline-block; vertical-align: middle; position: relative; margin-right: 10px; font-size: 18px; top: -1px;
+                    
+                    &:before {font-size: 18px;}
+
+                }
+
+            }
+
+            &.btnAlisverisDevam {float: left;}
+
+            &.btnSepetGuncelle,
+            &.btnSepetBosalt {float:right;
+
+                i {
+
+                    &.icon-ico_cart-update:before {font-size: 22px;}
+
+                    &.icon-ico_cart-delete:before {font-size: 20px;}
+                }
+
+            }
+
+            &.btnSepetGuncelle {margin-left: 20px;}
+
+            &.btnSepetBosalt {padding-right:0;}
+
+            @extend .none;
+
+        }
+
+    }
+    
+    .bottom-step {background: $color-4; padding: 18px;
+        
+        a.btnDefault {display: block; color: #fff; text-align: center;
+
+            @extend .large;
+
+            &.btnSiparisOnay {margin-bottom: 15px;}
+
+        }
+
+        [id$="btnSiparisSonuc3D"] {margin-bottom: 15px;}
+
+        [id$="lbfSIP_ONAYLA_DEC"] {display: block; margin: 10px 0; font-size: 14px;}
+    
+    }
+
+    // basket summary
+
+    .ems-cart-summary {width: 335px; border: 1px solid $color-4; margin-top: 50px;
+        
+        > span {display: block; padding: 20px 10px 10px 10px; font-size: 18px; font-weight: bold; line-height: 1; text-align: center; position: relative; letter-spacing: 2px;
+            
+            .show-detail {display: none;
+                
+                .icon-ico_arw-full-bttm {display: inline-block; margin-left: 10px;
+                    
+                    &:before{ font-size: 10px; }
+                
+                }
+            
+            }
+        
+        }
+
+        &.fixed {position: fixed; width: 100%; max-width:335px; top:0;}
+    
+    }
+
+    .pnlDipToplamTable {border-collapse: collapse;
+
+        [id$="lblSIP_NETTOPLAM"],
+        [id$="lblSIP_KDVTOPLAM"],
+        [id$="lblSIP_ARATOPLAM"] {display: flex; align-items: center; width: 100px;
+            
+            .pb1 {order: -1;
+                
+                &::before {font-size: 16px;}
+            
+            }
+        
+        }
+
+        th,
+        td {font-size: 16px; font-weight: 600;}
+        
+        th {text-align: left; font-weight: normal; padding-top: 10px; padding-left: 30px; font-weight: bold;}
+        
+        td {color: #1a1a1a; padding-top: 10px; padding-right: 30px;}
+        
+        .pnlDipToplam_sipToplam {background-color: $color-4;
+            
+            th,
+            td{padding-top: 20px;}
+
+        }
+
+        .pnlDipToplam_kdvToplam {
+            
+            th,
+            td {padding-bottom: 35px;} 
+
+        }
+
+        .pnlDipToplam_kulBonusPara {
+           
+            th {
+
+                .pb1 {display: inline-block; margin-left: 3px;}
+
+            }
+        }
+
+        .pnlDipToplam_kulBankaBonus {display: none;}
+
+    }
+
+    // basket coupon
+
+    .ems-cart-coupon {
+
+        > span {margin: 20px 30px 0 30px; border-top: 1px solid; padding: 20px 0 20px 0; position: relative; display:block; cursor: pointer; font-size:12px;
+            
+            i {position: absolute; right: 0; top: 50%; width: 12px; height: 12px; margin-top: -1px;
+                
+                &:before,
+                &:after {position: absolute; content:''; width: 12px; height: 2px;}
+
+            }
+
+        }
+
+        .ems-cart-coupon-body {display: none; position: relative; margin: 0 30px;
+            
+            input {width: 100% !important; padding-right: 50px; margin-bottom: 10px;}
+            
+            table {display: table !important; position: absolute; right: 0; top: 0; width: 50px; height:50px; 
+                
+                a.btnHediyeCekiKullan {display: block; height: 50px; text-align: center; line-height: 50px;
+                    
+                    span {letter-spacing: inherit;
+                        
+                        .icon-ico_arrw-long-right {font-size: 20px; line-height: 50px;
+                            
+                            &::before{font-size: 20px;}
+                        
+                        }
+                    
+                    }
+                
+                }
+            
+            }
+            
+            .ems-message {margin-top: 5px;}
+        
+        }
+
+        &.opened {
+
+            .ems-cart-coupon-body {display: block;}
+        
+        }
+
+    }
+
+    .ems-page-order-delivery {position: relative;
+
+        .ems-grid-address {
+
+            .ems-grid-row {
+
+                .col-1{
+
+                    .ems-address-name{
+
+                        .adresTip1 { display: none; }
+
+                    }
+
+                }
+
+            }
+        }
+
+        .add-new-address, .same-address {
+            display: inline-block;
+            vertical-align: middle;
+            width: 50%;
+        }
+        .add-new-address {
+            text-align: right;
+            position: absolute;
+            top: -12px;
+            right: 0;
+            a.btnDefault {
+                font-size: 14px;
+                background: none;
+                padding: 10px 0 10px 15px;
+                line-height: 18px;
+                span{
+                    font-size: 14px;
+                    letter-spacing: inherit;
+                    &:before{
+                        display:inline-block;
+                        content:'+';
+                        font-size:20px;
+                        margin-right:3px;
+                    }
+                }
+            }
+        }
+        .same-address {
+            width: 100%;
+            text-align: left;
+            font-size: 12px;
+            display: none !important;
+            .dvFarkliFatAdrSec { padding-top: 10px; }
+            div > span { vertical-align: middle; line-height: 25px; }
+            span.cStyler {
+                cursor: pointer;
+                width: 37px;
+                height: 20px;
+                border-radius: 23px;
+                background-color: #979797;
+                border: none;
+                position: relative;
+                padding: 1px;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    height: 16px;
+                    width: 16px;
+                    border-radius: 100%;
+                    background: #ffffff;
+                }
+            }
+            span.cStyler.checked {
+                
+                &:before{
+                    left: 19px;
+                }
+            }
+        }
+        .ems-delivery-tab {
+            margin-top: 20px;
+            .ems-delivery-tab-header {
+                
+                font-size: 18px;
+                
+                padding: 20px 0 15px 0;
+                margin: 0;
+            }
+            &.ems-cargo-tab {
+                .divTeslimatKargo {
+                    > ul {
+                        > li {
+                            position: relative;
+                            display: inline-block;
+                            vertical-align: middle;
+                            text-align: center;
+                            border: 1px solid;
+                            margin-left: 20px;
+                            padding: 80px 20px 20px 20px;
+                            font-size: 12px;
+                            min-width: 110px;
+                            max-width: 110px;
+                            &:first-child {
+                                margin-left: 0;
+                            }
+                            > img {
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                top: 20px;
+                                margin: 0 auto;
+                                max-width: 75px;
+                            }
+                            > span {
+                                display: block;
+                                
+                                font-size: 12px;
+                                padding-top: 5px;
+                                
+                            }
+                            .kargoBilgi {
+                                display: none;
+                            }
+                            input {
+                                margin: 10px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ems-page-new-address{
+        max-width: 780px;
+        width: 100%;
+        margin: 0 auto;
+        .page-top-title { 
+            text-align: center;
+            padding-bottom: 35px;
+            > span{
+                padding-top: 20px;
+                
+                font-size: 18px;
+            } 
+        }
+        .ems-form {
+            margin: 0 auto;
+            max-width: 375px;
+            &-inner{
+                .ems-field {
+                    .ems-form-label{
+                        font-size: 12px;
+                        color: #888;
+                        line-height: 12px;
+                    }
+                    .ems-form-obj input, .ems-form-obj textarea{
+                        text-transform: uppercase;
+                        
+                        color: #000;
+                        font-size: 14px;
+                    }
+                    .sStylerMainWrp.sStylerWrp_select{
+                        .sStylerWrp{
+                            text-transform: uppercase;
+                            
+                            color: #000;
+                            font-size: 14px;
+                        }
+                    }
+                    &.is-completed{
+                        .sStylerMainWrp.sStylerWrp_select{
+                            .sStylerWrp{ height:60px; line-height:30px; }
+                        }
+                    }
+                    &.tcCheck {
+                        .ems-form-label{
+                            font-size:inherit;
+                            color:#888;
+                            line-height:inherit;
+                        }
+                    }
+                }
+            }
+        }
+        .pageErrorDefault { text-align: center; } 
+    }
+
+    .ems-page-order-payment {
+        .obj-step0 {
+            display: block;
+            padding-top: 40px;
+            .ems-grid-row{
+                .ems-grid-gift-box{ display: none; }
+            }
+        }
+        .ems-page-order-cart{
+            .page-top-title{
+                &:before{
+                    content:'SİPARİŞ ÖZETİ';
+                    display: block;
+                    padding-top: 40px;
+                    
+                    letter-spacing: 1.5px;
+                }
+            }
+        }
+        .ems-cart-button {
+            display: none;
+        }
+        .ems-cart-pay-tab {
+            ul {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+                li {
+                    display: table-cell;
+                    vertical-align: middle;
+                    a {
+                        display: block;
+                        padding: 15px 5px;
+                        text-align: center;
+                       
+                        font-size: 15px;
+                        
+                        line-height:1;
+                        border-bottom:3px solid #ffffff;
+                        text-transform:uppercase;
+                        letter-spacing:1.5px;
+                        &.emos_selected {
+                            
+                           
+                            border-bottom: 3px solid;
+                        }
+                    }
+                }
+            }
+        }
+        .ems-cart-pay-adress {
+            margin-top: 45px;
+            .left, .right {
+                display: inline-block;
+                width: 49%;
+                vertical-align: top;
+            }
+            .ems-delivery-address {
+                &-lbl{
+                    
+                    font-size: 18px;
+                    
+                    padding-bottom: 20px;
+                    letter-spacing:1.5px; 
+                }
+                &-obj{
+                    min-height: 100px;
+                    max-height: 100px;
+                    overflow: hidden;
+                   
+                    font-size: 12px;
+                    padding:25px 30px;
+                    border: 1px solid;
+                }
+            }
+        }
+        .ems-cart-pay-type {
+            position: relative;
+            .tableTitleDefault {
+                display: none;
+            }
+            .ems-pay-credit-cart {
+                div[id$="pnlKrediKartiBilgi"] { border:1px solid; }
+                .pageOdemeBilgi_chkBankaBonus {
+                    padding: 20px;
+                    border-top: 1px solid;
+                }
+            }
+            
+            .tableOdemeBilgiKrediKarti {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-right: 1px solid;
+                .sStylerMainWrp.sStylerWrp_select .sStylerWrp {
+                    padding-top: 15px;
+                    height: 50px;
+                    line-height: 22px;
+                    
+                    font-size: 14px;
+                    background:#f7f7f7;
+                    &:after{
+                        content:'\e904';
+                        font-size: 10px;
+                        color: #000;
+                        
+                    }
+                }
+                tbody, tr { display: block; width: 100%; }
+                th {
+                    display: block;
+                    text-align: left;
+                   
+                    font-size: 11px;
+                    color: #9e9e9e;
+                    font-weight: normal;
+                    padding-bottom: 10px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                th:empty {
+                    display: none;
+                }
+                td {
+                    display: block;
+                    width: 100%;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 20px;
+                    input {
+                        width: 100% !important;
+                        
+                    }
+                    select {
+                        
+                        font-size: 14px;
+                    }
+                    &.tableOdemeBilgiKrediKarti_tddrpKSA_SPR_ID {
+                        select {
+                            width: 100% !important;
+                        }
+                        .sStylerMainWrp.sStylerWrp_select {
+                            width: 50%;
+                        }
+                        .sStylerMainWrp.sStylerWrp_select:first-child {
+                            padding-right: 10px;
+                        }
+                        .sStylerMainWrp.sStylerWrp_select:last-child {
+                            padding-left: 10px;
+                        }
+                        .sStylerMainWrp.sStylerWrp_select {
+                            .sStylerWrp:after{ right:15px; }
+                        }
+                    }
+                    &.tableOdemeBilgiKrediKarti_tdtxtKKARTCVCNO {
+                        input {
+                            vertical-align: middle;
+                            width: 48% !important;
+                        }
+                        &nbsp { display: none; }
+                        > span {
+                            padding-left: 10px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 45%;
+                           
+                            font-size: 12px;
+                            text-decoration: underline;
+                        }
+                    }
+                    &.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit {
+                        display: none;
+                    }
+                    .div-cc-carttype {
+                        margin-top: 0;
+                        right: 10px;
+                        top: 50%;
+                        margin-top: -13.5px;
+                        img {
+                            display: block;
+                        }
+                    }
+                    .cvc-info {
+                        position: relative;
+                        font-size: 15px;
+                        
+                        > b {
+                            font-weight: bold;
+                            text-decoration: underline;
+                            cursor:pointer;
+                        }
+                        > span {
+                            display: none;
+                            position: absolute;
+                            left: 0;
+                            top: -50%;
+                            z-index: 2;
+                            width: 300px;
+                            background: #fff;
+                            padding: 10px;
+                            border: 1px solid;
+                        }
+                        &:hover {
+                            > span {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .pageOdemeBilgi_odemeTaksit {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+                padding: 20px;
+                border-left: 1px solid;
+                margin-left: -1px;
+                > img {
+                    margin: 10px auto;
+                }
+                > .pageOdemeBilgi_lbfOdemeTaksit {
+                    text-align: center;
+                    padding: 5px;
+                    color: #fff;
+                    font-size: 14px;
+                }
+                .tableOdemeTaksit {
+                    width: 100%;
+                    table-layout: fixed;
+                    border-collapse: collapse;
+                    td {
+                        font-size: 14px;
+                        padding: 10px;
+                        text-align: center;
+                        input {
+                            margin-right: 0;
+                        }
+                        &:nth-child(1) {
+                            width: 24px;
+                        }
+                    }
+                    .tableTitleOdemeTaksit {
+                        display: table-row;
+                        td {
+                            font-size: 14px;
+                            padding: 10px;
+                            color: #9e9e9e;
+                            vertical-align: top;
+                        }
+                    }
+                    .taksit_pesin td {
+                        
+                    }
+                }
+            }
+            
+            .ems-pay-point {
+                padding: 20px;
+                [id$="BONUSPARAHESAPLANIYOR"] {
+                    display: block;
+                    margin-top: 15px;
+                    font-size: 13px;
+                }
+                &:empty{ display: none; }
+            }
+            
+            .ems-pay-other {
+                .OdemeBilgiPesinDigerOdemeNotu {
+                    padding: 20px;
+                    border: 1px solid;
+                    br {display: none;}
+                    > span {
+                        display: block;
+                        text-align: left;
+                       
+                        font-size: 15px;
+                        margin: 10px 0 5px;
+                        
+                    }
+                    textarea {
+                        width: 100% !important;
+                        max-width: 400px;
+                        height: 100px;
+                        resize: none;
+                    }
+                }
+            }
+            .tableOdemeBilgiHavale {
+                width: 100%;
+                border-collapse: collapse;
+                .tableOdemeBilgiHavale_thlbfBNK_AD_HV{
+                    padding: 20px 30px;
+                    text-align: left;
+                    font-weight: normal;
+                    font-size: 16px;
+                    border-width: 1px 1px 0 1px;
+                    
+                    border-style: solid;
+                }
+                .tableOdemeBilgiHavale_tddrpBNK_KOD_HV{
+                    padding:0 30px 10px 30px;
+                    border-width: 0 1px 1px 1px;
+                    
+                    border-style: solid;
+                    table { width: 100%; }
+                    .logo.emos_invisible{
+                        display: inline-block !important;
+                        vertical-align: top;
+                        width: 20%;
+                    }
+                    .banka{
+                        width: 80%;
+                        padding-left: 10px;
+                        display: inline-block;
+                        vertical-align: top;
+                        b,span {
+                            font-size: 14px;
+                            font-weight: normal;
+                        }
+                        b{  display: block; }
+                    }
+                    .link{
+                        width: 80%;
+                        margin-left: 20%;
+                        display: block;
+                        padding-top: 20px;
+                        padding-bottom: 30px;
+                        padding-left: 10px;
+                        > a{
+                            background: none;
+                            border: 1px solid;
+                            display: inline-block;
+                            padding:8px 10px;
+                            min-width: 100px;
+                            
+                            span {
+                                font-size: 14px;
+                               
+                                
+                            }
+                            &:hover{
+                                
+                                span {
+                                    color: #ffffff;
+                                }    
+                            }   
+                        }
+                        > a.emos_selected{
+                            
+                            span {
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ems-pay-type-desc {
+            > span {
+                display: block;
+                margin-top: 40px;
+                background: $color-4;
+                padding: 30px;
+                max-height: 190px;
+                overflow: auto;
+                .text{
+                    display: block;
+                }
+                .title{
+                  
+                    font-size: 18px;
+                    font-weight: bold;
+                    letter-spacing: 1.5px;
+                   
+                }
+                img{ float: right; }
+                p{
+                    font-size: 12px;
+                    
+                    line-height: 15px;
+                }
+                a{}
+                &:empty{ display: none; }
+            }
+            .ems-col-left{
+                width: 70%;
+                text-align: left;
+            }
+            .ems-col-right{
+                width: 30%;
+                text-align: right;
+            }
+        }
+    }
+
+    .onBilgilendirmeForm, .siparisOnaySozlesme {
+        .tableTitleDefault {
+            display: none;
+        }
+    }
+    .siparisOnaySozlesme { margin-bottom: 10px; } 
+    .onBilgilendirmeFormMetin, .siparisOnaySozlesmeMetin {
+        display: none;
+        > span {
+            overflow: auto !important;
+            display: block !important;
+            padding: 15px;
+            border: 1px solid;
+            table {
+                width: 100% !important;
+            }
+        }
+    }
+    .pageSiparisOnay_lbfOnBilgilendirmeForm, .pageSiparisOnay_lbfSatisSozlesme {
+        position: relative;
+        padding: 10px 0;
+        min-height: 35px;
+        color:#888;
+        > div {
+            display: inline-block;
+            .checkbox{ float: left; }
+            .cStyler{
+                border-radius:0;
+                border-width:2px;
+                background: $color-4;
+                border-color:#cbcbcb;
+                &.checked{
+                   
+                }
+            }
+        }
+    }
+    
+    .pageSiparisOnay_chkSatisSozlesme, .pageSiparisOnay_chkOnBilgilendirmeForm, .pageSiparisOnay_garanriSozlesme {
+        cursor: pointer;
+        font-size: 13px;
+        b{
+            font-weight: normal;
+            text-decoration: underline;
+            font-size: 13px;
+        }
+    }
+    .pageSiparisOnay_garanriSozlesme {margin-bottom: 20px; position: relative;}
+    .pageSiparisOnay_garanriSozlesme .lbfGaranriSozlesmeAlert {display:none;}
+
+    .bottom-step  .pageSiparisOnay_btnOnBilgilendirmeFormOnizle,
+    .bottom-step  .pageSiparisOnay_btnSatisSozlesmeOnizle {
+        position: absolute;
+        left: 25px;
+        top: 0;
+        width: 95%;
+        height: 50px;
+        > table {
+            display: table !important;
+            width: 100%;
+            a {
+                font-size: 28px;
+                background: none;
+                width: 100%;
+                padding: 0;
+                height: 50px;
+                span { display: block; text-indent: -999em; }
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+    }
+     .bottom-step .pageSiparisOnay_garanriSozlesme {
+        a {
+            position: absolute;
+            left: 25px;
+            top: 0;
+            width: 100%;
+            height: 35px;    
+        }
+     }
+
+    .onBilgilendirmeForm.opened > .onBilgilendirmeFormMetin {
+        display: block !important;
+    }
+    .siparisOnaySozlesme.opened > .siparisOnaySozlesmeMetin {
+        display: block !important;
+    }
+
+    .ems-page-order-result {
+        .pageDescDefault {
+            padding-bottom: 0;
+            margin-top: 0;
+        }
+        .page-top-title{ display: none; }
+        .pageDescSiparisSonucHavale {
+            text-align: center;
+            font-size: 18px;
+
+            padding-bottom: 0;
+            max-width: 960px;
+            margin: 0 auto;
+            display: block;
+            .btnHome4 { display: none; }
+
+        }
+        .pageSiparisSonuc_lbfSiparisBasarili, .bottom-step {
+            display: none;
+        }
+        .order-result {
+            max-width: 580px;
+            margin: 50px auto;
+         
+            font-size: 18px;
+            text-align: center;
+            p {
+                margin: 35px 0;
+            }
+            .color-1 {
+               
+                font-size: 36px;
+            }
+            .color-2 {
+              
+                font-size: 36px;
+            }
+            .fsize17 {
+                font-size: 18px;
+               
+            }
+            .btnOrder {
+                width: 50%;
+                max-width: 280px;
+                border: 1px solid;
+                background: none;
+                span{ }
+            }
+            .btnHome {
+                margin-left: 10px;
+                width: 50%;
+                max-width: 280px;
+                color: #ffffff;
+               
+                display: inline-block;
+                i {
+                    display: none;
+                }
+            }
+            .g-home{
+                
+            }
+            i.icon-ico_close{
+                display: inline-block;
+                
+                width: 85px;
+                height: 85px;
+                border-radius: 100%;
+                text-align: center;
+                &:before {
+                    font-size: 35px;
+                    color: #fff;
+                    line-height: 85px;
+                    font-weight: bold;
+                }
+            }
+            i.order-status, i.icon-ico_step3{
+                display: inline-block;
+               
+                width: 85px;
+                height: 85px;
+                border-radius: 100%;
+                text-align: center;
+                &:before {
+                    font-size: 45px;
+                    color: #fff;
+                    line-height: 85px;
+                    font-weight: bold;
+                }
+            }
+            i.icon-ico_step3{
+                &:before {
+                    content: "\e90a";
+                    font-size: 35px;
+                }
+            }
+            &.result-0 {
+                i.order-status {
+                   
+                    &:before {
+                        content: "!";
+                        
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+    .widget.visilabs-widget{
+        .swiper-inner{
+            width: calc(100% + 1px);
+            border-bottom-width:1px;
+           
+            border-style: solid;
+        }
+    }
+    .miss-opp-widget{
+       
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        .ems-prd-inner:before{ display: none; }
+        &.active{
+            opacity: 1;
+            height: auto;
+            overflow: visible;
+            position:relative;
+            &.items-4 {
+                .ems-prd {
+                    width:25% !important;
+                }
+            }
+            &.items-3 {
+                .ems-prd {
+                    width:33.333% !important;
+                }
+            }
+            &.items-2 {
+                .ems-prd {
+                    width:50% !important;
+                }
+                .swiper-button-next, .swiper-button-prev {
+                    display: none;
+                }
+            }
+            &.items-1 {
+                .ems-prd {
+                    width:100% !important;
+                    &-inner {
+                        border:0;
+                    }
+                }
+                .swiper-button-next, .swiper-button-prev {
+                    display: none;
+                }
+            }
+        }
+        .swiper-title{
+            margin-top:30px;
+        }
+        .ems-prd-price {
+            .urunListe_satisFiyat, .urunListe_brutFiyat {
+                .d {
+                    display:none;
+                }
+            }
+        }
+    }
+}
+
+.sip-sonuc-3d {
+    .page-cart {
+        .bottom-step {
+            a.btnDefault { 
+                &[id$='btnSiparisSonuc'] {
+                   
+                    &:hover {
+                        background:#848484; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cart-step-result {
+    .page-cart .row-1, .page-cart .row-3  {display: none !important;}
+}
+.odeme3d {
+    display:none;
+} 
+.ems-page-order-payment {
+    .pageSiparisOnay_garanriSozlesme {
+        display: none;
+    }
+}
+.pageCreditCart .odeme3d {
+    display:block;
+}
+
+.page-cart .ems-page-order-payment .ems-cart-pay-type .ems-pay-other, .ems-message,
+.page-member .ems-page-member-order-detail .order-detail-info-payment > div > div {
+    &:empty {
+        display: none !important;
+    }
+}
+
+/*@media screen and (max-width: $breakpointSM) {
+    
+    .page-cart {
+        .widget-prd-detail, .cart-logo, .ems-site-safe{ display:none; }
+
+        .ems-container { padding-bottom: 60px; }
+        
+        .row-1{ border:none; }
+        .row-2 { width:100%; padding-right:0; padding-top:0 !important; }
+        .row-3 { float:none; width:100%; z-index:inherit; }
+
+        .tabloTabBtnAdimSiparis {
+            margin-top:30px;
+            margin-bottom:25px;
+            td > span a span b { font-size: 14px; }
+        }
+        .pnlDipToplamTable {
+            th{ padding-left:0; }
+            td{ padding-right:0; }
+        }
+        .ems-cart-button { 
+            .btnSepetBosalt, .btnSepetGuncelle{ display:none; }
+            .btnAlisverisDevam {
+                margin-top:10px;
+            }
+        }
+        .ems-cart-coupon{
+            > span{
+                margin-left:0;
+                margin-right:0;
+            }
+            .ems-cart-coupon-body{ margin:0; }
+        }
+        .bottom-step {
+            padding: 0;
+            background: none;
+            .next{
+                > a.btnDefault {
+                    position: fixed;
+                    left: 0;
+                    width: 100%;
+                    bottom: 0;
+                    z-index: 20;
+                    margin:0;
+                    padding: 19px 10px 18px 10px;
+                    span { font-size: 18px !important; }
+                }
+            }
+            [id$="lbfSIP_ONAYLA_DEC"] {
+                margin: 0;
+            }
+            .ems-message {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 21px 10px;
+                text-align: center;
+            }
+        }
+        .ems-cart-summary{
+            width: 100%;
+            border: none;
+            margin-top:25px;
+            > span { display:none; }
+             &.fixed{
+                position: static;
+                width: 100%;
+                max-width:none;
+            }
+        }
+        
+        .ems-page-order-delivery {
+            .page-top-title{
+                border-top:1px solid $borderColor;
+                padding-bottom:10px;
+                padding-top:25px;
+            }
+            .same-address, .add-new-address {
+                width: auto;
+                display: block;
+            }
+            .same-address {
+                margin-top: 20px;
+                text-align: left;
+                font-size:15px;
+            }
+            .add-new-address {
+                top:16px;
+            }
+            .ems-delivery-tab {
+                margin: 35px 0 10px 0;
+                &.ems-cargo-tab .divTeslimatKargo > ul > li {
+                    width: 100%;
+                    margin-left: 0;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+                .ems-delivery-tab-header {
+                    margin:0 0 15px 0;
+                    font-size: 18px;
+                    padding: 0;
+                }
+            }
+        }
+        .ems-page-new-address{
+            .ems-form {
+                max-width: 100%;
+                 .ems-field {
+                     .ems-form-obj{ max-width: 100% !important; }
+                     &.button{
+                        a.btnAdresKaydet{
+                            padding-top: 19px;
+                            padding-bottom: 18px;
+                            span{
+                                font-size:18px;
+                            }
+                        }
+                     }
+                 }
+            }
+            .page-top-title{ padding-bottom:10px; border-top:1px solid $borderColor; }
+            .page-top-title > span { padding-top:50px; color:$btnColor; }
+            a.btnAdresIptal { 
+                left:0; top:15px;
+                span{ padding-bottom:0; }
+            }
+        }
+        
+        .ems-page-order-payment {
+            .ems-pay-type-desc { display: none; }
+            .page-top-title {
+                display: block;
+                font-size: 18px;
+                padding-top: 25px;
+                padding-bottom:10px;
+                border-top:1px solid $borderColor; 
+            }
+            .cart-section-left {
+                .page-top-title {
+                    padding:0 0 0 0;
+                    &:before{ padding-top:20px; }
+                }
+            }
+            .ems-cart-pay-tab {
+                ul {
+                    li {
+                        display: inline-block;
+                        width: 50%;
+                        a {
+                            padding: 15px;
+                            font-size: 18px;
+                            font-family:$fB;
+                        }
+                    }
+                }
+            }
+            .ems-cart-pay-type {
+                .ems-pay-credit-cart {
+                    div[id$="pnlKrediKartiBilgi"]{
+                        border-width: 1px 0 0 0;
+                    }
+                }
+                .ems-pay-other {
+                    .OdemeBilgiPesinDigerOdemeNotu {
+                        border-width:1px 0 0 0;
+                        padding-left:0;
+                        padding-right:0;
+                        textarea {
+                            max-width: 100%;
+                        }
+                    }
+                }
+                .tableOdemeBilgiKrediKarti {
+                    display: block;
+                    width: 100%;
+                    padding: 30px 0 20px 0;
+                    border: none;
+                    th {
+                        font-size: 14px;
+                        padding: 0;
+                        margin-bottom: 10px;
+                        font-weight: normal;
+                    }
+                    td {
+                        padding: 0;
+                        margin-bottom: 20px;
+                        .cvc-info {
+                            > span {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .tableOdemeBilgiKrediKarti_tdtxtKKARTISIM {
+                        margin-bottom: 0;
+                    }
+                }
+                .pageOdemeBilgi_chkBankaBonus {
+                    margin-top:20px;
+                }
+                .pageOdemeBilgi_odemeTaksit {
+                    display: block;
+                    width: 100%;
+                    margin: 20px 0 40px 0;
+                    background: $vlightBg;
+                    .tableOdemeTaksit {
+                        .tableTitleOdemeTaksit {
+                            td {
+                                font-size: 12px;
+                            }
+                            td:nth-child(1) { width: 35px; }
+                        }
+                    }
+                }
+                .ems-pay-point {
+                    padding: 20px;
+                    max-width: 100%;
+                    margin-left: 0;
+                    border-top: 1px solid $borderColor;
+                    margin-bottom: 10px;
+                }
+                .tableOdemeBilgiHavale {
+                    margin-bottom:20px;
+                    width: 100%;
+                    tr th.tableOdemeBilgiHavale_thlbfBNK_AD_HV {
+                        border-right-width:0;
+                        border-left-width:0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        font-size: 14px;
+                        color:$sText;
+                    }
+                    tr td.tableOdemeBilgiHavale_tddrpBNK_KOD_HV {
+                        border-right-width:0;
+                        border-left-width:0;
+                        border-bottom-width:1px;
+                    }
+                    tr td.tableOdemeBilgiHavale_tddrpBNK_KOD_HV table { width: 100%; }
+                }
+            }
+            .ems-cart-pay-adress{
+                margin-top:0;
+                margin-bottom:65px;
+                .left, .right{ width:100%; float:none; }
+                .ems-delivery-address-lbl{ padding-top:25px; padding-bottom: 25px; }
+            }
+        }
+        
+        .ems-page-order-result {
+            .order-result {
+                margin: 100px auto 0 auto;
+                max-width: 100%;
+                .color-1, .color-2{ font-size:24px; padding-top:10px; }
+                .fsize17, .g-home {
+                    font-size: 18px;
+                }
+                .btnHome, .g-orders, .btnOrder{ 
+                    width:100%;
+                    margin:0;
+                    max-width:100%;
+                    padding-top:21px;
+                    padding-bottom:20px;
+                    font-size:16px;
+                    span{ font-size:16px; }
+                }
+                .btnOrder{ margin-bottom:30px; }
+            }
+        }
+        
+        .pageSiparisOnay_chkSatisSozlesme, .pageSiparisOnay_chkOnBilgilendirmeForm {
+            cursor: pointer;
+            font-size: 14px;
+            color:$sText;
+            b{ font-size: 14px; color:$sText; }
+        }
+        .onBilgilendirmeForm {
+            margin-top: 20px;
+            span.cStyler { width: 20px; height: 20px; border-color:#cbcbcb; }
+        }
+        .siparisOnaySozlesme {
+            margin-bottom: 0;
+            span.cStyler { width: 20px; height: 20px; border-color:#cbcbcb; }
+        }
+        .pageSiparisOnay_garanriSozlesme {
+            padding: 0 20px;
+            margin-top: 10px;
+            span.cStyler { width: 20px; height: 20px; border-color:#cbcbcb;}
+            .checkbox { 
+                font-size: 14px;
+                b {
+                    font-size: 14px;
+                }
+            }
+        }
+        .sip-sonuc-3d .page-cart .bottom-step a.btnDefault[id$=btnSiparisSonuc3D] {
+            width:50%;
+            left:auto;
+            right:0;
+            span { font-size: 16px !important; }
+        }
+        .sip-sonuc-3d .page-cart .bottom-step a.btnDefault[id$=btnSiparisSonuc] {
+            width:50%;
+            left:0;
+            span { font-size: 16px !important; }
+        }
+    }
+}*/

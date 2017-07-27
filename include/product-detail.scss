@@ -8,6 +8,15 @@
 
     .presentation {display: none;}
 
+    .system-widget {
+
+        .swiper-button-prev,
+        .swiper-button-next {display: none;}
+
+        .swiper-pagination {display: none;}
+
+    }
+
 }
 
 .ems-prd-detail-inner {
@@ -76,7 +85,17 @@
 
         .urunDetay_btnSepeteAt {font-size: 0px; margin-left: 10px;}
 
-        .btnsepeteAt {
+        .ems-prd-price-taksit {margin-top: 20px; display: block; font-size: 14px;
+
+            .lnkTaksitSecenek {text-decoration: underline;
+
+                @extend .none;
+
+            }
+
+        }
+
+        a.btnsepeteAt {
 
             @extend .large;
 
