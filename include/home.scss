@@ -58,3 +58,52 @@
     }
 
 }
+
+@media screen and (max-width: 960px) {
+
+    .page-home {padding-left: 0px;
+    
+        > .slider,
+        > .pay-type {margin-left: -20px; margin-right: -20px;}
+    
+    }
+
+    .main-slider {
+
+        h3 {font-size: 24px; max-width: 400px;}
+
+        > .swiper-pagination-bullets {bottom: 20px;}
+
+    }
+
+    .pay-type-list {padding: 25px 20px;}
+
+    .home-content {padding-left: 0px;}
+
+    .background-banner-list .background-banner-item {width: calc(50% - 10px);}
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .pay-type-list {padding: 6px 20px;
+
+        > div {flex-wrap: wrap; text-align: center; justify-content: center;
+        
+            &::before {margin-right: 0px; margin-bottom: 0px;}
+        
+        }
+
+    }
+
+    .background-banner-list {flex-wrap: wrap; width: calc(100% + 40px); margin-left: -20px;
+
+        .background-banner-item {width: 100%; margin-bottom: 30px;
+        
+            &:last-child {margin-bottom: 0px;}
+        
+        }
+
+    }
+
+}

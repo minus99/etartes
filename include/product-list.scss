@@ -280,3 +280,21 @@
     .tumunuGoster {display: inline-block $i; float: right; font-size: 14px; font-weight: 600; color: $color-9; text-decoration: underline;}
 
 }
+
+@media screen and (max-width: 960px) {
+
+    .widget-product {padding-left: 0px; margin: 40px 0px 0px 0px;}
+
+    .product-item {padding: 0px;}
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .no-swiper .swiper-wrapper .swiper-slide {width: calc(50% - 5px);}
+
+    .swiper-title {text-align: center;}
+
+    .product-item .ems-prd-name a {font-size: 14px;}
+
+}
