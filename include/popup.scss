@@ -1,0 +1,13 @@
+.minPp {
+
+    .btnMinPpCl {right: 30px; top: 15px; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: $color-2; color: $color-3; border-radius: 50%; font-size: 13px;
+
+        &::before {content: '\e80c'; 
+
+            @extend .icons;        
+
+        }        
+
+    }
+
+}

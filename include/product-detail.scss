@@ -25,7 +25,7 @@
 
     .inner-row-2 {width: calc(100% - 420px); padding-left: 12px; box-sizing: border-box;}
 
-    .inner-row-3 {width: 100%; border-top: 1px solid $color-4; margin-top: 20px;}
+    .inner-row-3 {width: 100%; border-top: 1px solid $color-4; margin-top: 20px; margin-bottom: 70px; padding-right: 30px;}
 
 }
 
@@ -151,18 +151,184 @@
 
 // tab
 
-#urnDetTabsContainer {
+.detail-content  {
 
-    > li {
+    .tableUrunDokuman {display: none;}
 
-        #urnDetTabsDivContainer {display: none;}
+}
 
-        &.selected {
+.ems-tab-inner {
 
-            #urnDetTabsDivContainer {display: block;}
+    > ul {margin: 0px;}
+
+}
+
+.prd-info-tab {margin-top: 40px;
+
+    iframe {width: 100%; height: 400px;}
+
+    h3 {font-size: 18px; font-weight: 600;}
+    
+    p {}
+
+    .download {background-color: $color-4; text-transform: uppercase; font-weight: 600;
+    
+        a {padding: 13px 25px 13px 10px;}
+    
+    } 
+     
+}
+
+// installment
+
+.popupTaksit {padding: 15px 20px;
+
+    .popupTitleTaksit {text-align: left; font-size: 20px; font-weight: 600;}
+
+    .popupTaksit_lbfAciklama {margin-top: 33px; margin-bottom:  19px; font-size: 15px; color: $color-9; text-align: left;} 
+
+    .gridTaksitBanka {font-size: 12px; font-weight: 600;
+
+        th {padding: 11px;}
+
+        .gridTaksitSecenek td {padding: 5px;}
+
+        > tbody {display: flex; flex-wrap: wrap;
+        
+            tr {width: 100%;}
+        
+        }
+
+        .gridRowTaksitBanka {display: block; padding: 0px;}
+
+        .gridTaksitSecenek {
+
+            td,
+            th {border: 1px solid $color-4; text-align: center;}
 
         }
 
+        .taksit_banka {display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: center; border: 1px solid $color-4; padding: 15px 10px; font-weight: bold;}
+
+    } 
+
+}
+
+// content
+
+.product-table {margin-top: 30px; border: 1px solid $color-4;
+
+    > div {padding: 10px 24px;
+
+        > div {width: 50%;}
+
+        &:nth-child(odd) {background-color: $color-4;}
+
+    }
+
+    .title {font-size: 12px; color: $color-2; font-weight: 600;}
+
+}
+
+.product-text {
+
+    h3,
+    p {margin: 15px 0px; color: #757575;}
+
+    h3 {font-weight: bold;}
+
+    .product-text-table {
+
+        .row {border: 1px solid $color-5;
+        
+            &:last-child {border-top: 0px;}
+
+            .col {border-left: 1px solid $color-5; padding: 17px 25px;
+            
+                &:first-child {border-left: none;}
+            
+            }
+        
+        }
+
+    }
+
+}
+
+.navigation-js {display: flex; margin: 0px; margin-top: 40px; 
+
+    li {flex-grow: 1; flex-basis: calc(100% / 3);
+
+        a {font-size: 18px; padding: 13px 20px; border: 1px solid $color-5; border-left-width: 0px; cursor: pointer; color: $color-9; width: 100%; box-sizing: border-box;}
+
+        &:first-child {
+
+            a {border-left-width: 1px;}
+
+        }
+
+        &.selected {
+
+            a {background-color: $color-1; color: $color-3; border-color: $color-1;}
+
+        }
+
+    }
+
+}
+
+.content-js {
+
+    li {display: none;
+    
+        &.selected {display: block;}
+
+        > .title {display: none;}
+    
+    }
+
+    .popupTaksit {padding: 0px;
+
+        .gridTaksitBanka {
+
+            th {padding: 13px 8px;}
+
+            .taksit_banka {flex-wrap: wrap; flex-direction: row; border: none;
+            
+                img {max-height: 27px; margin-bottom: 10px;}
+            
+            }
+
+            > tbody {flex-wrap: nowrap; justify-content: space-between;
+            
+                > tr {width: calc(50% - 15px);}
+            
+            }
+
+            .gridTaksitSecenek {table-layout: fixed;
+
+                tr {border: 1px solid $color-4;}
+
+                td,
+                th {border: none;}
+            
+                td {padding: 11px 5px;}
+
+                > tbody {
+
+                    > tr:nth-child(2) {color: $color-10;}
+
+                }
+            
+            }
+
+            .gridHeaderTaksitSecenek {background-color: $color-4;}
+
+        }
+
+        .popupTitleTaksit {display: none;}
+
+        .popupTaksit_lbfAciklama {margin-top: 30px; margin-bottom: 30px;}
 
     }
 
@@ -176,7 +342,7 @@
 
     .product-list > li {width: 100%; text-align: left; min-height: 132px; padding: 0px; margin-bottom: 20px;
 
-        .ems-prd-inner {display: block;
+        .ems-prd-inner {display: block; padding: 0px;
         
             > * {float: left;}
         

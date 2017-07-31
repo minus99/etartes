@@ -26,9 +26,9 @@
 
 // product item
 
-.product-item {padding: 20px;
+.product-item {
 
-    .ems-prd-inner {display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start;}
+    .ems-prd-inner {display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; padding: 20px;}
 
     .product-code-group {min-height: 76px;}
 
@@ -67,7 +67,21 @@
 
 .navigation {min-height: 50px; line-height: 50px; border-bottom: 1px solid $color-5; color: $color-9;
 
-    .navigasyon {font-size: 13px;}
+    .navigasyon {font-size: 13px;
+    
+        a {
+
+            &::before {content: '>'; padding: 0px 5px; display: inline-block;}
+
+            &:first-child {
+
+                &:before {display: none;}
+
+            }
+
+        }
+    
+    }
 
 }
 
@@ -88,10 +102,12 @@
     .ems-prd-list-sort {height: 50px; font-size: 13px; color: $color-9;
 
         .sStylerMainWrp {border: none;
+
+            .sStylerWrp {position: relative; padding-left: 10px; z-index: 3; left: auto; right: auto;}
         
             &::after {display: none;}
 
-            select {padding-right: 0px;}
+            select {padding-right: 0px; position: absolute; top: 0px;}
 
         }
 
@@ -165,7 +181,7 @@
 
         li {
 
-            > a {display: inline-block; line-height: 2.5; color: $color-9;}
+            > a {display: block; line-height: 2.5; color: $color-9;}
 
             > span {display: none;}
 
@@ -191,7 +207,7 @@
 
         .sub-items {position: relative;
 
-            &::after {content: '\e804'; position: absolute; right: 0px; top: 12px; font-size: 12px;
+            &::after {content: '\e804'; position: absolute; right: 0px; top: 12px; font-size: 12px; pointer-events: none;
 
                 @extend .icons;
 
@@ -213,6 +229,12 @@
 
             &.s2 > ul {padding-left: 10px;}
 
+            &.sel {
+
+                ul {display: block;}
+
+            }
+
         }
 
     }
@@ -221,7 +243,7 @@
 
 .kutuBodyOzellikFiltre > table {width: 100%;}
 
-.urunKiyaslamaOzellik_ozellikAd {text-transform: uppercase; font-size: 14px; color: $color-6; font-weight: 600; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;
+.urunKiyaslamaOzellik_ozellikAd {text-transform: uppercase; font-size: 14px; color: $color-6; font-weight: 600; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; cursor: pointer;
 
     &::after {content: '\e81c'; 
     
@@ -285,7 +307,7 @@
 
     .widget-product {padding-left: 0px; margin: 40px 0px 0px 0px;}
 
-    .product-item {padding: 0px;}
+    .product-item .ems-prd-inner {padding: 0px;}
 
 }
 

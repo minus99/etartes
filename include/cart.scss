@@ -72,11 +72,17 @@
 
 }
 
-// sepet bos
+// sepet empty
 
 .sepet-bos {
 
-    .ems-page-cart {padding-bottom: 0px; text-align: center;}
+    .ems-page-cart {padding-bottom: 0px; text-align: center;
+    
+        .row-3 {display: none;}
+        
+        .row-2 {width: 100%;} 
+    
+    }
 
     .pageDescSepet {display: none;}
 
