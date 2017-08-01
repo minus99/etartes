@@ -6,7 +6,11 @@
 
 html {font-family: $font; font-size: 17px; line-height: 1.5; color: $color-2; -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility;}
 
-body {margin: 0px; overflow-x: hidden;}
+body {margin: 0px; overflow-x: hidden;
+
+    &.system-popup-ready {height: 100vh; overflow: hidden;} 
+
+}
 
 img {max-width: 100%;}
 
@@ -88,7 +92,7 @@ a.lnkUyeOlmak,
 
 // container
 
-.ems-container {max-width: 1200px; padding-left: 20px; padding-right: 20px; margin-left: auto; margin-right: auto; box-sizing: content-box;
+.ems-container {width: 100%; max-width: 1200px; padding-left: 20px; padding-right: 20px; margin-left: auto; margin-right: auto; box-sizing: border-box;
 
     &::before,
     &::after {clear: both;}

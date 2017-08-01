@@ -147,7 +147,7 @@
 
         .mod-mini-cart-header {padding: 12px;}
 
-        .mod-mini-cart-body {width: 380px; background: $color-3; position: absolute; right: 0; z-index: 2; opacity: 0; visibility: hidden;}
+        .mod-mini-cart-body {width: 380px; background: $color-3; position: absolute; right: 0; z-index: 5; opacity: 0; visibility: hidden;}
 
         &.opened {
 
@@ -396,11 +396,7 @@
 
                 li {
 
-                    a {padding: 15px 20px;
-
-                        i {display: block;}
-
-                    }
+                    a {padding: 15px 20px;}
 
                 }
 

@@ -76,7 +76,7 @@
 
     }
 
-    .pay-type-list {padding: 25px 20px;}
+    .pay-type-list {padding: 20px 25px;}
 
     .home-content {padding-left: 0px;}
 
@@ -86,11 +86,11 @@
 
 @media screen and (max-width: 768px) {
 
-    .pay-type-list {padding: 6px 20px;
+    .pay-type-list {
 
         > div {flex-wrap: wrap; text-align: center; justify-content: center;
         
-            &::before {margin-right: 0px; margin-bottom: 0px;}
+            &::before {margin-bottom: 0px;}
         
         }
 
@@ -104,6 +104,16 @@
         
         }
 
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .pay-type-list {padding: 6px 20px;
+    
+        > div::before {margin-right: 0px;}
+    
     }
 
 }

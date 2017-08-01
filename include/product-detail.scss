@@ -4,7 +4,21 @@
 
     .detail-bundle {width: 390px;}
 
-    .navigasyon {margin-top: 20px; margin-bottom: 40px;}
+    .navigasyon {margin-top: 20px; margin-bottom: 40px; font-size: 13px; color: $color-9;
+    
+        a {
+
+            &::before {content: '>'; margin: 0px 5px; display: flex; align-items: center;} 
+
+            &:first-child {
+
+                &::before {display: none;}
+
+            }
+
+        }
+    
+    }
 
     .presentation {display: none;}
 
@@ -257,7 +271,7 @@
 
 .navigation-js {display: flex; margin: 0px; margin-top: 40px; 
 
-    li {flex-grow: 1; flex-basis: calc(100% / 3);
+    li {flex-grow: 1;
 
         a {font-size: 18px; padding: 13px 20px; border: 1px solid $color-5; border-left-width: 0px; cursor: pointer; color: $color-9; width: 100%; box-sizing: border-box;}
 
@@ -344,7 +358,7 @@
 
         .ems-prd-inner {display: block; padding: 0px;
         
-            > * {float: left;}
+            > * {float: left; width: auto;}
         
         }
 
@@ -361,6 +375,97 @@
         }
 
         .ems-prd-button {margin-left: 20px;}
+
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .page-detail {
+    
+        .detail-content {width: 100%; border-right: none;}
+
+        .detail-bundle {display: none;}
+
+    }
+    
+    .ems-prd-detail-inner {
+
+        .inner-row-1 {width: 50%;}
+
+        .inner-row-2 {width: 50%;} 
+
+        .inner-row-3 {padding-right: 0px;}
+
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+    .page-detail {
+
+        .navigasyon {margin-bottom: 0px; width: calc(100% + 40px); margin-left: -20px; border-bottom: 1px solid $color-4; padding: 0px 20px 5px 20px;
+        
+            a {}
+        
+        }
+
+        .urunDetay {margin-top: 20px;}
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .ems-prd-detail-inner {
+
+        .inner-row-1 {width: 100%;}
+
+        .inner-row-2 {width: 100%; padding-left: 0px;}
+
+    }
+
+    .urunDetay .inner-row-2 {
+
+        a.btnsepeteAt {padding-left: 10px; padding-right: 10px; display: block;}
+
+        .urunDetay_btnSepeteAt {width: 100%;
+
+            table,
+            tbody,
+            tr,
+            th {display: block;}
+
+        }
+
+    }
+
+    .ems-tab-inner {
+        
+        .navigation-js {display: none;}
+
+    }
+
+    .content-js {
+
+        li {display: block;
+        
+            > .title {display: block; padding: 12px 20px; color: $color-9; border: 1px solid $color-5; border-radius: 3px; font-weight: 600;}
+
+            > .content {height: 0px; overflow: hidden;}
+
+            &.selected {
+
+                > .title {background-color: $color-1; color: $color-3; border-color: $color-1; margin-bottom: 20px; margin-top: 20px;}
+
+                > .content {height: auto;}
+
+            }
+        
+        }
 
     }
 

@@ -10,7 +10,7 @@
 
 // footer-top
 
-.footer-top {background-color: $color-4;
+.footer-top {background-color: $color-4;    
 
     // logo
 
@@ -64,9 +64,67 @@
 
 }
 
+// whatsapp
+
+.ems-whatsapp {position: fixed; z-index: 3; right: 0px; top: 30%;
+
+    .mini-whatsapp {background-color: $color-1; transform: rotate(-90deg); transform-origin: bottom right; transition: left 0.2s linear; color: $color-3; padding: 0px 10px; font-size: 14px; border-radius: 3px; margin-top: -45px;
+    
+        i {font-size: 30px;
+        
+            &::before {margin-left: 0px;}
+        
+        }
+
+        span {transform: translate3d(0, 0, 0);}
+    
+    }
+
+    .open-whatsapp {width: 245px; right: -245px; top: 0px; padding: 5px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; visibility: hidden; transition: right 0.2s linear; background-color: $color-1;
+    
+        i {width: 50px; height: 70px; left: -50px; top: 0px; background-color: $color-1; color: $color-3; font-size: 35px; border-top-left-radius: 3px; border-bottom-left-radius: 3px;}
+
+        .open-whatsapp-wrapper {background-color: $color-4;}
+
+        a {height: 120px; padding-left: 30px;}
+
+        h4 {margin: 0px;}
+
+        span {font-size: 15px;}
+    
+    }
+
+    &:hover {
+
+        .mini-whatsapp {left: -45px; visibility: hidden;}
+
+        .open-whatsapp {right: 0px; visibility: visible;}
+
+    }
+
+} 
+
+@media screen and (max-width: 960px) {
+
+    .ems-whatsapp {position: static; width: 220px; margin: 0px auto;
+    
+        .mini-whatsapp {transform: rotate(0deg); border-radius: 0px;}
+
+        &:hover {
+
+            .mini-whatsapp {visibility: visible; left: 0px;}
+
+            .open-whatsapp {display: none;}
+
+        }
+    
+    }
+
+}
+
 @media screen and (max-width: 768px) {
 
-    .main-footer {margin-top: 50px;
+    .main-footer {
 
         .menu {flex-wrap: wrap; text-align: center;
 
@@ -98,7 +156,7 @@
 
         .social {
 
-            ul {justify-content: flex-end;
+            ul {
             
                 li {padding-left: 15px;}
             
@@ -116,6 +174,20 @@
     
         address {color: $color-2;}
     
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .footer-top {
+        
+        .social {
+
+            ul {justify-content: flex-end;}
+
+        }
+
     }
 
 }
