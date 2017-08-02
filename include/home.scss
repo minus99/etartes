@@ -37,6 +37,12 @@
 
 }
 
+.no-swiper {
+
+    .product-item .ems-prd-inner {padding: 0px;}
+
+}
+
 // pay type
 
 .pay-type-list {padding: 25px 50px; color: $color-3; background-color: $color-7; font-size: 13px; font-weight: 500;
@@ -82,15 +88,21 @@
 
     .background-banner-list .background-banner-item {width: calc(50% - 10px);}
 
+    .no-swiper {
+
+        .product-item .ems-prd-inner {padding: 0px;}
+
+    }
+
 }
 
 @media screen and (max-width: 768px) {
 
     .pay-type-list {
 
-        > div {flex-wrap: wrap; text-align: center; justify-content: center;
+        > div {flex-wrap: wrap; text-align: center; justify-content: center; padding: 0px 5px;
         
-            &::before {margin-bottom: 0px;}
+            &::before {margin-bottom: 5px; margin-right: 0px; width: 100%;}
         
         }
 
@@ -110,10 +122,6 @@
 
 @media screen and (max-width: 480px) {
 
-    .pay-type-list {padding: 6px 20px;
-    
-        > div::before {margin-right: 0px;}
-    
-    }
+    .pay-type-list {padding: 6px 20px;}
 
 }

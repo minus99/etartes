@@ -7,6 +7,8 @@
         > div {display: table-cell; position: relative; vertical-align: middle; word-break: break-word;}
         
         .ems-grid-img {width: 10%;}
+
+        .ems-grid-code {width: 12%;}
         
         .ems-grid-name {width: 30%;
             
@@ -257,42 +259,39 @@
 
         // row address name
 
-        .ems-address-name {
-           
-            font-size: 14px;
-            > span {
-                display: block;
-                margin-top: 7px;
-                font-size: 14px;
-              
-                &:before {
-                    margin-right: 5px;
-                }
+        .ems-address-name {font-size: 14px; font-weight: bold;
+            
+            > span {display: block; margin-top: 7px; font-size: 14px;}
+
+            .adresTip2,
+            .adresTip1 {display: none;}
+        
+        }
+
+        .ems-address {padding-top: 5px; font-size: 12px; color: $color-9;} 
+
+        .ems-address-buttons {display: flex; justify-content: center;
+
+            > a {line-height: 40px; padding: 0 10px; font-size: 14px;
+                
+                span {letter-spacing: inherit;}
+                
+                i {display: none;}
+
+                @extend .none;
+
+                font-weight: 600;
+
+                &.btnAdresListeGuncelle {margin-right: 40px; color: $color-2;}
+                
+                &.btnAdresListeSil {color: $color-1;}
+
             }
-            .adresTip2 { display: none; }
+
         }
-        .ems-address {
-            padding-top: 5px;
-            font-size: 12px;
-           
-        }
-        .ems-address-buttons {
-            > a {
-                line-height: 40px;
-                padding: 0 10px;
-                span{ letter-spacing: inherit; }
-                i { display: none; }
-                &.btnAdresListeGuncelle{
-                   
-                    width: 60%;
-                }
-                &.btnAdresListeSil {
-                    width: 40%;
-                  
-                }
-            }
-        }
+
     }
+
 }
 
 .ems-grid-favorites,
@@ -371,7 +370,6 @@
 
 .ems-grid-address {
     .ems-grid-row {
-        margin-bottom: 20px;
         > div {
             border-bottom-width: 1px;
         }
@@ -488,30 +486,18 @@
     }
 }
 
-.ems-grid-address {
-    margin-bottom: 20px;
+.ems-grid-address {margin-bottom: 20px;
+
     .ems-grid-row {
-        &.selected {
-            background: #f8f8f8;
-        }
-        > div {
-            padding:23px 30px;
-        }
-        .col-1 {
-            width: 45%;
-        }
-        .col-2 {
-            width: 30%;
-            padding-left: 0;
-            padding-right: 10px;
-            text-align: right;
-        }
-        .col-3 {
-            width: 25%;
-            border-left-width: 1px;
-            text-align: left;
-            padding-left: 20px;
-            padding-right: 10px;
+
+        > div {padding: 0px 20px;}
+
+        .col-1 {width: 45%;}
+
+        .col-2 {width: 30%; padding-left: 0; padding-right: 10px;}
+
+        .col-3 {width: 25%; border-left-width: 1px; text-align: left; padding-left: 20px; padding-right: 10px;
+            
             > a.btnDefault {
                 width: 100%;
                 font-size: 12px;

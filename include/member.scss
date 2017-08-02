@@ -1,9 +1,291 @@
 .page-member {
 
+    .row-1 {width: 280px;}
+
+    .row-2 {width: calc(100% - 280px);}
+
     div[id$="pnlBilgiGuncelle"],
     .tableUyeBilgi_aciklama,
     .page-top-desc-border {display: none;}
 
-    #validateUye {max-width: 320px;}
+    // menu
+
+    .member-menu-selecbox {display: none;}
+
+    .member-menu {
+
+        .mobile-title {display: none;}
+
+        > h4 {font-size: 18px; font-weight: bold; margin-top: 0px; margin-bottom: 20px;}
+
+        > ul {visibility: visible; opacity: 1; position: static; width: auto; border: none; padding: 0px; margin: 0px;
+        
+            li {
+
+                a {font-size: 14px; line-height: 2;}
+
+                &.selected {
+
+                    a {font-weight: bold;}
+
+                }
+
+                .lvl2 {display: none;}
+
+            }
+        
+        }
+
+    }
+
+    // content
+
+    #validateUye {max-width: 320px; padding-left: 160px;}
+
+    .page-top-title {text-align: center; margin-bottom: 15px; font-size: 18px; font-weight: bold;}
+
+    .mobile-phone {
+
+        .cepTelAlan {width: 110px $i; margin-right: 15px;}
+
+        .cepTelNo {width: calc(100% - 125px) $i;}
+
+    }
+
+    div[id$='plhUyelikBultenChk1'],
+    div[id$='plhUyelikSmsChk1'] {display: flex; align-items: center;}
+
+    .btnUyeBilgi {display: block;
+
+        @extend .large;
+
+    }
 
 }
+
+// address
+
+.ems-page-member-address {
+
+    .page-top-title {text-align: left;}
+
+    .page-top-desc {display: none;}
+
+    .ems-address-form {display: flex; flex-direction: column-reverse;}
+
+    .add-new-address {margin-bottom: 10px;
+
+        a {font-size: 14px; color: $color-2; font-weight: 600;
+
+            @extend .none;
+
+            &::before {content: '\e813'; margin-right: 10px;
+
+                @extend .icons;
+
+            }
+
+        }
+
+    }
+
+    .col-3 {display: none;}
+
+}
+
+// new address
+
+.new-address {
+
+    .page-member {
+
+        .row-1 {display: none;}
+
+        .row-2 {width: 100%;}
+
+    }
+
+}
+
+.ems-page-new-address {
+
+    .page-top-title {text-align: center; position: relative;
+    
+        .btnAdresIptal {position: absolute; left: 0px; font-size: 12px;
+
+            @extend .none;
+
+            color: $color-2; font-weight: bold;
+
+            i {font-size: 20px; margin-right: 10px;}
+
+            .addrsClose {display: flex; align-items: center;}
+
+        }
+    
+    }
+
+    .ems-form {display: flex; justify-content: center;
+        
+        .ems-form-inner {width: 100%; max-width: 320px;}
+
+        .tcCheck {display: flex; flex-direction: row-reverse; justify-content: flex-end; align-items: center;
+        
+            .ems-form-label {position: static;}
+
+        }
+
+        textarea {height: 90px;}
+
+        .btnAdresKaydet {display: block;
+
+            @extend .large;
+
+        }
+    
+    }
+
+    .adresTip {
+
+       .ems-form-obj {display: flex; align-items: center; justify-content: space-around;
+    
+            a {color: $color-9; font-weight: bold;
+            
+                &.emos_selected {color: $color-2;}
+            
+            }
+    
+        } 
+
+    }
+
+    &.lnkAdrTip_1 {
+
+        .tcCheck {display: none;}
+
+    }
+
+}
+
+// order list
+
+.ems-page-member-order {
+
+    .page-top-title {text-align: left;}
+
+    .page-top-desc {display: block; font-size: 12px; color: $color-9; margin-bottom: 40px;}
+
+    .order-filter {display: flex; margin-bottom: 30px;
+    
+        .sStylerWrp_select {width: 320px; margin-right: 20px; color: $color-9; font-size: 14px;}
+
+        .btnSipAra {
+
+            @extend .large;
+
+            padding: 14px 27px; border-radius: 0px; background-color: $color-5; font-size: 14px;
+
+        }
+    
+    }
+
+    .ems-grid-row {min-height: 60px;
+
+        > div {border-width: 1px 1px 0px 0px; font-size: 15px; color: $color-9; padding-left: 12px; padding-right: 12px;}
+
+        .ems-grid-detail {font-size: 20px;
+
+            .btnSiparisDetay {
+
+                @extend .none;
+
+            }
+
+        }
+
+    }
+
+}
+
+// order detail
+
+.ems-page-member-order-detail {
+
+    .page-top-title {text-align: left;}
+
+    .inner-title {margin: 50px 0px; font-size: 15px; color: $color-9;}
+
+    .bottom-step {
+
+        .btnSipariseDon {
+
+            @extend .large;
+
+        }
+
+    }
+
+}
+
+.order-detail-info {margin-bottom: 65px; line-height: 1.6;
+
+    > div {flex-basis: 360px; font-size: 15px;
+    
+        > div {
+
+            > div {
+
+                &:first-child {width: 60%;}
+            
+                &:last-child {color: $color-9; width: 40%;}
+            
+            }
+
+        }
+
+    }
+
+}
+
+.order-address-delivery-wrapper {
+
+    > div {width: calc(50% - 8px); border: 1px solid $color-4; padding: 24px; box-sizing: border-box; text-transform: uppercase;
+    
+        .text {font-size: 14px; font-weight: bold; margin-bottom: 5px;}
+
+        .value {font-size: 12px; color: $color-9; font-weight: 600;}
+    
+    }
+
+}
+
+.ems-grid-order-products {
+
+    .ems-grid-header .ems-grid-name {text-align: center;}
+
+    .ems-grid-header > div {text-transform: uppercase;}
+
+    .ems-grid-row > div {border-width: 1px 1px 0px 0px; font-size: 15px; padding: 15px 9px;}
+
+    .ems-grid-row > div:not(.ems-grid-price-total) {color: $color-9;}
+
+}
+
+.order-detail-info-payment {border: 1px solid $color-4; margin-top: -1px; min-width: 340px; float: right; padding: 20px 40px;
+
+    > div {font-size: 14px; 
+
+        > div {font-weight: 600;
+
+            &:first-child {width: 60%;}
+
+            &:last-child {width: 40%;}
+
+        }
+
+        &.total {font-size: 16px; margin-top: 30px; text-transform: uppercase;}
+
+    }
+
+}
+

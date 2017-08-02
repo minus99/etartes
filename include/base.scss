@@ -80,9 +80,13 @@ a.lnkUyeOlmak,
 
 .flex-middle {align-items: center;}
 
+.flex-middle-end {align-items: flex-end;} 
+
 .flex-middle-content {align-content: center;}
 
 .flex-direction-column {flex-direction: column;}
+
+.flex-direction-row-reverse {flex-direction: row-reverse;}
 
 .flex-1 {flex: 1;}
 
@@ -143,7 +147,7 @@ textarea {height: 150px; padding-top: 15px; resize: none;}
 
 @mixin select-box {
 
-    &::after {content: '\e802'; position: absolute; right: 12px; top: calc(50% - 4px); pointer-events: none; color: $color-9;
+    &::after {content: '\e802'; position: absolute; right: 12px; top: calc(50% - 4px); pointer-events: none; color: $color-9; font-size: 10px;
 
         @extend .icons;
 
