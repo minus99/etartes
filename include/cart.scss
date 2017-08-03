@@ -1,15 +1,23 @@
-.cart-page {
+.cart-page {padding: 0px;
 
     .main-header,
     .main-footer {display: none;}
 
 }
 
-.ems-page-cart {
+.ems-page-cart {padding-bottom: 0px;
 
     .cart-header {
 
         img {margin-bottom: 40px;}
+
+    }
+
+    .ems-grid-cart {
+
+        .ems-grid-row {border-right-width: 1px;}
+
+        .ems-grid-img {}
 
     }
 
@@ -70,6 +78,10 @@
 
     }
 
+    .system-widget {max-width: 1200px; width: 100%;}
+
+    .pay-type-list {background-color: $color-4; color: $color-2; padding: 35px 120px;} 
+
 }
 
 // sepet empty
@@ -106,62 +118,7 @@
 
 }
 
-/*.ems-site-safe{
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
-    background:#f7f7f7;
-    ul{
-        display: table;
-        width: 100%;
-        margin: 0 auto;
-        max-width: 1200px;
-        li{
-            display: table-cell;
-            width: 33.333%;
-            text-align: center;
-            > div{
-                padding: 70px 0;
-                .ems-icon { margin-right:20px; }
-                .ems-icon, span{
-                    display: inline-block;
-                    vertical-align: middle;
-                }
-                span{ font-family:$fD; font-size:18px; }
-            }
-            &:first-child{ text-align: left; }
-        }
-    }   
-}*/
-
 .page-cart {
-    /*.ems-container {
-        max-width:1240px;
-        padding-left: 20px;
-        padding-right: 20px;
-        position: relative;
-        padding-bottom: 80px;
-        background: #fff;
-        min-height: 505px;
-    }*/
-    /*.cart-logo {
-        width: 100%;
-        margin-top: 45px;
-        text-align: center;
-        a{
-            display: inline-block;
-        }
-    }*/
-    /*.widget-prd-detail{
-        .widget-container{
-            margin-top:100px;
-            margin-bottom:100px;
-            max-width: 1380px;
-            .swiper-title{
-                span{ padding-bottom:70px; }
-            }
-        }
-    }*/
     
     &.step0 {
     
@@ -361,36 +318,23 @@
 
     // basket coupon
 
-    .ems-cart-coupon {
+    .ems-cart-coupon {background-color: $color-4; padding: 20px 30px 0px 30px;
 
-        > span {margin: 20px 30px 0 30px; border-top: 1px solid; padding: 20px 0 20px 0; position: relative; display:block; cursor: pointer; font-size:12px;
+        > span {border-top: 1px solid $color-2; font-weight: 600; position: relative; display: block; cursor: pointer; font-size: 12px; padding-top: 10px;
             
-            i {position: absolute; right: 0; top: 50%; width: 12px; height: 12px; margin-top: -1px;
-                
-                &:before,
-                &:after {position: absolute; content:''; width: 12px; height: 2px;}
-
-            }
+            i {right: 0px; top: 50%; width: 12px; height: 12px; margin-top: -1px;}
 
         }
 
-        .ems-cart-coupon-body {display: none; position: relative; margin: 0 30px;
+        .ems-cart-coupon-body {display: none; position: relative; margin-top: 8px;
             
-            input {width: 100% !important; padding-right: 50px; margin-bottom: 10px;}
+            input {width: 100% !important; padding-right: 50px; height: 40px;}
             
-            table {display: table !important; position: absolute; right: 0; top: 0; width: 50px; height:50px; 
+            table {display: table !important; position: absolute; right: 0px; top: calc(50% - 12px);
                 
-                a.btnHediyeCekiKullan {display: block; height: 50px; text-align: center; line-height: 50px;
+                a.btnHediyeCekiKullan {
                     
-                    span {letter-spacing: inherit;
-                        
-                        .icon-ico_arrw-long-right {font-size: 20px; line-height: 50px;
-                            
-                            &::before{font-size: 20px;}
-                        
-                        }
-                    
-                    }
+                    @extend .none;
                 
                 }
             
@@ -403,6 +347,16 @@
         &.opened {
 
             .ems-cart-coupon-body {display: block;}
+
+            > span {
+            
+                i {
+
+                    &::before {content: '\e81c';}
+
+                }
+
+            }
         
         }
 
@@ -850,43 +804,32 @@
                             vertical-align: top;
                         }
                     }
-                    .taksit_pesin td {
-                        
-                    }
+
                 }
+                
             }
             
-            .ems-pay-point {
-                padding: 20px;
-                [id$="BONUSPARAHESAPLANIYOR"] {
-                    display: block;
-                    margin-top: 15px;
-                    font-size: 13px;
-                }
-                &:empty{ display: none; }
+            .ems-pay-point {padding: 20px;
+
+                [id$="BONUSPARAHESAPLANIYOR"] {display: block; margin-top: 15px; font-size: 13px;}
+
+                &:empty {display: none;}
+
             }
             
             .ems-pay-other {
-                .OdemeBilgiPesinDigerOdemeNotu {
-                    padding: 20px;
-                    border: 1px solid;
+
+                .OdemeBilgiPesinDigerOdemeNotu {padding: 20px; border: 1px solid;
+
                     br {display: none;}
-                    > span {
-                        display: block;
-                        text-align: left;
-                       
-                        font-size: 15px;
-                        margin: 10px 0 5px;
-                        
-                    }
-                    textarea {
-                        width: 100% !important;
-                        max-width: 400px;
-                        height: 100px;
-                        resize: none;
-                    }
+                    
+                    > span {display: block; text-align: left; font-size: 15px; margin: 10px 0 5px;}
+
+                    textarea {width: 100% !important; max-width: 400px; height: 100px; resize: none;}
+                
                 }
             }
+
             .tableOdemeBilgiHavale {
                 width: 100%;
                 border-collapse: collapse;

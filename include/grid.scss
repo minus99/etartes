@@ -24,7 +24,15 @@
 
         }
 
-        .ems-grid-price {display: none;}
+        .ems-grid-price {direction: rtl;
+        
+            .pb1 {
+
+                &::before {font-size: 15px;}
+
+            }
+        
+        }
 
         .ems-grid-piece {width: 10%; text-align: center;
 
@@ -59,9 +67,19 @@
 
     }
 
+    &.ems-grid-favorites {
+
+        .ems-grid-header {
+
+            > div {text-align: center; text-transform: uppercase;}
+
+        }
+
+    }
+
     // cart list body
 
-    .ems-grid-row {position: relative; border-width: 0 1px 0 1px; border-style: solid; border-color: $color-4; min-height: 130px;
+    .ems-grid-row {position: relative; border-width: 0px 0px 0px 1px; border-style: solid; border-color: $color-4; min-height: 130px; color: $color-9; font-size: 15px;
        
         > div {border-width: 1px 0px 0 0; border-style: solid; border-color: $color-4; padding: 15px 0;
 
@@ -220,23 +238,23 @@
         // row delete
 
         .ems-grid-delete {
-            i {
-                font-size: 12px;
-            }
-            b {
-                font-weight: normal;
-            }
+
+            i {font-size: 12px;}
+            
+            b {font-weight: normal;}
+        
         }
 
         // row cargo no
 
         .ems-grid-cargo-no {
+
             a {
-                &:hover {
-                   
-                    text-decoration: underline;
-                }
-            }            
+
+                &:hover {text-decoration: underline;}
+
+            }        
+
         }
 
         .satBrFiyat,
@@ -292,6 +310,14 @@
 
     }
 
+    .ems-grid-message {}
+
+}
+
+.ems-grid-favorites {
+ 
+    .ems-grid-img {width: 7% $i;}
+
 }
 
 .ems-grid-favorites,
@@ -321,90 +347,117 @@
     }
     
 	 .ems-grid-row {
-		> div {
-            padding:10px;
-            vertical-align: middle;
-            border-left: 1px solid;
-			&.ems-grid-remove {
-                width:7%; 
-            }
-            &.ems-grid-img { 
-                width:12%;  
-            }
-            &.ems-grid-code {
-                width:12%;
-            }
-            &.ems-grid-report{
-                width: 12%;
-            }
-            &.ems-grid-piece {
-                width:12%;
-            }
-            &.ems-grid-price {
-                width:12%;
-            }
-            &.ems-grid-date {
-                width:15%;
-            }
-            &:first-child{ border-left: none; }
-		}
-	 }
+
+        > div {padding: 10px; vertical-align: middle; border-left: 1px solid $color-4;
+            
+            &.ems-grid-remove {width: 7%;}
+            
+            &.ems-grid-img {width: 12%;}
+
+            &.ems-grid-code {width: 12%;}
+
+            &.ems-grid-report {width: 12%;}
+
+            &.ems-grid-piece {width: 12%;}
+
+            &.ems-grid-price {width: 12%;}
+
+            &.ems-grid-date {width: 15%;}
+
+            &:first-child {border-left: none;}
+
+        }
+        
+     }
+     
 }
 
 .ems-grid-cart {
+
     .ems-grid-row {
-        > div {
-            border-left: none;
-            border-right: none;
-        }
+
+        > div {border-left: none; border-right: none;}
+
     }
+
 }
 
 .ems-grid-address {
-    .ems-grid-row {
-        > div {
-            border-right-width: 0;
-        }
+
+    .ems-grid-row {border-width: 1px; border-top-width: 0px;
+
+        > div {border: none;}
+
+        &:first-child {border-top-width: 1px;}
+
     }
+
 }
 
-.ems-grid-address {
-    .ems-grid-row {
-        > div {
-            border-bottom-width: 1px;
-        }
-    }
-}
+.ems-grid-follow-price {
 
-.ems-grid-favorites, .ems-grid-refund, .ems-page-member-follow-list .ems-grid-default, .ems-grid-order, .ems-grid-order-products, .ems-grid-message {
-    > div > div {
-        text-align: center;
-    }
-}
+    .ems-grid-row {border-right-width: 1px;}
 
-.ems-grid-favorites, .ems-grid-refund, .ems-page-member-follow-list .ems-grid-default, .ems-grid-order-products {
-    .ems-grid-row > div {
-        &.ems-grid-img img {
-            width: 90px;
-            margin: 0 auto;
-        }
-    }
 }
 
 .ems-grid-favorites {
-    .ems-grid-row {
-        .ems-grid-piece {
-            > a {
-                left: 60%;
-                &:first-child {
-                    top: 40px;
-                }
-                &:last-child {
-                    top: 20px;
-                }
-            }
-        }
+
+    .ems-grid-row {border-right-width: 1px;}
+
+}
+
+.ems-grid-message {
+
+    .ems-grid-row {min-height: 60px;
+
+        > div {border-width: 1px 1px 0px 0px; padding: 15px;}
+
     }
+
+}
+
+.ems-grid-favorites,
+.ems-grid-refund,
+.ems-page-member-follow-list .ems-grid-default,
+.ems-grid-order,
+.ems-grid-order-products,
+.ems-grid-message {
+
+    > div > div {text-align: center;}
+
+}
+
+.ems-grid-favorites,
+.ems-grid-refund,
+.ems-page-member-follow-list .ems-grid-default,
+.ems-grid-order-products {
+
+    .ems-grid-row > div {
+
+        &.ems-grid-img img {width: 90px; margin: 0 auto;}
+
+    }
+
+}
+
+.ems-grid-favorites {
+
+    .ems-grid-row {
+
+        .ems-grid-piece {
+
+            > a {left: 60%; 
+
+                &:first-child {top: 40px;}
+
+                &:last-child {top: 20px;}
+
+            }
+
+        }
+        
+    }
+
 }
 
 .ems-grid-cart {
@@ -436,21 +489,21 @@
         }
 
         .ems-grid-price {
-            > span {
-               
-                font-size: 15px;
-                line-height: 1;
-                color: #1a1a1a;
-                text-align: center;
+            
+            > span {font-size: 15px; text-align: center;
+
                 .brFiyat {display:none !important;}
+
             }
+
             .brutFiyat {display:none !important;}
-            .brutFiyatVrg {
-                display:block !important;
-                text-decoration: line-through;
-            }
+
+            .brutFiyatVrg {display:block !important; text-decoration: line-through;}
+
         }
+
     }
+
 }
 
 .gridSepetStok {
@@ -540,13 +593,13 @@
 }
 
 .ems-grid-message {
+
     .ems-grid-row > div {
-        a {
-            display: block !important; 
-        }
-        a.emos_invisible {
-           display: none !important;
-        }
+
+        a {display: block !important;}
+
+        a.emos_invisible {display: none !important;}
+
         &.ems-grid-icon {
             a.emos_invisible {
                 padding-right: 40px;
@@ -595,9 +648,9 @@
 }
 
 .ems-grid-order-products {
-    .ems-grid-row .ems-grid-price-total {
-        text-align: center;
-    }
+
+    .ems-grid-row .ems-grid-price-total {text-align: center;}
+
 }
 
 @media screen and (max-width: 1100px) {

@@ -1,12 +1,11 @@
 .page-member {
 
-    .row-1 {width: 280px;}
+    .row-1 {width: 280px; display: none;}
 
     .row-2 {width: calc(100% - 280px);}
 
     div[id$="pnlBilgiGuncelle"],
-    .tableUyeBilgi_aciklama,
-    .page-top-desc-border {display: none;}
+    .tableUyeBilgi_aciklama {display: none;}
 
     // menu
 
@@ -24,13 +23,19 @@
 
                 a {font-size: 14px; line-height: 2;}
 
-                &.selected {
-
-                    a {font-weight: bold;}
-
+                .lvl2 {display: none;
+                
+                    h4 {display: none;}
+                
                 }
 
-                .lvl2 {display: none;}
+                &.selected {
+
+                    > a {font-weight: bold;}
+
+                    .lvl2 {display: block; padding-left: 20px;}
+
+                }
 
             }
         
@@ -43,6 +48,8 @@
     #validateUye {max-width: 320px; padding-left: 160px;}
 
     .page-top-title {text-align: center; margin-bottom: 15px; font-size: 18px; font-weight: bold;}
+
+    .page-top-desc {display: block; font-size: 15px; color: $color-9; margin-bottom: 40px;}
 
     .mobile-phone {
 
@@ -103,6 +110,22 @@
 
         .row-2 {width: 100%;}
 
+        .ems-page-member-address {
+
+            > .page-top-title {display: none;}
+
+        }
+
+    }
+
+}
+
+body:not(.new-address) {
+
+    .page-member {
+
+        .row-1 {display: block;} 
+    
     }
 
 }
@@ -142,6 +165,8 @@
             @extend .large;
 
         }
+
+        .sStylerWrp_select {font-size: 14px;}
     
     }
 
@@ -173,7 +198,7 @@
 
     .page-top-title {text-align: left;}
 
-    .page-top-desc {display: block; font-size: 12px; color: $color-9; margin-bottom: 40px;}
+    .page-top-desc {font-size: 12px;}
 
     .order-filter {display: flex; margin-bottom: 30px;
     
@@ -289,3 +314,132 @@
 
 }
 
+// favorites
+
+.ems-page-member-favorites {
+
+    .page-top-title {text-align: left;}
+
+    .page-top-desc {
+
+        > span {display: block; margin-bottom: 40px;}
+
+        a {
+
+            @extend .large;
+
+            border-radius: 0px;
+
+        }
+
+    }
+
+    .btnFavoriListeSil {
+
+        @extend .none;
+
+    }
+
+}
+
+// follow list
+
+.ems-page-member-follow-list {
+
+    .page-top-title {text-align: left;}
+
+    .inner-title {font-size: 15px; font-weight: 600; margin-top: 20px; margin-bottom: 40px;}
+
+    .btnTakipListeFiySil {
+
+        @extend .none;
+
+    }
+
+    .ems-message {font-size: 15px; color: $color-9;}
+
+}
+
+// message
+
+.ems-page-member-message {
+
+    .ems-grid-default .ems-grid-row > div {}
+
+}
+
+// message detail
+
+.ems-page-member-message-detail {font-size: 14px;
+
+    .btnMesajKonuYeniGonder,
+    .btnMesajCozuldu {
+
+        @extend .small;
+
+    }
+
+    .btnMesajKonuYeniGonder {margin-right: 20px;}
+
+    ul {margin: 0px;}
+
+    ul.ems-message-type {width: 100%; position: relative; border: 1px solid $color-4; margin-top: 20px; display: inline-block;
+    
+        li {display: table; width: 100%; border-bottom: 1px solid $color-4;
+        
+            span {padding: 15px; border-right: 1px solid $color-4; display: table-cell;
+            
+                &:first-child {width: 20%;}
+
+                &:last-child {border-right: 0;}
+            
+            }
+
+
+            &:last-child {border-bottom: 0;}
+        
+        }
+    
+    }
+
+}
+
+.ems-message-detail-form .msgDtList {margin-bottom: 20px;
+
+    .msgDtHeader ul {display: table; width: 100%;
+    
+        li {display: table-cell; width: 50%;
+        
+            span {font-size: 12px; color: $color-9; padding: 5px; text-align: left; text-transform: uppercase; display: block;}
+        
+        } 
+    
+    }
+
+    .msgDtContent {width: 100%; position: relative; border: 1px solid $color-4; display: inline-block;
+    
+        ul {display: table; width: 100%;
+        
+            li {width: 50%; padding: 15px; border-right: 1px solid $color-4; display: table-cell;
+            
+                &:last-child {border: 0;}
+            
+            }
+        
+        }
+    
+    }
+
+}
+
+// password change
+
+.ems-page-member-password {max-width: 280px;
+
+    .btnSifreGuncelle {display: block;
+
+        @extend .large;
+
+    }
+
+}

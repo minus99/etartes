@@ -8,7 +8,7 @@
     
         a {
 
-            &::before {content: '>'; margin: 0px 5px; display: flex; align-items: center;} 
+            &::before {content: '>'; margin: 0px 5px; display: inline-flex; align-items: center;} 
 
             &:first-child {
 
@@ -115,17 +115,13 @@
 
         }
 
-        .btnFiyatDus {font-size: 14px; display: flex;
+        .btnFavoriEkle {font-size: 14px; display: flex;
 
             span {text-decoration: underline;}
 
-            @extend .none;
+            i {margin-right: 5px; font-size: 18px;}
 
-            &::before {content: '\e80b'; text-decoration: none; margin-right: 15px; font-size: 20px;
-            
-                @extend .icons;
-            
-            }
+            @extend .none;
 
         }
 
