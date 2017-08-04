@@ -6,7 +6,7 @@
         
         > div {display: table-cell; position: relative; vertical-align: middle; word-break: break-word;}
         
-        .ems-grid-img {width: 10%;}
+        .ems-grid-img {width: 10%; padding-left: 10px; padding-right: 10px;}
 
         .ems-grid-code {width: 12%;}
         
@@ -44,13 +44,12 @@
 
         }
 
-        .ems-grid-price.currency-ico {display: none;}
-
-        .ems-grid-price {width: 19%; padding-left: 10px !important;}
+        .ems-grid-price {width: 19%; padding-left: 10px !important;} 
 
         .ems-grid-price-total {width: 19%; color: $color-10; font-size: 20px; font-weight: bold;}
 
         .ems-grid-delete {width: 8%; text-align: center;}
+
     }
 
     // cart list header
@@ -81,7 +80,7 @@
 
     .ems-grid-row {position: relative; border-width: 0px 0px 0px 1px; border-style: solid; border-color: $color-4; min-height: 130px; color: $color-9; font-size: 15px;
        
-        > div {border-width: 1px 0px 0 0; border-style: solid; border-color: $color-4; padding: 15px 0;
+        > div {border-width: 1px 0px 0px 0px; border-style: solid; border-color: $color-4; padding-top: 15px; padding-bottom: 15px;
 
             &.ems-grid-delete {
 
@@ -551,45 +550,34 @@
 
         .col-3 {width: 25%; border-left-width: 1px; text-align: left; padding-left: 20px; padding-right: 10px;
             
-            > a.btnDefault {
-                width: 100%;
-                font-size: 12px;
-                background: none;
-                padding: 10px 0;
-                text-align: left;
-                text-transform: inherit;
-                i {
-                    margin-right: 10px;
-                    margin-top: -2px;
-                    padding: 1px;
-                    width: 16px;
-                    height: 16px;
-                    border: 1px solid;
-                    display: inline-block;
-                    vertical-align: middle;
-                    border-radius: 100%;
-                    b{
-                        font-weight: normal;
-                        background: #ffffff;
-                        width: 12px;
-                        height: 12px;
-                        border-radius: 100%;
-                        display: inline-block;
-                    }
+            > a.btnDefault {width: 100%; font-size: 12px; background: none; padding: 10px 0px; text-align: left; text-transform: inherit; color: $color-9;
+                
+                i {margin-right: 10px; margin-top: -2px; padding: 1px; width: 12px; height: 12px; border: 1px solid; display: inline-block; vertical-align: middle; border-radius: 100%;
+                    
+                    b {font-weight: normal; opacity: 0; width: 12px; height: 12px; border-radius: 100%; display: inline-block;}
+                
                 }
-                span {font-size:12px; letter-spacing:inherit; }
+
+                span {font-size:12px; letter-spacing:inherit;}
+                
                 &.emos_selected {
-                    i{
+
+                    i {background-color: $color-1; border-color: $color-1;
                        
-                        b{
-                            
-                        }
+                        b {}
+
                     }
-                    span {}
-                }            
+
+                    span {color: $color-1;}
+
+                }       
+
             }
+
         }
+
     }
+
 }
 
 .ems-grid-message {
@@ -601,16 +589,15 @@
         a.emos_invisible {display: none !important;}
 
         &.ems-grid-icon {
-            a.emos_invisible {
-                padding-right: 40px;
-            }
-            img {
-                position: absolute;
-                right: 30px;
-                top: 7px;
-            }
+
+            a.emos_invisible {padding-right: 40px;}
+
+            img {position: absolute; right: 30px; top: 7px;}
+        
         }
+    
     }
+    
     .ems-grid-row.newMessage {
         > div {
             &.ems-grid-icon {
