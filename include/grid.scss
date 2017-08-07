@@ -4,7 +4,7 @@
     
     > div {position: relative; display: table; width: 100%; table-layout: fixed;
         
-        > div {display: table-cell; position: relative; vertical-align: middle; word-break: break-word;}
+        > div {display: table-cell; position: relative; vertical-align: middle;}
         
         .ems-grid-img {width: 10%; padding-left: 10px; padding-right: 10px;}
 
@@ -552,7 +552,7 @@
             
             > a.btnDefault {width: 100%; font-size: 12px; background: none; padding: 10px 0px; text-align: left; text-transform: inherit; color: $color-9;
                 
-                i {margin-right: 10px; margin-top: -2px; padding: 1px; width: 12px; height: 12px; border: 1px solid; display: inline-block; vertical-align: middle; border-radius: 100%;
+                i {margin-right: 10px; margin-top: -2px; padding: 1px; width: 12px; height: 12px; border: 1px solid; display: inline-block; vertical-align: middle; border-radius: 100%; background-color: $color-3;
                     
                     b {font-weight: normal; opacity: 0; width: 12px; height: 12px; border-radius: 100%; display: inline-block;}
                 
@@ -654,10 +654,12 @@
 
     .ems-grid-address {
 
-        .ems-grid-row {min-height: 150px; display: flex; flex-direction: column; justify-content: space-around; margin-bottom: 15px;
+        .ems-grid-row {min-height: 150px; padding-top: 15px; display: flex; flex-direction: column; justify-content: space-around; margin-bottom: 15px;
 
             .col-1,
             .col-2 {width: 100%; display: block; padding-left: 10px; box-sizing: border-box;}
+
+            .col-3 {width: 100%; padding-left: 10px;}
 
             .ems-address-buttons {justify-content: flex-start;
             

@@ -69,3 +69,10 @@
     }    
 
 }
+
+@media screen and (max-width: 960px) {
+
+    .ems-page-member-login .ems-login,
+    .ems-page-member-login .ems-signup {width: 100%;}
+
+}

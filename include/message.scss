@@ -14,3 +14,17 @@
     }
 
 }
+
+@media screen and (max-width: 960px) {
+
+    .ems-page-message {
+
+        .ems-form {max-width: 100%;}
+
+        textarea {width: 100% $i;}
+
+        .btnMesajGonder {width: 100%; box-sizing: border-box;}
+
+    }
+
+}
