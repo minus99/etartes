@@ -50,7 +50,13 @@
 
     .category {
 
-        ul {column-count: 3; column-gap: 50px;}
+        > ul {column-count: 3; column-gap: 50px;
+        
+            ul {display: none;}
+        
+        }
+
+        .icon-right-arrow {display: none;}
 
     }
 

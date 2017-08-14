@@ -6,7 +6,7 @@
 
 // main-slider
 
-.main-slider {font-size: 0px;
+.main-slider {
 
     img {visibility: hidden;}
 
@@ -49,6 +49,11 @@
 
     > div::before{font-size: 30px; margin-right: 20px; margin-left: 0px;}
 
+    .icon-cart,
+    .icon-lock {flex: 1;}
+
+    .icon-money {flex: 1.5; justify-content: center;}
+
 }
 
 // background banner
@@ -82,7 +87,11 @@
 
     }
 
-    .pay-type-list {padding: 20px 25px;}
+    .pay-type-list {padding: 20px 25px;
+
+        .icon-money {flex: 1;}
+        
+    }
 
     .home-content {padding-left: 0px;}
 

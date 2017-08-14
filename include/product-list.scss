@@ -69,7 +69,7 @@
 
 // navigation
 
-.navigation {min-height: 50px; line-height: 50px; border-bottom: 1px solid $color-5; color: $color-9;
+.navigation {min-height: 50px; line-height: 50px; border-bottom: 1px solid $color-4; color: $color-9;
 
     .navigasyon {font-size: 13px;
     
@@ -105,7 +105,7 @@
 
     .ems-prd-list-sort {height: 50px; font-size: 13px; color: $color-9;
 
-        .sStylerMainWrp {border: none;
+        .sStylerMainWrp {border: none; color: $color-9;
 
             .sStylerWrp {position: relative; padding-left: 10px; z-index: 3; left: auto; right: auto;}
         
@@ -143,13 +143,13 @@
 
     .ems-prd-image {flex-basis: 70px;}
 
-    .product-code-group {padding-left: 20px; text-align: left; flex-basis: 300px; display: flex; flex-direction: column; justify-content: center;}
+    .product-code-group {font-weight: 600; padding-left: 20px; text-align: left; flex-basis: 300px; display: flex; flex-direction: column; justify-content: center;}
 
     .ems-none.product-code {display: block $i; font-size: 12px; color: $color-9;}
 
     .ems-prd-name a {font-size: 14px; color: $color-8;}
 
-    .product-item .ems-prd-price {margin-top: 0px; display: flex; align-items: center; flex-direction: column; font-size: 14px; color: $color-9;}
+    .product-item .ems-prd-price {margin-top: 0px; display: flex; align-items: center; flex-direction: column; flex: 1; font-size: 14px; color: $color-9;}
 
     .pb1::before {font-size: 14px;}
 
@@ -206,7 +206,7 @@
 
         .s2 {
 
-            > a {font-size: 15px; font-weight: bold;}
+            > a {font-size: 15px; font-weight: 600;}
 
         }
 
@@ -420,7 +420,15 @@
 
 @media screen and (max-width: 768px) {
 
-    .no-swiper .swiper-wrapper .swiper-slide {width: calc(50% - 5px);}
+    .no-swiper {margin-bottom: 40px;
+
+        .swiper-wrapper .swiper-slide {width: calc(50% - 5px); height: auto; margin-bottom: 0px;
+        
+            .ems-prd-inner {height: calc(100% - 40px);}
+        
+        }
+
+    }
 
     .swiper-title {text-align: center;}
 

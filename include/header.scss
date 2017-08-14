@@ -31,7 +31,7 @@
 
 // member
 
-.member {position: absolute; right: 40px; top: -83px; height: 83px; width: 275px; transition: top 0.3s ease; transition-delay: 0s; 
+.member {position: absolute; right: 0px; top: -83px; height: 83px; width: 275px; transition: top 0.3s ease; transition-delay: 0s; 
 
     .icon-basket,
     .icon-user {
@@ -359,7 +359,11 @@
 
     .header-top .logo {display: block; flex-basis: 100%;}
 
-    .header-logo {width: 100px;}
+    .header-logo {flex: 1.7; text-align: center;
+
+        a {display: inline-block; width: 100px;}
+
+    }
 
     .header-top .logo,
     .header-top .nav {height: 70px;}
@@ -437,11 +441,15 @@
     .header-logo-wrapper {height: 70px; display: flex; justify-content: space-between; align-items: center;}
 
     .mbHeader,
-    .mbCart {display: block; color: $color-3;}
+    .mbCart {display: block; color: $color-3; flex: 1;}
 
-    .mbHeader {font-size: 29px;}
+    .mbHeader {font-size: 29px;
+    
+        .mbBack {display: none;}
+    
+    }
 
-    .mbCart {
+    .mbCart {text-align: right;
 
         a {font-size: 27px;}
 
