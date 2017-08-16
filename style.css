@@ -71,7 +71,7 @@ a.lnkUyeOlmak,
   border-radius: 4px;
   display: inline-block; }
 
-.large, .btnFacebookLogin, .member #validateLogin .submit .btnKutuLogin, .member #validateLogin .lnkUyeOlmak, .member .mod-mini-cart .lnkSepet, .ems-page-member-login .btnLogin, .ems-page-member-login .btnYeniUyeKaydet, .page-product-list .popup-sort .popup-footer a, .urunDetay .inner-row-2 a.btnsepeteAt, .errorHolder .text-content-wrp > a, .ems-page-message .btnMesajGonder, .page-cart .bottom-step a.btnDefault, .ems-page-order-result .order-result a, .ems-page-order-result .order-result .g-orders, .page-member .btnUyeBilgi, .ems-page-new-address .ems-form .btnAdresKaydet, .ems-page-member-order .order-filter .btnSipAra, .ems-page-member-order-detail .bottom-step .btnSipariseDon, .ems-page-member-favorites .page-top-desc a, .ems-page-member-password .btnSifreGuncelle {
+.large, a.btnFacebookLogin, .member #validateLogin .submit .btnKutuLogin, .member #validateLogin .lnkUyeOlmak, .member .mod-mini-cart .lnkSepet, .tableSifremiUnuttum td a.btnUyeSifreGonder, .ems-page-member-login .btnLogin, .ems-page-member-login .btnYeniUyeKaydet, .page-product-list .popup-sort .popup-footer a, .urunDetay .inner-row-2 a.btnsepeteAt, .errorHolder .text-content-wrp > a, .ems-page-message .btnMesajGonder, .page-cart .bottom-step a.btnDefault, .ems-page-order-result .order-result a, .ems-page-order-result .order-result .g-orders, .page-member .btnUyeBilgi, .ems-page-new-address .ems-form .btnAdresKaydet, .ems-page-member-order .order-filter .btnSipAra, .ems-page-member-order-detail .bottom-step .btnSipariseDon, .ems-page-member-favorites .page-top-desc a, .ems-page-member-password .btnSifreGuncelle {
   font-size: 18px;
   padding: 12px 56px; }
 
@@ -94,7 +94,7 @@ a.lnkUyeOlmak,
 .border {
   font-size: 14px; }
 
-.btnFacebookLogin {
+a.btnFacebookLogin {
   background-color: #385C8E; }
 
 .none, .member #validateLogin .mod-mini-login .mod-mini-login-body .sub.login .btnKutuLogout, .ems-grid-default .ems-grid-row .ems-address-buttons > a, .urunDetay .inner-row-2 .ems-prd-price-taksit .lnkTaksitSecenek, .urunDetay .inner-row-2 .btnFavoriEkle, .page-cart .ems-cart-button .btnDefault, .page-cart .ems-cart-coupon .ems-cart-coupon-body table a.btnHediyeCekiKullan, .ems-page-member-address .add-new-address a, .ems-page-new-address .page-top-title .btnAdresIptal, .ems-page-member-order .ems-grid-row .ems-grid-detail .btnSiparisDetay, .ems-page-member-favorites .btnFavoriListeSil, .ems-page-member-follow-list .btnTakipListeFiySil {
@@ -194,6 +194,9 @@ a.lnkUyeOlmak,
 
 .ems-page-default {
   padding: 50px 0px 70px 0px; }
+
+.width-1-1 {
+  width: 100%; }
 
 input:not([type=radio]):not([type=checkbox]),
 select,
@@ -1487,6 +1490,8 @@ button.toast-close-button {
       margin-right: 20px; }
     .header-category .title span {
       width: 100%; }
+    .header-category .title i {
+      font-size: 8px; }
   .header-category .list {
     border-left: 1px solid #F3F3F3;
     border-right: 1px solid #F3F3F3;
@@ -1973,7 +1978,7 @@ button.toast-close-button {
     position: relative;
     vertical-align: middle; }
   .ems-grid-default > div .ems-grid-img {
-    width: 10%;
+    width: 14%;
     padding-left: 10px;
     padding-right: 10px; }
   .ems-grid-default > div .ems-grid-code {
@@ -2214,11 +2219,6 @@ button.toast-close-button {
       .ems-grid-default .ems-grid-row .ems-address-buttons > a.btnAdresListeSil {
         color: #78B657; }
 
-/*.ems-grid-favorites {
- 
-    .ems-grid-img {width: 7% $i;}
-
-}*/
 .ems-grid-favorites .ems-grid-header > div.ems-grid-remove,
 .ems-grid-follow-price .ems-grid-header > div.ems-grid-remove,
 .ems-grid-follow-stock .ems-grid-header > div.ems-grid-remove {
@@ -2362,12 +2362,9 @@ button.toast-close-button {
   .ems-grid-cart .ems-grid-row .ems-grid-name .ems-grid-code {
     display: none; }
 
-.ems-grid-cart .ems-grid-row .ems-grid-img a,
 .ems-grid-cart .ems-grid-row .ems-grid-img img {
+  width: 120px;
   max-width: 120px; }
-
-.ems-grid-cart .ems-grid-row .ems-grid-img img {
-  width: 100%; }
 
 .ems-grid-cart .ems-grid-row .ems-grid-price > span {
   font-size: 15px;
@@ -2474,23 +2471,38 @@ button.toast-close-button {
   top: 14px; }
 
 .tableSifremiUnuttum {
-  width: 100%;
-  table-layout: fixed; }
+  table-layout: fixed;
+  max-width: 600px;
+  width: 100%; }
   .tableSifremiUnuttum th, .tableSifremiUnuttum [id$="lbfUYE_KONTROLKODU"] {
     font-size: 14px; }
   .tableSifremiUnuttum th {
     width: 23%;
     text-align: left; }
-  .tableSifremiUnuttum td input, .tableSifremiUnuttum td a.btnUyeSifreGonder {
-    max-width: 400px; }
+  .tableSifremiUnuttum td input {
+    width: 100%; }
   .tableSifremiUnuttum td a.btnUyeSifreGonder {
-    width: 100%;
+    display: block;
     margin-top: 10px; }
   .tableSifremiUnuttum td.tableSifremiUnuttum_tdCaptchaImage1 {
     padding: 10px 0; }
 
 .ems-grid-order-products .ems-grid-row .ems-grid-price-total {
   text-align: center; }
+
+@media screen and (max-width: 960px) {
+  .tableSifremiUnuttum {
+    max-width: 100%;
+    width: 100%; }
+    .tableSifremiUnuttum th,
+    .tableSifremiUnuttum td {
+      display: block;
+      padding: 5px 0px; }
+    .tableSifremiUnuttum th {
+      width: 100%; }
+  .pageLogin_btnUyeSifreGonder table {
+    width: 100%;
+    display: table !important; } }
 
 @media screen and (max-width: 768px) {
   .ems-grid-address .ems-grid-row {
@@ -2837,7 +2849,8 @@ button.toast-close-button {
   -webkit-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  margin-top: 15px; }
+  margin-top: 15px;
+  text-transform: uppercase; }
 
 .product-item .urunListe_adet {
   display: none; }
@@ -4899,6 +4912,12 @@ button.toast-close-button {
 .siparis-onay .page-cart .row-3 {
   display: none; }
 
+.siparis-onay .tabBtnAdimOdeme {
+  color: #30373B; }
+
+.siparis-onay .ems-page-default {
+  min-height: 50vh; }
+
 .ems-page-order-result .pageDescDefault {
   padding-bottom: 0px;
   margin-top: 0px; }
@@ -4912,7 +4931,7 @@ button.toast-close-button {
   padding-bottom: 0px;
   max-width: 960px;
   margin: 0px auto;
-  display: block; }
+  display: none; }
   .ems-page-order-result .pageDescSiparisSonucHavale .btnHome4 {
     display: none; }
 
@@ -4925,8 +4944,7 @@ button.toast-close-button {
   margin: 50px auto;
   font-size: 18px;
   text-align: center; }
-  .ems-page-order-result .order-result .icon-close,
-  .ems-page-order-result .order-result .icon-checked {
+  .ems-page-order-result .order-result .icon-close {
     display: inline-block;
     padding: 20px;
     font-size: 25px;
@@ -4935,21 +4953,33 @@ button.toast-close-button {
   .ems-page-order-result .order-result .icon-close {
     background-color: #9B9B9B; }
   .ems-page-order-result .order-result .icon-checked {
-    background-color: #78B657; }
-  .ems-page-order-result .order-result p {
-    margin: 35px 0px; }
+    color: #78B657;
+    font-size: 60px; }
   .ems-page-order-result .order-result a {
     width: calc(50% - 10px);
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px; }
     .ems-page-order-result .order-result a i {
       margin-right: 10px; }
+    .ems-page-order-result .order-result a.border {
+      border-color: #F3F3F3;
+      color: #444444; }
   .ems-page-order-result .order-result .color-1 {
-    font-size: 36px; }
+    color: #78B657;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px; }
   .ems-page-order-result .order-result .color-2 {
     font-size: 36px; }
   .ems-page-order-result .order-result .fsize17 {
-    font-size: 18px; }
+    font-size: 18px;
+    color: #444444;
+    line-height: 1.7;
+    margin-top: 10px;
+    margin-bottom: 25px; }
   .ems-page-order-result .order-result .g-orders {
     background-color: #9B9B9B;
     color: #FFFFFF;
@@ -5202,6 +5232,16 @@ button.toast-close-button {
 .page-member .btnUyeBilgi {
   display: block; }
 
+.sifremi-unuttum .page-member .row-2 {
+  width: 100%;
+  padding-left: 280px; }
+  .sifremi-unuttum .page-member .row-2 .pageHeaderSifremiUnuttum {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold; }
+  .sifremi-unuttum .page-member .row-2 .pageDescSifremiUnuttum {
+    margin-bottom: 20px; }
+
 .ems-page-member-address .page-top-title {
   text-align: left; }
 
@@ -5238,7 +5278,7 @@ button.toast-close-button {
 .new-address .page-member .ems-page-member-address > .page-top-title {
   display: none; }
 
-body:not(.new-address) .page-member .row-1 {
+body:not(.new-address):not(.sifremi-unuttum) .page-member .row-1 {
   display: block; }
 
 .ems-page-new-address .page-top-title {
@@ -5456,6 +5496,10 @@ body:not(.new-address) .page-member .row-1 {
   font-size: 15px;
   color: #9B9B9B; }
 
+.ems-page-member-message .page-top-title,
+.pageMesajGonder #mesajGonder .page-top-title {
+  text-align: left; }
+
 .ems-page-member-message-detail {
   font-size: 14px; }
   .ems-page-member-message-detail .btnMesajKonuYeniGonder {
@@ -5670,7 +5714,9 @@ body:not(.new-address) .page-member .row-1 {
   .ems-grid-default > div .ems-grid-price {
     direction: ltr; }
   .ems-page-member-password {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .sifremi-unuttum .page-member .row-2 {
+    padding-left: 0px; } }
 
 @media screen and (max-width: 768px) {
   .ems-page-member-order .ems-grid-order {

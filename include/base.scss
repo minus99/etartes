@@ -60,7 +60,7 @@ a.lnkUyeOlmak,
 .short,
 .border {font-size: 14px;}
 
-.btnFacebookLogin {background-color: $facebook;
+a.btnFacebookLogin {background-color: $facebook;
 
     @extend .large;
 
@@ -106,6 +106,8 @@ a.lnkUyeOlmak,
 }
 
 .ems-page-default {padding: 50px 0px 70px 0px;}
+
+.width-1-1 {width: 100%;}
 
 // form
 

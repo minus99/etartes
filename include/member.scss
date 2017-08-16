@@ -70,6 +70,20 @@
 
 }
 
+// password-forgot
+
+.sifremi-unuttum {
+
+    .page-member .row-2 {width: 100%; padding-left: 280px;
+
+        .pageHeaderSifremiUnuttum {margin-bottom: 15px; font-size: 18px; font-weight: bold;}
+    
+        .pageDescSifremiUnuttum {margin-bottom: 20px;}
+    
+    }
+
+}
+
 // address
 
 .ems-page-member-address {
@@ -118,7 +132,7 @@
 
 }
 
-body:not(.new-address) {
+body:not(.new-address):not(.sifremi-unuttum) {
 
     .page-member {
 
@@ -362,9 +376,10 @@ body:not(.new-address) {
 
 // message
 
-.ems-page-member-message {
+.ems-page-member-message,
+.pageMesajGonder #mesajGonder {
 
-    .ems-grid-default .ems-grid-row > div {}
+    .page-top-title {text-align: left;}
 
 }
 
@@ -552,6 +567,16 @@ body:not(.new-address) {
     }
 
     .ems-page-member-password {max-width: 100%;}
+
+    .sifremi-unuttum {
+        
+        .page-member .row-2 {padding-left: 0px;
+        
+            .tableSifremiUnuttum {}
+        
+        }
+
+    }
 
 }
 

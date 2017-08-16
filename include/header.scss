@@ -266,6 +266,8 @@
         &::before {font-size: 26px; margin-right: 20px;}
 
         span {width: 100%;}
+
+        i {font-size: 8px;} 
     
     }
 
@@ -350,6 +352,12 @@
 .sticky-header-animate {padding-top: 84px;
 
     .header-bottom {position: fixed; top: 0px; left: 0px; width: 100%; z-index: 2;}
+
+}
+
+.search-focused {
+
+
 
 }
 

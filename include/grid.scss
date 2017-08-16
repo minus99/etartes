@@ -6,7 +6,7 @@
         
         > div {display: table-cell; position: relative; vertical-align: middle;}
         
-        .ems-grid-img {width: 10%; padding-left: 10px; padding-right: 10px;}
+        .ems-grid-img {width: 14%; padding-left: 10px; padding-right: 10px;}
 
         .ems-grid-code {width: 12%;}
         
@@ -313,12 +313,6 @@
 
 }
 
-/*.ems-grid-favorites {
- 
-    .ems-grid-img {width: 7% $i;}
-
-}*/
-
 .ems-grid-favorites,
 .ems-grid-follow-price,
 .ems-grid-follow-stock {
@@ -481,10 +475,8 @@
 
         .ems-grid-img {
 
-            a,
-            img {max-width: 120px;}
+            img {width: 120px; max-width: 120px;}
 
-            img {width: 100%;}
         }
 
         .ems-grid-price {
@@ -610,8 +602,9 @@
 }
 
 .tableSifremiUnuttum {
-    width: 100%;
     table-layout: fixed;
+    max-width: 600px;
+    width: 100%;
     th, [id$="lbfUYE_KONTROLKODU"] {
        
         font-size: 14px;
@@ -621,14 +614,15 @@
         text-align: left;
     }
     td {
-        input, a.btnUyeSifreGonder {
-            max-width: 400px;
+        input {
+            width: 100%;
         }
         a.btnUyeSifreGonder {
-            width: 100%;
+            display: block;
             margin-top: 10px;
+            @extend .large;
         }
-        &.tableSifremiUnuttum_tdCaptchaImage1 {
+        &.tableSifremiUnuttum_tdCaptchaImage1 { 
             padding: 10px 0;
         }
     }
@@ -647,6 +641,20 @@
 
 @media screen and (max-width: 960px) {
     
+    .tableSifremiUnuttum {max-width: 100%; width: 100%;
+    
+        th,
+        td {display: block; padding: 5px 0px;}
+
+        th {width: 100%;}
+    
+    }
+
+    .pageLogin_btnUyeSifreGonder {
+
+        table {width: 100%; display: table $i;} 
+
+    }
     
 }
 

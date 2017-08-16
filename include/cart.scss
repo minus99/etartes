@@ -935,13 +935,21 @@
 
 }
 
+.siparis-onay {
+
+    .tabBtnAdimOdeme {color: $color-2;}
+
+    .ems-page-default {min-height: 50vh;}
+
+}
+
 .ems-page-order-result {
 
     .pageDescDefault {padding-bottom: 0px; margin-top: 0px;}
     
     .page-top-title {display: none;}
     
-    .pageDescSiparisSonucHavale {text-align: center; font-size: 18px; padding-bottom: 0px; max-width: 960px; margin: 0px auto; display: block;
+    .pageDescSiparisSonucHavale {text-align: center; font-size: 18px; padding-bottom: 0px; max-width: 960px; margin: 0px auto; display: none;
         
         .btnHome4 {display: none;}
 
@@ -952,28 +960,29 @@
     
     .order-result {max-width: 580px; margin: 50px auto; font-size: 18px; text-align: center;
         
-        .icon-close,
-        .icon-checked {display: inline-block; padding: 20px; font-size: 25px; border-radius: 50%; color: $color-3;}
+        .icon-close {display: inline-block; padding: 20px; font-size: 25px; border-radius: 50%; color: $color-3;} 
 
         .icon-close {background-color: $color-9;}
 
-        .icon-checked {background-color: $color-1;}
+        .icon-checked {color: $color-1; font-size: 60px;}
 
-        p {margin: 35px 0px;}
+        p {}
 
-        a {width: calc(50% - 10px); box-sizing: border-box;
+        a {width: calc(50% - 10px); box-sizing: border-box; margin-left: 5px; margin-right: 5px; font-size: 14px;
         
             @extend .large;
 
             i {margin-right: 10px;}
+
+            &.border {border-color: $color-4; color: #444444;}
         
         }
         
-        .color-1 {font-size: 36px;}
+        .color-1 {color: $color-1; font-size: 24px; font-weight: 700; margin: 0px;} 
         
         .color-2 {font-size: 36px;}
         
-        .fsize17 {font-size: 18px;}
+        .fsize17 {font-size: 18px; color: #444444; line-height: 1.7; margin-top: 10px; margin-bottom: 25px;}
 
         .g-orders {background-color: $color-9; color: $color-3; border-radius: 3px;
 
