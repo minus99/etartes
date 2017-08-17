@@ -372,7 +372,7 @@
 
     .system-widget {
 
-        .product-item .ems-prd-inner {padding: 20px;}
+        .product-item .ems-prd-inner {padding: 20px 0px;} 
 
     }
 
@@ -501,5 +501,7 @@
         }
 
     }
+
+    .product-item .ems-prd-price {font-size: 19px;}
 
 }

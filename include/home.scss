@@ -127,10 +127,19 @@
 
     }
 
+    .main-slider {
+
+        .swiper-button-prev,
+        .swiper-button-next {display: none;}
+
+    }
+
 }
 
 @media screen and (max-width: 480px) {
 
-    .pay-type-list {padding: 6px 20px;}
+    .pay-type-list {padding: 6px 5px;}
+
+    .main-slider img {height: 320px;}
 
 }

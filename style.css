@@ -1614,10 +1614,10 @@ button.toast-close-button {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
   .header-logo {
-    -webkit-box-flex: 1.7;
-    -webkit-flex: 1.7;
-    -ms-flex: 1.7;
-    flex: 1.7;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     text-align: center; }
     .header-logo a {
       display: inline-block;
@@ -1716,9 +1716,11 @@ button.toast-close-button {
     -ms-flex: 1;
     flex: 1; }
   .mbHeader {
-    font-size: 29px; }
+    font-size: 25px; }
     .mbHeader .mbBack {
       display: none; }
+      .mbHeader .mbBack i::before {
+        margin: 0px; }
   .mbCart {
     text-align: right; }
     .mbCart a {
@@ -1943,12 +1945,12 @@ button.toast-close-button {
   .footer-top .logo img {
     width: 70px; }
   .footer-top .logo small {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: normal;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
-    padding-left: 3px;
+    padding-left: 2px;
     margin-bottom: -15px; }
   .footer-top .social ul li {
     padding-left: 15px; }
@@ -2502,7 +2504,12 @@ button.toast-close-button {
       width: 100%; }
   .pageLogin_btnUyeSifreGonder table {
     width: 100%;
-    display: table !important; } }
+    display: table !important; }
+  .ems-grid-cart .ems-grid-row .ems-grid-img img {
+    width: 80px;
+    max-width: 80px; }
+  .ems-grid-default .ems-grid-row {
+    min-height: 146px; } }
 
 @media screen and (max-width: 768px) {
   .ems-grid-address .ems-grid-row {
@@ -2754,11 +2761,16 @@ button.toast-close-button {
       width: 100%;
       margin-bottom: 30px; }
       .background-banner-list .background-banner-item:last-child {
-        margin-bottom: 0px; } }
+        margin-bottom: 0px; }
+  .main-slider .swiper-button-prev,
+  .main-slider .swiper-button-next {
+    display: none; } }
 
 @media screen and (max-width: 480px) {
   .pay-type-list {
-    padding: 6px 20px; } }
+    padding: 6px 5px; }
+  .main-slider img {
+    height: 320px; } }
 
 .widget-product {
   margin: 60px 0px 40px 0px; }
@@ -3243,7 +3255,7 @@ button.toast-close-button {
   .product-item .ems-prd-inner {
     padding: 0px; }
   .system-widget .product-item .ems-prd-inner {
-    padding: 20px; }
+    padding: 20px 0px; }
   .page-product-list .filter-button {
     display: block; }
   .page-product-list .filtre {
@@ -3371,7 +3383,9 @@ button.toast-close-button {
     -ms-flex-line-pack: justify;
     align-content: space-between; }
   .page-product-list .product-list li {
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+  .product-item .ems-prd-price {
+    font-size: 19px; } }
 
 .page-detail .detail-content {
   width: calc(100% - 391px);

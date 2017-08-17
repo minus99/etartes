@@ -655,6 +655,10 @@
         table {width: 100%; display: table $i;} 
 
     }
+
+    .ems-grid-cart .ems-grid-row .ems-grid-img img {width: 80px; max-width: 80px;}
+
+    .ems-grid-default .ems-grid-row {min-height: 146px;}
     
 }
 
