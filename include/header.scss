@@ -16,7 +16,7 @@
 .main-menu {
 
     ul {list-style: none; margin: 0px; padding: 0px;
-    
+
         li {
 
             a {padding: 0px 10px; color: $color-3; font-size: 14px; text-decoration: none; font-weight: 600;}
@@ -24,14 +24,14 @@
             &:first-child a {padding-left: 0px;}
 
         }
-    
+
     }
 
 }
 
 // member
 
-.member {position: absolute; right: 0px; top: -83px; height: 83px; width: 275px; transition: top 0.3s ease; transition-delay: 0s; 
+.member {position: absolute; right: 0px; top: -83px; height: 83px; width: 275px; transition: top 0.3s ease; transition-delay: 0s;
 
     .icon-basket,
     .icon-user {
@@ -60,11 +60,11 @@
             }
 
             .mod-mini-login-body {
-        
+
                 .ems-form {opacity: 0; visibility: hidden; position: absolute; background-color: $color-3; z-index: 2; width: 290px; left: 0px; top: 52px; padding: 15px; border-radius: 3px; border-top-left-radius: 0px;}
-            
+
                 .sub.login {position: absolute; top: 51px; left: 0; width: 290px; min-width: 170px; background: $color-3; z-index: 10; padding: 10px 15px; transition: all .2s ease; opacity: 0; visibility: hidden; overflow: hidden; border-radius: 3px; border-top-left-radius: 0px;
-                
+
                     > * {line-height: 2;}
 
                     .btnKutuLogout {
@@ -72,7 +72,7 @@
                         @extend .none;
 
                     }
-                
+
                 }
 
             }
@@ -100,9 +100,9 @@
                     .ems-form {opacity: 1; visibility: visible;}
 
                     .sub {
-                    
+
                         > span * {color: $color-2;}
-                    
+
                     }
 
                 }
@@ -129,7 +129,7 @@
 
         .btn-signin {display: none;}
 
-        .ems-form .ems-field .ems-form-label {color: $color-9; font-weight: 600;} 
+        .ems-form .ems-field .ems-form-label {color: $color-9; font-weight: 600;}
 
         .remember {color: $color-9;}
 
@@ -152,9 +152,9 @@
         &.opened {
 
             .mod-mini-cart-header {background-color: $color-3; border-top-left-radius: 3px; border-top-right-radius: 3px;
-            
+
                 * {color: $color-2;}
-            
+
             }
 
             .mod-mini-cart-body {opacity: 1; visibility: visible; width: 371px; border-radius: 3px; border-top-right-radius: 0px; overflow: hidden;}
@@ -164,11 +164,11 @@
         }
 
         .ems-cart-piece {position: absolute; left: 0px; top: 0px; font-size: 11px; width: 26px; height: 26px; text-align: center; line-height: 31px; color: $color-3;}
-    
+
         .ems-col {display: flex; flex-wrap: wrap; margin-bottom: 20px;
-        
+
             .cart-prd-left {width: 130px; display: flex; justify-content: space-between; align-items: center; padding-right: 20px; box-sizing: border-box;
-            
+
                 .cart-prd-image {width: 70px;}
 
                 .icon-ico_quit {font-size: 0px;
@@ -178,11 +178,11 @@
                         @extend .icons;
 
                     }
-                
+
                 }
-            
+
             }
-            
+
             .cart-prd-right {width: calc(100% - 130px);
 
                 .cart-prd-name {font-size: 13px; font-weight: 600; color: $color-9; text-transform: uppercase;
@@ -190,30 +190,30 @@
                     > b {display: none;}
 
                 }
-            
+
                 .cart-prd-quantity {display: none;}
 
                 .cart-prd-price {font-size: 14px; color: $color-10; font-weight: bold; line-height: 1; margin-top: 10px;}
 
                 .pb1 {float: left;
-                
+
                     &::before {font-size: 14px;}
-                
+
                 }
-            
+
             }
-        
+
         }
 
         .mini-basket-price,
         .mini-basket-link {background-color: #FAF8F7; padding: 15px;}
 
         .mini-basket-price {display: flex; justify-content: space-between; align-items: center; color: $color-10; font-weight: bold; font-size: 20px;
-        
+
             #lblUrunTutari {line-height: 1;}
 
             .pb1 {float: left;}
-        
+
         }
 
         .mini-basket-link {padding-top: 0px;}
@@ -246,6 +246,8 @@
 
 .header-bottom {background-color: $color-2; position: relative;
 
+    .kutuKategori {display: none;}
+
     .category {position: relative; max-width: 250px; margin-right: 30px;}
 
     .search {min-height: 84px;}
@@ -262,13 +264,13 @@
     // title
 
     .title {height: 67px; padding: 20px; box-sizing: border-box; font-size: 15px; font-weight: 600; color: $color-6;
-    
+
         &::before {font-size: 26px; margin-right: 20px;}
 
         span {width: 100%;}
 
-        i {font-size: 8px;} 
-    
+        i {font-size: 8px;}
+
     }
 
     // list
@@ -276,32 +278,35 @@
     .list {border-left: 1px solid $color-4; border-right: 1px solid $color-4; position: relative; display: none;
 
         .list-title {background-color: $color-1; height: 70px; align-items: center; justify-content: center; color: $color-3;
-        
+
             h2 {margin: 0px; text-align: center; font-size: 20px; font-weight: 600;}
 
             i {left: 20px; cursor: pointer;}
-        
+
         }
 
         ul {list-style: none; margin: 0px;
-        
+
             li {border-bottom: 1px solid $color-4;
 
                 a {font-size: 15px; font-weight: 600; color: #9B9B9B; padding: 15px 15px; display: flex; align-items: center; justify-content: space-between;
-                
+
                     i {display: none;}
-                
+
                 }
 
                 &:first-child {border-top: 1px solid $color-4;}
 
             }
-        
+
         }
 
         nav > ul {padding: 0px;
-        
+
             > li {
+
+                > span,
+                > b {display: none;}
 
                 > a i {font-size: 11px;}
 
@@ -314,7 +319,7 @@
                 }
 
             }
-        
+
         }
 
     }
@@ -381,9 +386,9 @@
         .ems-cart-basket span[id$='lbfKUTU_SEPET'] span {display: none;}
 
         .mod-mini-cart {text-align: right;
-        
+
             .ems-cart-piece {left: auto; right: 0px; width: 42px;}
-        
+
         }
 
     }
@@ -403,7 +408,7 @@
         }
 
         .list {position: fixed; border: none;  visibility: hidden; left: -100%; top: 0px; width: 100%; height: 100vh; background-color: $color-3; z-index: 6; transition: left 0.1s ease-in;
-        
+
             ul {
 
                 li {
@@ -413,23 +418,23 @@
                 }
 
             }
-        
+
         }
 
         .list-title {display: flex;}
 
         .list-login {display: flex; align-items: center; height: 50px; background-color: $color-2; color: $color-3; padding: 0px 20px;
-        
+
             a {font-size: 14px; font-weight: 600;
-            
+
                 i {font-size: 22px; margin-right: 5px;
-                
+
                     &::before {margin-left: 0px;}
-                
+
                 }
 
             }
-        
+
         }
 
     }
@@ -452,13 +457,13 @@
     .mbCart {display: block; color: $color-3; flex: 1;}
 
     .mbHeader {font-size: 25px;
-    
+
         .mbBack {display: none;
-        
+
             i::before {margin: 0px;}
-        
+
         }
-    
+
     }
 
     .mbCart {text-align: right;
@@ -470,9 +475,9 @@
     }
 
     .header-bottom .search {min-height: 70px;
-    
+
         input {height: 30px;}
-    
+
     }
 
     .mod-mini-search .icon-search {font-size: 15px;}

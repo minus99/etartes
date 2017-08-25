@@ -1457,6 +1457,8 @@ button.toast-close-button {
 .header-bottom {
   background-color: #30373B;
   position: relative; }
+  .header-bottom .kutuKategori {
+    display: none; }
   .header-bottom .category {
     position: relative;
     max-width: 250px;
@@ -1545,6 +1547,9 @@ button.toast-close-button {
           border-top: 1px solid #F3F3F3; }
     .header-category .list nav > ul {
       padding: 0px; }
+      .header-category .list nav > ul > li > span,
+      .header-category .list nav > ul > li > b {
+        display: none; }
       .header-category .list nav > ul > li > a i {
         font-size: 11px; }
       .header-category .list nav > ul > li > ul {
@@ -5789,5 +5794,3 @@ body:not(.new-address):not(.sifremi-unuttum) .page-member .row-1 {
       margin-bottom: 30px; }
     .ems-page-member-order .order-filter .btnSipAra {
       width: 100%; } }
-
-/*# sourceMappingURL=style.css.map */
