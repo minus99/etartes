@@ -1,14 +1,14 @@
 .page-detail {
 
-    .detail-content {width: calc(100% - 391px); border-right: 1px solid $color-4;} 
+    .detail-content {width: calc(100% - 391px); border-right: 1px solid $color-4;}
 
     .detail-bundle {width: 390px;}
 
     .navigasyon {margin-top: 20px; margin-bottom: 40px; font-size: 13px; color: $color-9;
-    
+
         a {
 
-            &::before {content: '>'; margin: 0px 5px; display: inline-flex; align-items: center;} 
+            &::before {content: '>'; margin: 0px 5px; display: inline-flex; align-items: center;}
 
             &:first-child {
 
@@ -17,7 +17,7 @@
             }
 
         }
-    
+
     }
 
     .presentation {display: none;}
@@ -48,7 +48,7 @@
 .urunDetay {
 
     .swiper-left-column {width: 50px; position: absolute; z-index: 2; left: 20px; top: 34px;}
-    
+
     .swiper-wrapper {margin: 0px;
 
         &.thumb-wrp {
@@ -64,9 +64,9 @@
                 }
 
             }
-        
+
         }
-    
+
     }
 
     .swiper-pagination {display: none;}
@@ -86,9 +86,9 @@
         }
 
         .ems-prd-price-selling {font-size: 36px; line-height: 0.9; color: $color-10; font-weight: bold;
-        
-            .urunDetay_satisFiyat {display: flex; align-items: flex-end;} 
-        
+
+            .urunDetay_satisFiyat {display: flex; align-items: flex-end;}
+
         }
 
         .ems-prd-price-first {display: flex; align-items: flex-end; font-size: 25px; font-weight: bold; color: $color-9; line-height: 0.9;}
@@ -135,12 +135,12 @@
 
     [id$='lblURN_ADET'] {display: none;}
 
-} 
+}
 
 .dropdown.plugins-active {
 
     > span {border: 1px solid $color-5; display: inline-flex; justify-content: space-around; align-items: center; border-radius: 3px; width: 100px; height: 50px; font-size: 14px;
-    
+
         i::after {content: '\e802'; font-size: 7px; display: flex; color: $color-9;
 
             @extend .icons;
@@ -163,7 +163,20 @@
 
 .detail-content  {
 
-    .tableUrunDokuman {display: none;}
+    .tableUrunDokuman {
+      .urunDetay_urunDokuman{
+        padding: 20px 10px;
+        a{
+          &:after{
+            content:'\e81d';
+            @extend .icons;
+          }
+        }
+      }
+      .urunDetay_urunDokumanTuru{
+          display: none;
+      }
+    }
 
 }
 
@@ -178,15 +191,15 @@
     iframe {width: 100%; height: 400px;}
 
     h3 {font-size: 18px; font-weight: 600;}
-    
+
     p {}
 
     .download {background-color: $color-4; text-transform: uppercase; font-weight: 600;
-    
+
         a {padding: 13px 25px 13px 10px;}
-    
-    } 
-     
+
+    }
+
 }
 
 // installment
@@ -195,7 +208,7 @@
 
     .popupTitleTaksit {text-align: left; font-size: 20px; font-weight: 600;}
 
-    .popupTaksit_lbfAciklama {margin-top: 33px; margin-bottom:  19px; font-size: 15px; color: $color-9; text-align: left;} 
+    .popupTaksit_lbfAciklama {margin-top: 33px; margin-bottom:  19px; font-size: 15px; color: $color-9; text-align: left;}
 
     .gridTaksitBanka {font-size: 12px; font-weight: 600;
 
@@ -204,9 +217,9 @@
         .gridTaksitSecenek td {padding: 5px;}
 
         > tbody {display: flex; flex-wrap: wrap;
-        
+
             tr {width: 100%;}
-        
+
         }
 
         .gridRowTaksitBanka {display: block; padding: 0px;}
@@ -220,13 +233,13 @@
 
         .taksit_banka {display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: center; border: 1px solid $color-4; padding: 15px 10px; font-weight: bold;}
 
-    } 
+    }
 
 }
 
 // content
 
-.product-table {margin-top: 30px; border: 1px solid $color-4; color: #757575; 
+.product-table {margin-top: 30px; border: 1px solid $color-4; color: #757575;
 
     > div {padding: 10px 24px;
 
@@ -250,22 +263,22 @@
     .product-text-table {color: #757575;
 
         .row {border: 1px solid $color-5;
-        
+
             &:last-child {border-top: 0px;}
 
             .col {border-left: 1px solid $color-5; padding: 17px 25px;
-            
+
                 &:first-child {border-left: none;}
-            
+
             }
-        
+
         }
 
     }
 
 }
 
-.navigation-js {display: flex; margin: 0px; margin-top: 40px; 
+.navigation-js {display: flex; margin: 0px; margin-top: 40px;
 
     li {flex-grow: 1;
 
@@ -290,11 +303,11 @@
 .content-js {
 
     li {display: none;
-    
+
         &.selected {display: block;}
 
         > .title {display: none;}
-    
+
     }
 
     .popupTaksit {padding: 0px;
@@ -304,15 +317,15 @@
             th {padding: 13px 8px;}
 
             .taksit_banka {flex-wrap: wrap; flex-direction: row; border: none;
-            
+
                 img {max-height: 27px; margin-bottom: 10px;}
-            
+
             }
 
             > tbody {flex-wrap: nowrap; justify-content: space-between;
-            
+
                 > tr {width: calc(50% - 15px);}
-            
+
             }
 
             .gridTaksitSecenek {table-layout: fixed;
@@ -321,7 +334,7 @@
 
                 td,
                 th {border: none;}
-            
+
                 td {padding: 11px 5px;}
 
                 > tbody {
@@ -329,7 +342,7 @@
                     > tr:nth-child(2) {color: $color-10;}
 
                 }
-            
+
             }
 
             .gridHeaderTaksitSecenek {background-color: $color-4;}
@@ -353,9 +366,9 @@
     .product-list > li {width: 100%; text-align: left; min-height: 132px; padding: 0px; margin-bottom: 20px;
 
         .ems-prd-inner {display: block; padding: 0px;
-        
+
             > * {float: left; width: auto;}
-        
+
         }
 
         .ems-prd-name {font-size: 14px; text-transform: uppercase; font-weight: 600; height: 40px; overflow: hidden;}
@@ -365,9 +378,9 @@
         .product-code-group {width: calc(100% - 140px); padding-left: 20px; box-sizing: border-box;}
 
         .ems-prd-price {padding-left: 20px; margin-top: -30px;
-        
+
             .pb1::before {margin: 0px;}
-        
+
         }
 
         .ems-prd-button {margin-left: 20px;}
@@ -379,18 +392,18 @@
 @media screen and (max-width: 1200px) {
 
     .page-detail {
-    
+
         .detail-content {width: 100%; border-right: none;}
 
         .detail-bundle {display: none;}
 
     }
-    
+
     .ems-prd-detail-inner {
 
         .inner-row-1 {width: 50%;}
 
-        .inner-row-2 {width: 50%;} 
+        .inner-row-2 {width: 50%;}
 
         .inner-row-3 {padding-right: 0px;}
 
@@ -403,9 +416,9 @@
     .page-detail {
 
         .navigasyon {margin-bottom: 0px; width: calc(100% + 40px); margin-left: -20px; border-bottom: 1px solid $color-4; padding: 0px 20px 5px 20px;
-        
+
             a {}
-        
+
         }
 
         .urunDetay {margin-top: 20px;}
@@ -446,7 +459,7 @@
     }
 
     .ems-tab-inner {
-        
+
         .navigation-js {display: none;}
 
     }
@@ -454,7 +467,7 @@
     .content-js {
 
         li {display: block;
-        
+
             > .title {display: block; padding: 12px 20px; color: $color-9; border: 1px solid $color-5; border-radius: 3px; font-weight: 600;}
 
             > .content {height: 0px; overflow: hidden;}
@@ -466,7 +479,7 @@
                 > .content {height: auto;}
 
             }
-        
+
         }
 
     }
